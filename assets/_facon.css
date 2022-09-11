@@ -1,0 +1,5 @@
+/* --color-sec */
+
+* {
+    background: var(--color-sec);
+}
