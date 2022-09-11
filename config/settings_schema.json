@@ -21,7 +21,6 @@
         "label": "Accent",
         "info": "Seasonal accent colour used throughout the shop."
       },
-      
       {
         "type": "color",
         "id": "colors_solid_button_labels",
