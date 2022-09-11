@@ -1,21 +1,18 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Facn Jacmin",
-    "theme_version": "2.0.0",
-    "theme_author": "Wannes Van der Weyden",
-    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes",
-    "theme_support_url": "https:\/\/support.shopify.com\/"
+    "theme_name": "Dawn",
+    "theme_version": "6.0.2",
+    "theme_author": "Shopify",
+    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
+    "theme_support_url": "https://support.shopify.com/"
   },
   {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {
-        "type": "color",
-        "id": "color_sec",
-        "default": "#dbf227",
-        "label": "Accent",
-        "info": "Seasonal accent colour used throughout the shop."
+        "type": "header",
+        "content": "t:settings_schema.colors.settings.header__1.content"
       },
       {
         "type": "color",
