@@ -153,6 +153,7 @@
     },
     "16629179331854321a": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "166291793312460e76-0": {
           "type": "heading",
@@ -196,6 +197,7 @@
     },
     "1662917939fd334d41": {
       "type": "page",
+      "disabled": true,
       "settings": {
         "page": "",
         "heading_size": "h1",
@@ -206,6 +208,7 @@
     },
     "166291794562443aab": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "1662917945dd69df74-0": {
           "type": "slide",
