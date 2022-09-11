@@ -16,6 +16,13 @@
       },
       {
         "type": "color",
+        "id": "color_sec",
+        "default": "#dbf227",
+        "label": "Accent",
+        "info": "Seasonal accent colour used throughout the shop."
+      },
+      {
+        "type": "color",
         "id": "colors_solid_button_labels",
         "default": "#FFFFFF",
         "label": "t:settings_schema.colors.settings.colors_solid_button_labels.label",
