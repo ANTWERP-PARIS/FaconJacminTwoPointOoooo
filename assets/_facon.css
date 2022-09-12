@@ -157,16 +157,13 @@ body, body * {
 
 body {
     opacity: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 body[data-loaded="true"] {
     opacity: 1;
     transition: opacity 1s !important;
-}
-
-.flexwrap {
-    display: flex;
-    flex-direction: column;
 }
 
 main {
