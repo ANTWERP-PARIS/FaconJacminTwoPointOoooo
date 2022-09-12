@@ -177,6 +177,10 @@ main {
 
 
 /* Grid */
+.page-width {
+    width: 100% !important;
+}
+
 .col {
     padding: calc(var(--pad)) !important;
     padding-top: 0 !important;
