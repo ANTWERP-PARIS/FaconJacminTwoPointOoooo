@@ -46,6 +46,7 @@
 
 .sml {
     font-size: 12px;
+    letter-spacing: .5px !important;
     font-weight: bold;
     text-transform: uppercase;
 }
