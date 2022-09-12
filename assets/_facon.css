@@ -166,12 +166,6 @@ body[data-loaded="true"] {
     transition: opacity 1s !important;
 }
 
-
-.flexwrap {
-    display: flex;
-    flex-direction: column;
-}
-
 main {
     flex: 1 0 auto;
     align-items: flex-start;
