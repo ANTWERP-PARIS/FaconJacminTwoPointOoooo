@@ -180,6 +180,7 @@ main {
 .page-width {
     width: 100% !important;
     max-width: none !important;
+    padding: 0 !important;
 }
 
 .col {
