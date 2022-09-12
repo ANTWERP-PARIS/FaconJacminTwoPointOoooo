@@ -179,6 +179,7 @@ main {
 /* Grid */
 .col {
     padding: calc(var(--pad)) !important;
+    padding-top: 0 !important;
 }
 
 
