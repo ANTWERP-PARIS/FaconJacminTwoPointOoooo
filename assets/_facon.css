@@ -164,7 +164,7 @@ body[data-loaded="true"] {
     transition: opacity 1s !important;
 }
 
-/*
+
 .flexwrap {
     display: flex;
     flex-direction: column;
@@ -177,7 +177,7 @@ main {
     overflow: hidden !important;
     z-index: 1;
 }
-*/
+
 
 
 /* Grid */
