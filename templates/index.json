@@ -2,6 +2,7 @@
   "sections": {
     "1662919415b0a94cfe": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "Blog posts",
         "heading_size": "h1",
@@ -19,6 +20,7 @@
     },
     "1662919418e6f81620": {
       "type": "newsletter",
+      "disabled": true,
       "blocks": {
         "16629194185d9f17a9-0": {
           "type": "heading",
@@ -53,6 +55,7 @@
     },
     "1662919421b6375f6c": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured collection",
         "heading_size": "h1",
@@ -80,6 +83,7 @@
     },
     "1662919424ee913431": {
       "type": "featured-product",
+      "disabled": true,
       "blocks": {
         "166291942424d2619d-0": {
           "type": "text",
@@ -196,6 +200,7 @@
     },
     "1662919435c792b1ca": {
       "type": "page",
+      "disabled": true,
       "settings": {
         "page": "",
         "heading_size": "h1",
@@ -206,6 +211,7 @@
     },
     "1662919439977d6564": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "16629194381b538d6c-0": {
           "type": "slide",
