@@ -179,6 +179,7 @@ main {
 /* Grid */
 .page-width {
     width: 100% !important;
+    max-width: none !important;
 }
 
 .col {
