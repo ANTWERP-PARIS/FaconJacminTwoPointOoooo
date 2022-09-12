@@ -157,6 +157,9 @@ body, body * {
 
 body {
     opacity: 0;
+
+    display: flex;
+    flex-direction: column;
 }
 
 body[data-loaded="true"] {
