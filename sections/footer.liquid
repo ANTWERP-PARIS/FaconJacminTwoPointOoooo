@@ -121,7 +121,7 @@
         -%}
         <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}">
           {%- for block in section.blocks -%}
-            <div class="col footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu col-xs-12 col-md-4{% endif %}" {{ block.shopify_attributes }}>
+            <div class="col footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu col-xs-6 col-md-2{% else %} col-xs-12 col-md-4{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
                 <h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
               {%- endif -%}
