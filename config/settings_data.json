@@ -167,7 +167,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Quick links",
-              "menu": "footer"
+              "menu": "main-menu"
             }
           },
           "footer-1": {
@@ -186,9 +186,7 @@
         "settings": {
           "newsletter_enable": true,
           "newsletter_heading": "Subscribe to our emails",
-          "show_social": true,
-          "enable_country_selector": false,
-          "enable_language_selector": false
+          "show_social": true
         }
       },
       "main-password-header": {
