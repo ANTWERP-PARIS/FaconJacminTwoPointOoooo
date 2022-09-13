@@ -1,34 +1,5 @@
 {
   "sections": {
-    "1662919439977d6564": {
-      "type": "slideshow",
-      "blocks": {
-        "16629194381b538d6c-0": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/a-hand-removes-a-sweater-from-a-clothing-rack.jpg"
-          }
-        },
-        "16629194381b538d6c-1": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "16629194381b538d6c-0",
-        "16629194381b538d6c-1"
-      ],
-      "settings": {
-        "change_slides_speed": 9,
-        "color_overlay": "white",
-        "overlay": "text",
-        "overlay_text": "New Collection",
-        "link": "shopify:\/\/collections\/frontpage",
-        "window": "_self"
-      }
-    },
     "1662919415b0a94cfe": {
       "type": "featured-blog",
       "settings": {
@@ -239,7 +210,6 @@
     }
   },
   "order": [
-    "1662919439977d6564",
     "1662919415b0a94cfe",
     "1662919418e6f81620",
     "1662919421b6375f6c",
