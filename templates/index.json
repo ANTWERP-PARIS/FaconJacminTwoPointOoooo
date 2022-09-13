@@ -21,9 +21,9 @@
         "166308670026e7fd8d-1"
       ],
       "settings": {
-        "change_slides_speed": 5,
+        "change_slides_speed": 3,
         "color_overlay": "sec",
-        "overlay": "logo",
+        "overlay": "text",
         "overlay_text": "New Collection",
         "link": "",
         "window": "_self"
