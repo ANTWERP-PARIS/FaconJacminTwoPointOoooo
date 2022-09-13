@@ -140,15 +140,11 @@
       "header": {
         "type": "header",
         "settings": {
-          "logo_position": "middle-left",
           "menu": "main-menu",
           "menu_type_desktop": "mega",
           "show_line_separator": false,
           "enable_sticky_header": false,
-          "mobile_logo_position": "left",
-          "margin_bottom": 0,
-          "padding_top": 20,
-          "padding_bottom": 20
+          "mobile_logo_position": "center"
         }
       },
       "footer": {
