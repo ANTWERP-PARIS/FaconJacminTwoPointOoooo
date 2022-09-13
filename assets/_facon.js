@@ -34,10 +34,14 @@ $(window).on('orientationchange resize', function (e) {
 function setTop() {
     let h = 0;
 
+    console.log('top is set');
+
     h += announce.alive() ? announce.height() : 0;
     if (head.alive()) head.css('top', h);
     h += head.alive() ? head.height() : 0;
     flexwrap.css('margin-top', h);
+
+    console.log('top',h);
 
     $(window).trigger('resize');
 }
