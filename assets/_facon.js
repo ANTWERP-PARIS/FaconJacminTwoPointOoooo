@@ -39,7 +39,7 @@ function setTop() {
     h += announce.alive() ? announce.height() : 0;
     if (head.alive()) head.css('top', h);
     h += head.alive() ? head.height() : 0;
-    flexwrap.css('margin-top', h);
+    main.css('margin-top', h);
 
     console.log('top',h);
 
