@@ -5,6 +5,10 @@
   .newsletter {
     padding: var(--pad);
   }
+
+  .newsletter__wrapper {
+    background: transparent;
+  }
 {%- endstyle -%}
 
 <div class="newsletter bg-{{ section.settings.color_scheme }} center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
