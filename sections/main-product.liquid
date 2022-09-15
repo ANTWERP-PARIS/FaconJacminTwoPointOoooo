@@ -3,8 +3,7 @@
 {%- assign mobile_thumbnails = "hide" -%}
 {%- assign media_size = "large" -%}
 {%- assign media_position = "left" -%}
-
-
+{%- assign gallery_layout = "stacked" -%}
 
 <section
   id="MainProduct-{{ section.id }}"
@@ -55,7 +54,7 @@
     >
   {%- endif -%}
 
-  <div class="product product--{{ media_size }} product--{{ media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+  <div class="product product--{{ media_size }} product--{{ media_position }} product--{{ gallery_layout }} product--mobile-{{ mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper{% if media_position == 'right' %} medium-hide large-up-hide{% endif %}">
       <media-gallery
         id="MediaGallery-{{ section.id }}"
@@ -64,7 +63,7 @@
           class="product__media-gallery"
         {% endif %}
         aria-label="{{ 'products.product.media.gallery_viewer' | t }}"
-        data-desktop-layout="{{ section.settings.gallery_layout }}"
+        data-desktop-layout="{{ gallery_layout }}"
       >
         <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
         <slider-component id="GalleryViewer-{{ section.id }}" class="slider-mobile-gutter">
@@ -107,7 +106,7 @@
                 data-media-id="{{ section.id }}-{{ featured_media.id }}"
               >
                 {%- assign media_position = 1 -%}
-                {% render 'product-thumbnail', media: featured_media, media_count: media_count, position: media_position, desktop_layout: section.settings.gallery_layout, mobile_layout: mobile_thumbnails, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true, media_width: media_width, lazy_load: false %}
+                {% render 'product-thumbnail', media: featured_media, media_count: media_count, position: media_position, desktop_layout: gallery_layout, mobile_layout: mobile_thumbnails, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true, media_width: media_width, lazy_load: false %}
               </li>
             {%- endif -%}
             {%- for media in product.media -%}
@@ -123,7 +122,7 @@
                     if media_position > 1
                       assign lazy_load = true
                     endif
-                    render 'product-thumbnail', media: media, media_count: media_count, position: media_position, desktop_layout: section.settings.gallery_layout, mobile_layout: mobile_thumbnails, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true, media_width: media_width, lazy_load: lazy_load
+                    render 'product-thumbnail', media: media, media_count: media_count, position: media_position, desktop_layout: gallery_layout, mobile_layout: mobile_thumbnails, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true, media_width: media_width, lazy_load: lazy_load
                   -%}
                 </li>
               {%- endunless -%}
@@ -168,10 +167,10 @@
             {{ 'products.product.xr_button' | t }}
           </button>
         {%- endif -%}
-        {%- if media_count > 1 and section.settings.gallery_layout contains 'thumbnail' or mobile_thumbnails == 'show' -%}
+        {%- if media_count > 1 and gallery_layout contains 'thumbnail' or mobile_thumbnails == 'show' -%}
           <slider-component
             id="GalleryThumbnails-{{ section.id }}"
-            class="thumbnail-slider slider-mobile-gutter quick-add-hidden{% unless section.settings.gallery_layout contains 'thumbnail' %} medium-hide large-up-hide{% endunless %}{% if mobile_thumbnails != 'show' %} small-hide{% endif %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}"
+            class="thumbnail-slider slider-mobile-gutter quick-add-hidden{% unless gallery_layout contains 'thumbnail' %} medium-hide large-up-hide{% endunless %}{% if mobile_thumbnails != 'show' %} small-hide{% endif %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}"
           >
             <button
               type="button"
@@ -185,7 +184,7 @@
             </button>
             <ul
               id="Slider-Thumbnails-{{ section.id }}"
-              class="thumbnail-list list-unstyled slider slider--mobile{% if section.settings.gallery_layout == 'thumbnail_slider' %} slider--tablet-up{% endif %}"
+              class="thumbnail-list list-unstyled slider slider--mobile{% if gallery_layout == 'thumbnail_slider' %} slider--tablet-up{% endif %}"
             >
               {%- if featured_media != null -%}
                 {%- liquid
@@ -726,7 +725,7 @@
             class="product__media-gallery"
           {% endif %}
           aria-label="{{ 'products.product.media.gallery_viewer' | t }}"
-          data-desktop-layout="{{ section.settings.gallery_layout }}"
+          data-desktop-layout="{{ gallery_layout }}"
         >
           <div id="GalleryStatus-{{ section.id }}-right" class="visually-hidden" role="status"></div>
           <slider-component id="GalleryViewer-{{ section.id }}-right" class="slider-mobile-gutter">
@@ -744,7 +743,7 @@
                   data-media-id="{{ section.id }}-{{ featured_media.id }}"
                 >
                   {%- assign media_position = 1 -%}
-                  {% render 'product-thumbnail', media: featured_media, media_count: media_count, position: media_position, desktop_layout: section.settings.gallery_layout, mobile_layout: mobile_thumbnails, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true, media_width: media_width, lazy_load: false %}
+                  {% render 'product-thumbnail', media: featured_media, media_count: media_count, position: media_position, desktop_layout: gallery_layout, mobile_layout: mobile_thumbnails, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true, media_width: media_width, lazy_load: false %}
                 </li>
               {%- endif -%}
               {%- for media in product.media -%}
@@ -760,7 +759,7 @@
                       if media_position > 1
                         assign lazy_load = true
                       endif
-                      render 'product-thumbnail', media: media, media_count: media_count, position: media_position, desktop_layout: section.settings.gallery_layout, mobile_layout: mobile_thumbnails, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true, media_width: media_width, lazy_load: lazy_load
+                      render 'product-thumbnail', media: media, media_count: media_count, position: media_position, desktop_layout: gallery_layout, mobile_layout: mobile_thumbnails, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true, media_width: media_width, lazy_load: lazy_load
                     -%}
                   </li>
                 {%- endunless -%}
@@ -781,10 +780,10 @@
               {{ 'products.product.xr_button' | t }}
             </button>
           {%- endif -%}
-          {%- if media_count > 1 and section.settings.gallery_layout contains 'thumbnail' or mobile_thumbnails == 'show' -%}
+          {%- if media_count > 1 and gallery_layout contains 'thumbnail' or mobile_thumbnails == 'show' -%}
             <slider-component
               id="GalleryThumbnails-{{ section.id }}-right"
-              class="thumbnail-slider slider-mobile-gutter quick-add-hidden{% unless section.settings.gallery_layout contains 'thumbnail' %} medium-hide large-up-hide{% endunless %}{% if mobile_thumbnails != 'show' %} small-hide{% endif %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}"
+              class="thumbnail-slider slider-mobile-gutter quick-add-hidden{% unless gallery_layout contains 'thumbnail' %} medium-hide large-up-hide{% endunless %}{% if mobile_thumbnails != 'show' %} small-hide{% endif %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}"
             >
               <button
                 type="button"
@@ -798,7 +797,7 @@
               </button>
               <ul
                 id="Slider-Thumbnails-{{ section.id }}-right"
-                class="thumbnail-list list-unstyled slider slider--mobile{% if section.settings.gallery_layout == 'thumbnail_slider' %} slider--tablet-up{% endif %}"
+                class="thumbnail-list list-unstyled slider slider--mobile{% if gallery_layout == 'thumbnail_slider' %} slider--tablet-up{% endif %}"
               >
                 {%- if featured_media != null -%}
                   {%- liquid
@@ -1454,31 +1453,6 @@
       ]
     }
   ],
-  "settings": [
-    {
-      "type": "select",
-      "id": "gallery_layout",
-      "options": [
-        {
-          "value": "stacked",
-          "label": "t:sections.main-product.settings.gallery_layout.options__1.label"
-        },
-        {
-          "value": "columns",
-          "label": "t:sections.main-product.settings.gallery_layout.options__2.label"
-        },
-        {
-          "value": "thumbnail",
-          "label": "t:sections.main-product.settings.gallery_layout.options__3.label"
-        },
-        {
-          "value": "thumbnail_slider",
-          "label": "t:sections.main-product.settings.gallery_layout.options__4.label"
-        }
-      ],
-      "default": "stacked",
-      "label": "t:sections.main-product.settings.gallery_layout.label"
-    }
-  ]
+  "settings": []
 }
 {% endschema %}
