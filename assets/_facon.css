@@ -112,6 +112,10 @@ b, b * {
     color: var(--color-white);
 }
 
+.bg-white {
+    background: var(--color-white);
+}
+
 .bg-light {
     background: var(--color-light);
 }
@@ -120,7 +124,7 @@ b, b * {
     background: var(--color-sec);
 }
 
-.bg-light, .bg-light *, .bg-sec, .bg-sec * {
+.bg-white, .bg-white *, .bg-light, .bg-light *, .bg-sec, .bg-sec * {
     color: var(--color-black);
 }
 
