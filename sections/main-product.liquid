@@ -1,6 +1,5 @@
 {%- assign hide_variants = true -%}
 {%- assign mobile_thumbnails = "hide" -%}
-{%- assign media_size = "large" -%}
 {%- assign media_position = "left" -%}
 {%- assign gallery_layout = "stacked" -%}
 
@@ -53,7 +52,7 @@
     >
   {%- endif -%}
 
-  <div class="product product--{{ media_size }} product--{{ media_position }} product--{{ gallery_layout }} product--mobile-hide grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+  <div class="product product--large product--{{ media_position }} product--{{ gallery_layout }} product--mobile-hide grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper{% if media_position == 'right' %} medium-hide large-up-hide{% endif %}">
       <media-gallery
         id="MediaGallery-{{ section.id }}"
@@ -85,13 +84,8 @@
                 assign media_count = media_count | minus: variant_images.size | plus: 1
               endif
 
-              if media_size == 'large'
-                assign media_width = 0.65
-              elsif media_size == 'medium'
-                assign media_width = 0.55
-              elsif media_size == 'small'
-                assign media_width = 0.45
-              endif
+
+              assign media_width = 0.65
             -%}
             {%- if product.selected_or_first_available_variant.featured_media != null -%}
               {%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
@@ -303,7 +297,7 @@
         {%- endif -%}
       </media-gallery>
     </div>
-    <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
+    <div class="product__info-wrapper grid__item">
       <div
         id="ProductInfo-{{ section.id }}"
         class="product__info-container"
