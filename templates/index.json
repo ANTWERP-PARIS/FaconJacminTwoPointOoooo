@@ -63,13 +63,13 @@
       "type": "featured-collection",
       "settings": {
         "title": "Featured collection",
-        "heading_size": "h1",
-        "description": "",
+        "heading_size": "h0",
+        "description": "<p>hello a description<\/p><p><\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "lole",
-        "products_to_show": 4,
-        "columns_desktop": 4,
+        "products_to_show": 12,
+        "columns_desktop": 3,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
@@ -201,12 +201,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "1662919435c792b1ca": {
-      "type": "page",
-      "settings": {
-        "page": "this-is-a-page"
-      }
     }
   },
   "order": [
@@ -214,7 +208,6 @@
     "1662919418e6f81620",
     "1662919421b6375f6c",
     "1662919424ee913431",
-    "1662919431ea69a6af",
-    "1662919435c792b1ca"
+    "1662919431ea69a6af"
   ]
 }
