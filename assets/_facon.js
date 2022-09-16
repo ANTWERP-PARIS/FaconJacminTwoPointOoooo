@@ -18,7 +18,7 @@ let
 // Init
 body.attr('data-loaded', true);
 
-submenu.mouseOver((e) => {
+submenu.mouseover((e) => {
     console.log($(e));
 })
 
