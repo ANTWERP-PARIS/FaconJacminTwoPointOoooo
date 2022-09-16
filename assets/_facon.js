@@ -11,7 +11,8 @@ let
     head = $('#shopify-section-header'),
     submenu = $('header-menu'),
     main = $('main'),
-    slideshow = $('.slideshow');
+    slideshow = $('.slideshow'),
+    featuredCollection = $('.featured-collection-wrapper');
 
 
 
@@ -50,4 +51,5 @@ function setTop() {
     h += head.alive() ? head.height() : 0;
 
     main.css('margin-top', h);
+    featuredCollection.css('top', h);
 }
