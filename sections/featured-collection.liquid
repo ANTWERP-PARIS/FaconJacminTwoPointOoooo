@@ -12,6 +12,11 @@
 <noscript>{{ 'template-collection.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
+  .grid {
+    column-gap: 0 !important;
+    row-gap: 0 !important;
+  }
+
   .grid__item {
     padding: 0 !important;
   }
