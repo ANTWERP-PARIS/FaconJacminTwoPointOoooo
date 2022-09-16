@@ -12,7 +12,7 @@ let
     submenu = $('header-menu'),
     main = $('main'),
     slideshow = $('.slideshow'),
-    featuredCollection = $('.featured-collection-wrapper');
+    featuredCollection = $('.featured-collection-wrapper .collection__title');
 
 
 
