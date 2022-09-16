@@ -1,5 +1,6 @@
 {
   "current": {
+    "color_sec": "#dbf227",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#121212",
     "gradient_accent_1": "",
@@ -126,13 +127,43 @@
             "type": "announcement",
             "settings": {
               "color_scheme": "sec",
-              "text": "Welcome to our store",
+              "text": "Hello this is our new website",
               "link": "shopify:\/\/pages\/this-is-a-page"
+            }
+          },
+          "5a2154bd-cdc8-4f1b-87f2-9b2357a4d16d": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "color_scheme": "sec",
+              "text": "Welcome to our store",
+              "link": ""
+            }
+          },
+          "b965e8eb-1723-4efe-adfd-aee9a112c2da": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "color_scheme": "sec",
+              "text": "Welcome to our store",
+              "link": ""
+            }
+          },
+          "e243463c-13b6-47e1-a8a6-b471387a5aed": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "color_scheme": "sec",
+              "text": "Welcome to our store",
+              "link": ""
             }
           }
         },
         "block_order": [
-          "announcement-bar-0"
+          "announcement-bar-0",
+          "5a2154bd-cdc8-4f1b-87f2-9b2357a4d16d",
+          "b965e8eb-1723-4efe-adfd-aee9a112c2da",
+          "e243463c-13b6-47e1-a8a6-b471387a5aed"
         ],
         "settings": {
         }
