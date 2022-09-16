@@ -52,8 +52,8 @@
     >
   {%- endif -%}
 
-  <div class="product product--large product--{{ media_position }} product--{{ gallery_layout }} product--mobile-hide grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
-    <div class="grid__item product__media-wrapper{% if media_position == 'right' %} medium-hide large-up-hide{% endif %}">
+  <div class="product product--large product--left product--stacked product--mobile-hide grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+    <div class="grid__item product__media-wrapper">
       <media-gallery
         id="MediaGallery-{{ section.id }}"
         role="region"
@@ -61,7 +61,7 @@
           class="product__media-gallery"
         {% endif %}
         aria-label="{{ 'products.product.media.gallery_viewer' | t }}"
-        data-desktop-layout="{{ gallery_layout }}"
+        data-desktop-layout="stacked"
       >
         <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
         <slider-component id="GalleryViewer-{{ section.id }}" class="slider-mobile-gutter">
