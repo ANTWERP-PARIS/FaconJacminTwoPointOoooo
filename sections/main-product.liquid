@@ -1,4 +1,3 @@
-{%- assign enable_sticky_info = false -%}
 {%- assign hide_variants = true -%}
 {%- assign mobile_thumbnails = "hide" -%}
 {%- assign media_size = "large" -%}
@@ -54,7 +53,7 @@
     >
   {%- endif -%}
 
-  <div class="product product--{{ media_size }} product--{{ media_position }} product--{{ gallery_layout }} product--mobile-{{ mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+  <div class="product product--{{ media_size }} product--{{ media_position }} product--{{ gallery_layout }} product--mobile-hide grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper{% if media_position == 'right' %} medium-hide large-up-hide{% endif %}">
       <media-gallery
         id="MediaGallery-{{ section.id }}"
@@ -84,10 +83,6 @@
               assign media_count = product.media.size
               if hide_variants and media_count > 1 and variant_images.size > 0
                 assign media_count = media_count | minus: variant_images.size | plus: 1
-              endif
-
-              if mobile_thumbnails == 'show' or media_count < 3 and mobile_thumbnails == 'columns'
-                assign hide_slider = true
               endif
 
               if media_size == 'large'
@@ -167,10 +162,10 @@
             {{ 'products.product.xr_button' | t }}
           </button>
         {%- endif -%}
-        {%- if media_count > 1 and gallery_layout contains 'thumbnail' or mobile_thumbnails == 'show' -%}
+        {%- if media_count > 1 and gallery_layout contains 'thumbnail' -%}
           <slider-component
             id="GalleryThumbnails-{{ section.id }}"
-            class="thumbnail-slider slider-mobile-gutter quick-add-hidden{% unless gallery_layout contains 'thumbnail' %} medium-hide large-up-hide{% endunless %}{% if mobile_thumbnails != 'show' %} small-hide{% endif %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}"
+            class="thumbnail-slider slider-mobile-gutter quick-add-hidden{% unless gallery_layout contains 'thumbnail' %} medium-hide large-up-hide{% endunless %} small-hide{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}"
           >
             <button
               type="button"
@@ -311,7 +306,7 @@
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
       <div
         id="ProductInfo-{{ section.id }}"
-        class="product__info-container{% if enable_sticky_info %} product__info-container--sticky{% endif %}"
+        class="product__info-container"
       >
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
