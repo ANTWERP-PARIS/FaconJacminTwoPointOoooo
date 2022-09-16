@@ -19,7 +19,7 @@ let
 body.attr('data-loaded', true);
 
 submenu.mouseover((e) => {
-    console.log($(e));
+    console.log($(e.currentTarget).click());
 })
 
 
