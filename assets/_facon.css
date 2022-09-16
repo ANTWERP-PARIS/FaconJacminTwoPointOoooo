@@ -81,15 +81,15 @@ b, b * {
 }
 
 .color-black {
-    color: var(--color-black);
+    color: var(--color-black) !important;
 }
 
 .color-light {
-    color: var(--color-light);
+    color: var(--color-light) !important;
 }
 
 .color-sec {
-    color: var(--color-sec);
+    color: var(--color-sec) !important;
 }
 
 .fill-black {
