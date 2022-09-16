@@ -56,34 +56,18 @@
         "16629194185d9f17a9-2"
       ],
       "settings": {
-        "color_scheme": "light"
+        "color_scheme": "white"
       }
     },
     "1662919421b6375f6c": {
       "type": "featured-collection",
       "settings": {
         "title": "Featured collection",
-        "heading_size": "h0",
         "description": "<p>hello a description<\/p><p><\/p>",
         "show_description": false,
-        "description_style": "uppercase",
         "collection": "lole",
-        "products_to_show": 12,
-        "columns_desktop": 2,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "portrait",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "products_to_show": 3,
+        "show_view_all": true
       }
     },
     "1662919424ee913431": {
