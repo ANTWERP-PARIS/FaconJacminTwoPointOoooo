@@ -183,6 +183,10 @@ main {
 
 
 /* Grid */
+section {
+    overflow: hidden !important;
+}
+
 .page-width {
     width: 100% !important;
     max-width: none !important;
