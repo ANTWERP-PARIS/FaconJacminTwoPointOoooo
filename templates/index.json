@@ -14,18 +14,32 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Screenshot_2020-11-27_at_23.27.35.png"
           }
+        },
+        "6fd5a355-196e-4d95-b056-f3671157631e": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg"
+          }
+        },
+        "7015a39b-a708-460a-9bb0-e47785f9d0cc": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/two-people-share-a-kiss-in-the-kitchen-cooking.jpg"
+          }
         }
       },
       "block_order": [
         "166308670026e7fd8d-0",
-        "166308670026e7fd8d-1"
+        "166308670026e7fd8d-1",
+        "6fd5a355-196e-4d95-b056-f3671157631e",
+        "7015a39b-a708-460a-9bb0-e47785f9d0cc"
       ],
       "settings": {
-        "change_slides_speed": 3,
+        "change_slides_speed": 5,
         "color_overlay": "sec",
-        "overlay": "logo",
-        "overlay_text": "New Collection",
-        "link": "",
+        "overlay": "text",
+        "overlay_text": "sales",
+        "link": "shopify:\/\/pages\/contact",
         "window": "_self"
       }
     },
@@ -35,7 +49,12 @@
         "16629194185d9f17a9-0": {
           "type": "heading",
           "settings": {
-            "heading": "Subscribe to our emails"
+            "heading": "newsletter"
+          }
+        },
+        "16629194185d9f17a9-2": {
+          "type": "email_form",
+          "settings": {
           }
         },
         "16629194185d9f17a9-1": {
@@ -43,17 +62,12 @@
           "settings": {
             "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
           }
-        },
-        "16629194185d9f17a9-2": {
-          "type": "email_form",
-          "settings": {
-          }
         }
       },
       "block_order": [
         "16629194185d9f17a9-0",
-        "16629194185d9f17a9-1",
-        "16629194185d9f17a9-2"
+        "16629194185d9f17a9-2",
+        "16629194185d9f17a9-1"
       ],
       "settings": {
         "color_scheme": "light"
