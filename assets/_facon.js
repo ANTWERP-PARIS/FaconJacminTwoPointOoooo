@@ -9,7 +9,8 @@ let
     flexwrap = $('.flexwrap'),
     announce = $('#shopify-section-announcement-bar'),
     head = $('#shopify-section-header'),
-    main = $('main');
+    main = $('main'),
+    slideshow = $('.slideshow');
 
 
 
@@ -21,28 +22,26 @@ body.attr('data-loaded', true);
 // Resize
 $(window).on('orientationchange resize', function (e) {
 
-    // Sticky footer
-    flexwrap.css('min-height', $(window).height() - parseFloat(flexwrap.css('margin-top')));
+    // Set Top
+    setTop();
+
+    // Slideshow
+    slideshow.css('height', $(window).height() - parseFloat(main.css('margin-top')));
 
     // Trigger scroll
     $(window).trigger('scroll');
 });
-
+$(window).trigger('resize');
 
 
 // Top
 function setTop() {
     let h = 0;
 
-    console.log('top is set');
-
     h += announce.alive() ? announce.height() : 0;
+
     if (head.alive()) head.css('top', h);
     h += head.alive() ? head.height() : 0;
+
     main.css('margin-top', h);
-
-    console.log('top',h);
-
-    $(window).trigger('resize');
 }
-setTop();
