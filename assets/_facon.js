@@ -6,9 +6,10 @@ $.fn.alive = function () {
 // Declarations
 let
     body = $('body'),
-    flexwrap = $('.flexwrap'),
+
     announce = $('#shopify-section-announcement-bar'),
     head = $('#shopify-section-header'),
+    submenu = $('header-menu'),
     main = $('main'),
     slideshow = $('.slideshow');
 
@@ -16,6 +17,8 @@ let
 
 // Init
 body.attr('data-loaded', true);
+
+console.log(submenu);
 
 
 
