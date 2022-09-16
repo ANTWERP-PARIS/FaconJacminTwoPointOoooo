@@ -66,7 +66,7 @@
         "description": "<p>hello a description<\/p><p><\/p>",
         "show_description": false,
         "collection": "lole",
-        "products_to_show": 3,
+        "products_to_show": 12,
         "show_view_all": true
       }
     },
