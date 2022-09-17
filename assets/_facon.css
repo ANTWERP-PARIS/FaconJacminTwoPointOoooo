@@ -130,6 +130,18 @@ b, b * {
 
 
 
+/* Z-Index */
+#shopify-section-announcement-bar, #shopify-section-header, #shopify-section-footer {
+    z-index: 10 !important;
+}
+
+main, .section {
+    overflow: hidden !important;
+    z-index: 1 !important;
+}
+
+
+
 /* Document */
 :root {
     --height: 80px;
@@ -176,17 +188,11 @@ main {
     flex: 1 0 auto;
     align-items: flex-start;
     position: relative;
-    overflow: hidden !important;
-    z-index: 1;
 }
 
 
 
 /* Grid */
-section {
-    overflow: hidden !important;
-}
-
 .page-width {
     width: 100% !important;
     max-width: none !important;
