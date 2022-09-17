@@ -2,13 +2,70 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+      }
+    },
+    "16634103990640f232": {
+      "type": "image-with-text",
+      "blocks": {
+        "1663410399f74aaa75-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Story",
+            "heading_size": "display"
+          }
+        },
+        "1663410399f74aaa75-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Belgian designer Alexandra Jacmin and her entrepreneur twin sister Ségolène Jacmin joined forces to establish their eco-conscious label FAÇON JACMIN. After graduating from La Cambre, Alexandra worked for Maison Martin Margiela and Jean-Paul Gaultier. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1663410399f74aaa75-0",
+        "1663410399f74aaa75-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_3516.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first"
+      }
+    },
+    "166341042548c49984": {
+      "type": "image-with-text",
+      "blocks": {
+        "16634104254e856674-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "FAÇON JACMIN is an attitude.",
+            "heading_size": "display"
+          }
+        },
+        "16634104254e856674-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16634104254e856674-0",
+        "16634104254e856674-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_0774.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16634103990640f232",
+    "166341042548c49984"
   ]
 }
