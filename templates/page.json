@@ -61,11 +61,48 @@
         "desktop_image_width": "medium",
         "layout": "text_first"
       }
+    },
+    "1663410567c805e994": {
+      "type": "image-with-text",
+      "blocks": {
+        "1663410566bb484755-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Store",
+            "heading_size": "display"
+          }
+        },
+        "1663410566bb484755-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Open Monday-Saturday from 10:30 a.m to 18:00 p.m.<\/p><p>Kammenstraat 58, 2000 Antwerp<\/p>"
+          }
+        },
+        "1663410566bb484755-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1663410566bb484755-0",
+        "1663410566bb484755-1",
+        "1663410566bb484755-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_5286.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first"
+      }
     }
   },
   "order": [
     "main",
     "16634103990640f232",
-    "166341042548c49984"
+    "166341042548c49984",
+    "1663410567c805e994"
   ]
 }
