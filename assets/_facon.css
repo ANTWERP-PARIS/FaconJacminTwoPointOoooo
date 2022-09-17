@@ -75,7 +75,7 @@ b, b * {
 
 /* Color */
 :root {
-    --color-black: #333333;
+    --color-black: #000;
     --color-light: #f2f2f2;
     --color-white: #ffffff;
 }
