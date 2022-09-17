@@ -3,22 +3,22 @@
     "16630867009ba8cd5d": {
       "type": "slideshow",
       "blocks": {
-        "166308670026e7fd8d-0": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_0774.jpg"
-          }
-        },
         "166308670026e7fd8d-1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_3516.jpg"
+            "image": "shopify:\/\/shop_images\/211222_FaconJacmin_CAMPAIGN_0484.jpg"
+          }
+        },
+        "166308670026e7fd8d-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/211222_FaconJacmin_CAMPAIGN_0374_2.jpg"
           }
         }
       },
       "block_order": [
-        "166308670026e7fd8d-0",
-        "166308670026e7fd8d-1"
+        "166308670026e7fd8d-1",
+        "166308670026e7fd8d-0"
       ],
       "settings": {
         "change_slides_speed": 5,
