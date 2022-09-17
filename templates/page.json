@@ -104,21 +104,13 @@
         "1663410566bb484755-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Open Monday-Saturday from 10:30 a.m to 18:00 p.m.<\/p><p>Kammenstraat 58, 2000 Antwerp<\/p>"
-          }
-        },
-        "1663410566bb484755-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Directions",
-            "button_link": "https:\/\/www.google.be\/maps\/place\/FAÇON+JACMIN+Studio+Antwerp\/@51.2166004,4.3990018,17z\/data=!3m1!4b1!4m5!3m4!1s0x47c3f74ba8b4b9e3:0x42051f14e6c7a4a7!8m2!3d51.2165962!4d4.401171?hl=en"
+            "text": "<p>Open Monday-Saturday from 10:30 a.m to 18:00 p.m.<\/p><p><a href=\"https:\/\/goo.gl\/maps\/ciD7CYCUpYUEaveMA\"><span style=\"text-decoration:underline\">Kammenstraat 58, 2000 Antwerp<\/span><\/a><\/p>"
           }
         }
       },
       "block_order": [
         "1663410566bb484755-0",
-        "1663410566bb484755-1",
-        "1663410566bb484755-2"
+        "1663410566bb484755-1"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/IMG_5286.jpg",
