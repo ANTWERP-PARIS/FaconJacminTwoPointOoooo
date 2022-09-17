@@ -125,6 +125,7 @@
         "blocks": {
           "84f14450-6e52-4df5-b8b9-3859df4f14ef": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "color_scheme": "sec",
               "text": "Under maintenance! check out our instagram",
