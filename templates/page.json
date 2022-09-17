@@ -58,7 +58,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/IMG_3516.jpg",
-        "height": "small",
+        "height": "large",
         "desktop_image_width": "medium",
         "layout": "image_first"
       }
