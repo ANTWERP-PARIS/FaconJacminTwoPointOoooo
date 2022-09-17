@@ -207,15 +207,6 @@ main {
 
 
 
-/* Nav */
-.header-wrapper {
-    padding-left: calc(var(--pad));
-    padding-right: calc(var(--pad));
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-
 /* Tools */
 .full {
     width: 100%;
