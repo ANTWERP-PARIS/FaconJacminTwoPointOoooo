@@ -6,6 +6,35 @@
       "settings": {
       }
     },
+    "16634110695ff77d1e": {
+      "type": "slideshow",
+      "blocks": {
+        "16634110690bc4a870-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/211222_FaconJacmin_CAMPAIGN_0484.jpg"
+          }
+        },
+        "16634110690bc4a870-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/211222_FaconJacmin_CAMPAIGN_0374_2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "16634110690bc4a870-0",
+        "16634110690bc4a870-1"
+      ],
+      "settings": {
+        "change_slides_speed": 5,
+        "color_overlay": "sec",
+        "overlay": "logo",
+        "overlay_text": "New Collection",
+        "link": "",
+        "window": "_self"
+      }
+    },
     "16634103990640f232": {
       "type": "image-with-text",
       "blocks": {
@@ -131,6 +160,7 @@
   },
   "order": [
     "main",
+    "16634110695ff77d1e",
     "16634103990640f232",
     "166341042548c49984",
     "16634106445924a060",
