@@ -40,8 +40,10 @@ $(window).on('orientationchange resize', function (e) {
     // Text with media
     textMedia.each((k,v) => {
         v = $(v);
+
+        let imgs = v.find('.imgs');
         
-        console.log(v);
+        console.log(imgs, imgs.alive());
     });
 
     
