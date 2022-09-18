@@ -42,14 +42,13 @@ $(window).on('orientationchange resize', function (e) {
         v = $(v);
 
         let imgs = v.find('.imgs');
-
-
-        
-        console.log(imgs, imgs.alive());
-
         if(!imgs.alive()) return;
-        
-        console.log('execute');
+
+        let 
+            adapt = $('.image-with-text__height--adapt'),
+            textr = $('.image-with-text__height--text')
+
+        console.log(adapt, adapt.alive(), textr, textr.alive());
     });
 
     
