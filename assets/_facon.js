@@ -43,10 +43,13 @@ $(window).on('orientationchange resize', function (e) {
 
         let imgs = v.find('.imgs');
         if(!imgs.alive()) return;
+        imgs = imgs.find('img');
 
         let vh = $('.image-with-text__height--adapt').alive() ? 
             0 : 
             v.find('.image-with-text__content').height() + 80;
+
+        console.log(imgs, imgs.first());
 
         v.height(vh);
         imgs.find('img').height(vh);
