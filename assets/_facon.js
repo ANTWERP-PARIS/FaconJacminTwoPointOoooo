@@ -47,11 +47,13 @@ $(window).on('orientationchange resize', function (e) {
        
         let 
             imgf = imgs.first(), 
-            imgw = imgf.data('width'), imgh = imgf.data('height');
+            imgw = imgf.data('width'), imgh = imgf.data('height'),
+            txth = v.find('.image-with-text__content').height() + 80;
 
         let vh = $('.image-with-text__height--adapt').alive() ? 
             Math.floor((imgf.width()/imgw) * imgh) : 
-            v.find('.image-with-text__content').height() + 80;
+            txth;
+        if(vh<txth) vh = txth;
 
         v.height(vh);
         imgs.height(vh);
