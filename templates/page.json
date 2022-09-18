@@ -67,7 +67,7 @@
         "color_scheme": "white",
         "change_slides_speed": 5,
         "height": "adapt",
-        "desktop_image_width": "small",
+        "desktop_image_width": "medium",
         "layout": "image_first"
       }
     },
