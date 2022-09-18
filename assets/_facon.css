@@ -193,6 +193,11 @@ main {
 
 
 /* Grid */
+:root {
+    --grid-desktop-horizontal-spacing: 0 !important;
+    --grid-desktop-vertical-spacing: 0 !important;
+}
+
 .page-width {
     width: 100% !important;
     max-width: none !important;
