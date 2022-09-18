@@ -6,13 +6,11 @@
         "166308670026e7fd8d-1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/211222_FaconJacmin_CAMPAIGN_0484.jpg"
           }
         },
         "166308670026e7fd8d-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Facon_Jacmin_AW22_Black_Moon_denim.jpg"
           }
         }
       },
@@ -28,9 +26,40 @@
         "link": "",
         "window": "_self"
       }
+    },
+    "1663500154cf3ceda7": {
+      "type": "newsletter",
+      "blocks": {
+        "16635001530cdc9d51-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails"
+          }
+        },
+        "16635001530cdc9d51-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "16635001530cdc9d51-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "16635001530cdc9d51-0",
+        "16635001530cdc9d51-1",
+        "16635001530cdc9d51-2"
+      ],
+      "settings": {
+        "color_scheme": "white"
+      }
     }
   },
   "order": [
-    "16630867009ba8cd5d"
+    "16630867009ba8cd5d",
+    "1663500154cf3ceda7"
   ]
 }
