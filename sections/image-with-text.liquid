@@ -97,6 +97,20 @@ txtimgs.each((k,v) => {
 });
 {% endjavascript %}
 
+{%- stylesheet -%}
+.image-with-text__media-item .imgs img {
+  border: 2px solid red;
+}
+
+.image-with-text__content--adapt {
+
+}
+
+.image-with-text__content--text {
+
+}
+{%- endstylesheet -%}
+
 
 
 {% schema %}
@@ -120,7 +134,7 @@ txtimgs.each((k,v) => {
       "options": [
         {
           "value": "adapt",
-          "label": "t:sections.image-with-text.settings.height.options__1.label"
+          "label": "Adapt to first image"
         },
         {
           "value": "text",
