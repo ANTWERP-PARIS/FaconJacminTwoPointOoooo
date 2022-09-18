@@ -64,7 +64,6 @@ $(window).on('orientationchange resize', function (e) {
 });
 $(window).trigger('resize');
 
-
 // Top
 function setTop() {
     let h = 0;
