@@ -42,8 +42,14 @@ $(window).on('orientationchange resize', function (e) {
         v = $(v);
 
         let imgs = v.find('.imgs');
+
+
         
         console.log(imgs, imgs.alive());
+
+        if(!imgs.alive()) return;
+        
+        console.log('execute');
     });
 
     
