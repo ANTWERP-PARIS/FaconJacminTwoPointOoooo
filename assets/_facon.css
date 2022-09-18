@@ -194,10 +194,10 @@ main {
 
 /* Grid */
 :root {
-    --grid-desktop-horizontal-spacing: 0 !important;
-    --grid-desktop-vertical-spacing: 0 !important;
-    --grid-mobile-horizontal-spacing: 0 !important;
-    --grid-mobile-vertical-spacing: 0 !important;
+    --grid-desktop-horizontal-spacing: 0px !important;
+    --grid-desktop-vertical-spacing: 0px !important;
+    --grid-mobile-horizontal-spacing: 0px !important;
+    --grid-mobile-vertical-spacing: 0px !important;
 }
 
 .page-width {
