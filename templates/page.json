@@ -71,6 +71,7 @@
         "5564c383-dd23-48d0-b434-57fb7144cd56"
       ],
       "settings": {
+        "color_scheme": "white",
         "change_slides_speed": 5,
         "height": "adapt",
         "desktop_image_width": "large",
@@ -99,6 +100,7 @@
         "16634104254e856674-1"
       ],
       "settings": {
+        "color_scheme": "light",
         "change_slides_speed": 5,
         "height": "small",
         "desktop_image_width": "medium",
@@ -127,6 +129,7 @@
         "1663410566bb484755-1"
       ],
       "settings": {
+        "color_scheme": "white",
         "change_slides_speed": 5,
         "height": "small",
         "desktop_image_width": "medium",
