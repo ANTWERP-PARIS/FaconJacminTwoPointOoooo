@@ -52,7 +52,7 @@ $(window).on('orientationchange resize', function (e) {
         console.log(imgs, imgs.first());
 
         v.height(vh);
-        imgs.find('img').height(vh);
+        imgs.find('img').css('height', vh);
     });
 
     
