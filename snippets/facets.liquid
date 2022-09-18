@@ -13,6 +13,17 @@
 
 {{ 'component-show-more.css' | asset_url | stylesheet_tag }}
 
+
+
+{%- style -%}
+.facets-container * {
+  font: 13px 'sans';
+  letter-spacing: .5px;
+}
+{%- endstyle -%}
+
+
+
 {%- liquid
   assign sort_by = results.sort_by | default: results.default_sort_by
   assign total_active_values = 0
