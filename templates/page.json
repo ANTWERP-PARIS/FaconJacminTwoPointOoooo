@@ -8,6 +8,7 @@
     },
     "16634110695ff77d1e": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "16634110690bc4a870-0": {
           "type": "slide",
@@ -37,7 +38,6 @@
     },
     "16634103990640f232": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "1663410399f74aaa75-0": {
           "type": "heading",
