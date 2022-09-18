@@ -50,14 +50,28 @@
           "settings": {
             "text": "<p>Belgian designer Alexandra Jacmin and her entrepreneur twin sister Ségolène Jacmin joined forces to establish their eco-conscious label FAÇON JACMIN. After graduating from La Cambre, Alexandra worked for Maison Martin Margiela and Jean-Paul Gaultier. <\/p>"
           }
+        },
+        "5a48b992-d838-4c97-ba5a-0a643b066b98": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/211222_FaconJacmin_CAMPAIGN_0484.jpg"
+          }
+        },
+        "5564c383-dd23-48d0-b434-57fb7144cd56": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_3516.jpg"
+          }
         }
       },
       "block_order": [
         "1663410399f74aaa75-0",
-        "1663410399f74aaa75-1"
+        "1663410399f74aaa75-1",
+        "5a48b992-d838-4c97-ba5a-0a643b066b98",
+        "5564c383-dd23-48d0-b434-57fb7144cd56"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_3516.jpg",
+        "change_slides_speed": 5,
         "height": "large",
         "desktop_image_width": "medium",
         "layout": "image_first"
@@ -85,7 +99,7 @@
         "16634104254e856674-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_0774.jpg",
+        "change_slides_speed": 5,
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first"
@@ -113,7 +127,7 @@
         "1663410566bb484755-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_5286.jpg",
+        "change_slides_speed": 5,
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "image_first"
