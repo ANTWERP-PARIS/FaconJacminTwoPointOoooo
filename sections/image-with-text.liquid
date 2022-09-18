@@ -65,7 +65,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.image-with-text.name",
+  "name": "Text with media",
   "class": "section",
   "settings": [
     {
@@ -133,6 +133,18 @@
     }
   ],
   "blocks": [
+    {
+      "type": "slide",
+      "name": "Image slide",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    },
     {
       "type": "heading",
       "name": "t:sections.image-with-text.blocks.heading.name",
@@ -217,7 +229,7 @@
   ],
   "presets": [
     {
-      "name": "t:sections.image-with-text.presets.name",
+      "name": "Text with media",
       "blocks": [
         {
           "type": "heading"
