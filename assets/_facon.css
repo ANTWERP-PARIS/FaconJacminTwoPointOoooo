@@ -104,24 +104,24 @@ b, b * {
     fill: var(--color-sec);
 }
 
-.bg-black {
-    background: var(--color-black);
+.bg-black, .bg-black * {
+    background: var(--color-black) !important;
 }
 
 .bg-black, .bg-black * {
     color: var(--color-white) !important;
 }
 
-.bg-white {
-    background: var(--color-white);
+.bg-white, .bg-white * {
+    background: var(--color-white) !important;
 }
 
-.bg-light {
-    background: var(--color-light);
+.bg-light, .bg-light * {
+    background: var(--color-light) !important;
 }
 
-.bg-sec {
-    background: var(--color-sec);
+.bg-sec, .bg-sec * {
+    background: var(--color-sec) !important;
 }
 
 * ,.bg-white, .bg-white *, .bg-light, .bg-light *, .bg-sec, .bg-sec * {
