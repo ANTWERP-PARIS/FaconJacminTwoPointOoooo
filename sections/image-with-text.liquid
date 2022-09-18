@@ -77,16 +77,16 @@
 
 {% javascript %}
 let 
-  imgs = $('.imgs'),
-  autoSpeed = parseFloat(imgs.data('auto')) * 1000;
+  txtimgs = $('.image-with-text__media-item .imgs'),
+  txtautoSpeed = parseFloat(txtimgs.data('auto')) * 1000;
 
-imgs.each((k,v) => {
+txtimgs.each((k,v) => {
   $(v).slick({
     infinite: true,
     fade: true,
 
     autoplay: true,
-    autoplaySpeed: autoSpeed,
+    autoplaySpeed: txtautoSpeed,
     speed: 1200,
 
     pauseOnFocus: false,
