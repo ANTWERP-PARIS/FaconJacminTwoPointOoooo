@@ -49,10 +49,10 @@ $(window).on('orientationchange resize', function (e) {
             0 : 
             v.find('.image-with-text__content').height() + 80;
 
-        console.log(imgs, imgs.first());
+        console.log(imgs.first().data('width'), imgs.data('height'));
 
         v.height(vh);
-        imgs.find('img').css('height', vh);
+        imgs.height(vh);
     });
 
     
