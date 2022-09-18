@@ -54,21 +54,14 @@
         "5a48b992-d838-4c97-ba5a-0a643b066b98": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/211222_FaconJacmin_CAMPAIGN_0484.jpg"
-          }
-        },
-        "5564c383-dd23-48d0-b434-57fb7144cd56": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_3516.jpg"
+            "image": "shopify:\/\/shop_images\/AAA3652-2.jpg"
           }
         }
       },
       "block_order": [
         "1663410399f74aaa75-0",
         "1663410399f74aaa75-1",
-        "5a48b992-d838-4c97-ba5a-0a643b066b98",
-        "5564c383-dd23-48d0-b434-57fb7144cd56"
+        "5a48b992-d838-4c97-ba5a-0a643b066b98"
       ],
       "settings": {
         "color_scheme": "white",
