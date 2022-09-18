@@ -56,19 +56,12 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/AAA3652-2.jpg"
           }
-        },
-        "0df42366-58db-4210-8ba7-79fa64a3a26e": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_4051.jpg"
-          }
         }
       },
       "block_order": [
         "1663410399f74aaa75-0",
         "1663410399f74aaa75-1",
-        "5a48b992-d838-4c97-ba5a-0a643b066b98",
-        "0df42366-58db-4210-8ba7-79fa64a3a26e"
+        "5a48b992-d838-4c97-ba5a-0a643b066b98"
       ],
       "settings": {
         "color_scheme": "white",
