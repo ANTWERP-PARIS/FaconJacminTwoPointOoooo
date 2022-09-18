@@ -37,6 +37,7 @@
     },
     "16634103990640f232": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "1663410399f74aaa75-0": {
           "type": "heading",
@@ -93,7 +94,7 @@
         "1663410566bb484755-1"
       ],
       "settings": {
-        "color_scheme": "light",
+        "color_scheme": "white",
         "change_slides_speed": 5,
         "height": "small",
         "desktop_image_width": "medium",
@@ -127,7 +128,7 @@
         "16634106440b2df3cc-2"
       ],
       "settings": {
-        "color_scheme": "white"
+        "color_scheme": "light"
       }
     }
   },
