@@ -11,7 +11,9 @@ let
     head = $('#shopify-section-header'),
     submenu = $('header-menu'),
     main = $('main'),
+
     slideshow = $('.slideshow'),
+    textMedia = $('.image-with-text'),
     featuredCollection = $('.featured-collection-wrapper .collection__title');
 
 
@@ -25,7 +27,6 @@ submenu.mouseover((e) => {
 
 
 
-
 // Resize
 $(window).on('orientationchange resize', function (e) {
 
@@ -33,7 +34,17 @@ $(window).on('orientationchange resize', function (e) {
     setTop();
 
     // Slideshow
-    slideshow.css('height', $(window).height() - parseFloat(main.css('margin-top')));
+    if(slideshow.alive())
+        slideshow.css('height', $(window).height() - parseFloat(main.css('margin-top')));
+
+    // Text with media
+    textMedia.each((k,v) => {
+        v = $(v);
+        
+        console.log(v);
+    });
+
+    
 
     // Trigger scroll
     $(window).trigger('scroll');
