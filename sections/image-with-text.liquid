@@ -63,6 +63,32 @@
   </div>
 </div>
 
+
+{% javascript %}
+let 
+  imgs = $('.imgs'),
+  autoSpeed = parseFloat(imgs.data('auto')) * 1000;
+
+imgs.each((k,v) => {
+  $(v).slick({
+    infinite: true,
+    fade: true,
+
+    autoplay: true,
+    autoplaySpeed: autoSpeed,
+    speed: 1200,
+
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    pauseOnDotsHover: false,
+    arrows: false
+  });
+});
+{% endjavascript %}
+
+
+
+
 {% schema %}
 {
   "name": "Text with media",
