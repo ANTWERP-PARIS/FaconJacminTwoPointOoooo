@@ -15,59 +15,6 @@
 
 
 
-{%- style -%}
-.product-card-wrapper * {
-  text-transform: none !important;
-}
-
-.card__content {
-  overflow: hidden !important;
-}
-
-.card__information {
-  padding-left: calc(var(--pad)) !important;
-  padding-right: calc(var(--pad)) !important;
-  padding-bottom: 15px !important;
-  padding-top: 15px !important;
-}
-
-.card__information * {
-  font-size: 13px !important;
-  line-height: 15px !important;
-}
-
-.card-information {
-  width: auto !important;
-  margin-top: -3px;
-}
-
-.badge {
-  background: white !important;
-  border-width: 2px !important;
-  
-  font-size: 11px;
-  letter-spacing: .5px;
-  text-transform: uppercase !important;
-  font-weight: bold;
-  
-  padding-top: 5px;
-  padding-bottom: 4px;
-  
-  transition: transform .3s;
-  transition-timing-function: ease-in-out;
-}
-
-.grid__item:hover .badge {
-  transform: translate(0, 40px);
-}
-
-.badge.color-accent-2 {
-  background: var(--color-sec) !important;
-}
-{%- endstyle -%}
-
-
-
 {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
   {{ 'component-facets.css' | asset_url | stylesheet_tag }}
   <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
@@ -205,3 +152,56 @@
   ]
 }
 {% endschema %}
+
+
+
+{%- style -%}
+.product-card-wrapper * {
+  text-transform: none !important;
+}
+
+.card__content {
+  overflow: hidden !important;
+}
+
+.card__information {
+  padding-left: calc(var(--pad)) !important;
+  padding-right: calc(var(--pad)) !important;
+  padding-bottom: 15px !important;
+  padding-top: 15px !important;
+}
+
+.card__information * {
+  font-size: 13px !important;
+  line-height: 15px !important;
+}
+
+.card-information {
+  width: auto !important;
+  margin-top: -3px;
+}
+
+.badge {
+  background: white !important;
+  border-width: 2px !important;
+  
+  font-size: 11px;
+  letter-spacing: .5px;
+  text-transform: uppercase !important;
+  font-weight: bold;
+  
+  padding-top: 5px;
+  padding-bottom: 4px;
+  
+  transition: transform .3s;
+  transition-timing-function: ease-in-out;
+}
+
+.grid__item:hover .badge {
+  transform: translate(0, 40px);
+}
+
+.badge.color-accent-2 {
+  background: var(--color-sec) !important;
+}
+{%- endstyle -%}
