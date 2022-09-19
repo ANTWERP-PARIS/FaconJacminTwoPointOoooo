@@ -1,3 +1,25 @@
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+    {%- when 'announcement' -%}
+      <div class="announcement-bar color-{{ block.settings.color_scheme }} gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
+        {%- if block.settings.text != blank -%}
+          {%- if block.settings.link != blank -%}
+            <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
+          {%- endif -%}
+              <p class="announcement-bar__message h5">
+                {{ block.settings.text | escape }}
+                {%- if block.settings.link != blank -%}
+                  {% render 'icon-arrow' %}
+                {%- endif -%}
+              </p>
+          {%- if block.settings.link != blank -%}
+            </a>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+  {%- endcase -%}
+{%- endfor -%}
+
 {% schema %}
 {
   "name": "t:sections.announcement-bar.name",
@@ -8,40 +30,43 @@
       "name": "t:sections.announcement-bar.blocks.announcement.name",
       "settings": [
         {
-          "type": "header",
-          "content": "Colour"
+          "type": "text",
+          "id": "text",
+          "default": "Welcome to our store",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
         },
         {
           "type": "select",
           "id": "color_scheme",
           "options": [
             {
-              "value": "sec",
-              "label": "Secondary accent"
+              "value": "background-1",
+              "label": "t:sections.announcement-bar.blocks.announcement.settings.color_scheme.options__1.label"
             },
             {
-              "value": "black",
-              "label": "Black"
+              "value": "background-2",
+              "label": "t:sections.announcement-bar.blocks.announcement.settings.color_scheme.options__2.label"
+            },
+            {
+              "value": "inverse",
+              "label": "t:sections.announcement-bar.blocks.announcement.settings.color_scheme.options__3.label"
+            },
+            {
+              "value": "accent-1",
+              "label": "t:sections.announcement-bar.blocks.announcement.settings.color_scheme.options__4.label"
+            },
+            {
+              "value": "accent-2",
+              "label": "t:sections.announcement-bar.blocks.announcement.settings.color_scheme.options__5.label"
             }
           ],
-          "default": "sec",
-          "label": "Background"
-        },
-
-        {
-          "type": "header",
-          "content": "Content"
-        },
-        {
-          "type": "text",
-          "id": "text",
-          "default": "Welcome to our store",
-          "label": "Text"
+          "default": "accent-1",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.color_scheme.label"
         },
         {
           "type": "url",
           "id": "link",
-          "label": "Link"
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.link.label"
         }
       ]
     }
@@ -55,59 +80,3 @@
   }
 }
 {% endschema %}
-
-
-
-{%- for block in section.blocks -%}
-  {%- case block.type -%}
-    {%- when 'announcement' -%}
-      {%- if block.settings.text != blank -%}
-
-        <div class="announcement-bar center-xs bg-{{ block.settings.color_scheme }}" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
-        
-          {%- if block.settings.link != blank -%}
-            <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset">
-          {%- endif -%}
-
-              <div class="page-width">
-                <span class="announcement-bar__message {{ block.settings.text_alignment }} sml">
-                  {{ block.settings.text | escape }}
-                </span>
-              </div>
-              
-          {%- if block.settings.link != blank -%}
-            </a>
-          {%- endif -%}
-
-        </div>
-
-      {%- endif -%}
-  {%- endcase -%}
-{%- endfor -%}
-
-
-
-{% stylesheet %}
-#shopify-section-announcement-bar {
-  position: fixed !important;
-  top: 0;
-  width: 100% !important;
-  
-  z-index: 10 !important;
-}
-  
-.announcement-bar {
-  padding-top: 4px;
-  height: 34px;
-}
-
-.announcement-bar__link {
-  padding: 1px 0 0 0 !important;
-  text-decoration: none;
-}
-
-.announcement-bar__link:hover {
-  background-color: transparent !important;
-}
-
-{% endstylesheet %}

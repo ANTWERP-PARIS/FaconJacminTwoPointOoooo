@@ -1,26 +1,16 @@
 {{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
 {{ 'newsletter-section.css' | asset_url | stylesheet_tag }}
 
-{%- style -%}
-  .newsletter {
-    padding: var(--pad);
-  }
-
-  .newsletter__wrapper {
-    background: transparent;
-  }
-{%- endstyle -%}
-
-<div class="newsletter bg-{{ section.settings.color_scheme }} center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
-  <div class="newsletter__wrapper gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
+<div class="newsletter center{% if section.settings.full_width == false %} newsletter--narrow page-width{% endif%}">
+  <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}
           {% render block %}
         {%- when 'heading' -%}
-          <h2 class="display {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
+          <h2 class="h1" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
         {%- when 'paragraph' -%}
-          <div class="newsletter__subheading rte lrg" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+          <div class="newsletter__subheading rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
         {%- when 'email_form' -%}
           <div {{ block.shopify_attributes }}>
             {% form 'customer', class: 'newsletter-form' %}
@@ -72,27 +62,45 @@
 {
   "name": "t:sections.newsletter.name",
   "tag": "section",
-  "class": "section",
+  "class": "spaced-section spaced-section--full-width",
   "settings": [
     {
       "type": "select",
       "id": "color_scheme",
       "options": [
         {
-          "value": "white",
-          "label": "White"
+          "value": "accent-1",
+          "label": "t:sections.newsletter.settings.color_scheme.options__1.label"
         },
         {
-          "value": "light",
-          "label": "Light gray"
+          "value": "accent-2",
+          "label": "t:sections.newsletter.settings.color_scheme.options__2.label"
         },
         {
-          "value": "sec",
-          "label": "Secondary accent"
+          "value": "background-1",
+          "label": "t:sections.newsletter.settings.color_scheme.options__3.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.newsletter.settings.color_scheme.options__4.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.newsletter.settings.color_scheme.options__5.label"
         }
       ],
-      "default": "white",
-      "label": "Background"
+      "default": "background-1",
+      "label": "t:sections.newsletter.settings.color_scheme.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "default": true,
+      "label": "t:sections.newsletter.settings.full_width.label"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:sections.newsletter.settings.paragraph.content"
     }
   ],
   "blocks": [

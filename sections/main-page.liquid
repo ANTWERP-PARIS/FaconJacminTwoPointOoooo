@@ -4,28 +4,8 @@
 <noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
-{%- style -%}
-  .page-wrap {
-    padding: calc(var(--pad)) !important;
-  }
-
-  .main-page-title {
-    margin-bottom: 12px;
-  }
-
-  h2, h3, h4 {
-    font: 27px 'display' !important;
-    letter-spacing: -.5px !important;
-    text-transform: uppercase;
-  }
-
-  .rte div {
-    margin-bottom: 20px;
-  }
-{%- endstyle -%}
-
-<div class="page-width page-wrap page-width--narrow section-{{ section.id }}-padding">
-  <h1 class="main-page-title page-title display">
+<div class="page-width page-width--narrow">
+  <h1 class="main-page-title page-title h0">
     {{ page.title | escape }}
   </h1>
   <div class="rte">
@@ -37,6 +17,6 @@
 {
   "name": "t:sections.main-page.name",
   "tag": "section",
-  "class": "section"
+  "class": "spaced-section"
 }
 {% endschema %}
