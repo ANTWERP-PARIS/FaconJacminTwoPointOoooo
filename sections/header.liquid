@@ -1,5 +1,3 @@
-{%- assign logo_position = "middle-left" -%}
-{%- assign menu_type_desktop = "mega" -%}
 
 
 
@@ -70,24 +68,6 @@
     }
   }
 </style>
-
-
-
-{%- style -%}
-  #shopify-section-header {
-    position: fixed;
-    width: 100%;
-  }
-
-  .header-wrapper {
-    padding-left: calc(var(--pad));
-    padding-right: calc(var(--pad));
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-{%- endstyle -%}
-
-
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
@@ -364,7 +344,7 @@
               alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
             >
           {%- else -%}
-            <span class="h2 logo">Facon Jacmin</span>
+            <span class="h2">{{ shop.name }}</span>
           {%- endif -%}
         </a>
     {%- if request.page_type == 'index' -%}
