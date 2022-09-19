@@ -18,8 +18,8 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
+              "color_scheme": "sec",
               "text": "AW21 New Arrivals - In store and online now",
-              "color_scheme": "inverse",
               "link": ""
             }
           }
