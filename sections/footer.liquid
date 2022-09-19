@@ -16,12 +16,12 @@
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
-    <div class="footer__content-top page-width row">
+    <div class="footer__content-top page-width">
 
-      <div class="col col-xs-12 logowrap">
+      <div class="logowrap">
         <div class="logo">Facon Jacmin</div>
       </div>
-      
+
       {%- if section.blocks.size > 0 -%}
         {%- liquid
           if section.blocks.size == 9
@@ -567,8 +567,13 @@
     font-size: 15px !important;
   }
 
-  footer .logowrap {
+  footer .logo {
     padding-bottom: 23px !important;
+  }
+
+  footer .page-width {
+    padding-left: calc(var(--pad)) !important;
+    padding-right: calc(var(--pad)) !important;
   }
 
   .footer-block__heading {
