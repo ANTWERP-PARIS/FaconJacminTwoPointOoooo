@@ -266,11 +266,17 @@ h1.collection-hero__title {
     margin: 30px !important;
 }
 
+
+
 .facets__form {
     padding-left: calc(var(--pad));
     padding-right: calc(var(--pad));
     margin-bottom: 0px;
     margin-top: 15px;
+}
+
+.facets__form * {
+    box-shadow: none !important;
 }
 
 .product-count__text {
@@ -280,6 +286,8 @@ h1.collection-hero__title {
 .facet-filters.sorting {
     margin-right: -30px !important;
 }
+
+
 
 .product-grid .grid__item {
     padding-left: 0 !important;
@@ -335,6 +343,8 @@ h1.collection-hero__title {
 .badge.color-accent-2 {
     background: var(--color-sec) !important;
 }
+
+
 
 .pagination-wrapper {
     margin-top: 140px !important;
