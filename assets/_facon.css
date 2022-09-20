@@ -280,6 +280,7 @@ h1.collection-hero__title {
 
 .active-facets.active-facets-desktop {
     margin-top: -20px;
+    margin-bottom: 15px;
     padding-left: calc(var(--pad));
     padding-right: calc(var(--pad));
 }
@@ -293,7 +294,7 @@ h1.collection-hero__title {
 }
 
 .facet-filters.sorting {
-    margin-right: -30px !important;
+    margin-top: 14px;
 }
 
 
