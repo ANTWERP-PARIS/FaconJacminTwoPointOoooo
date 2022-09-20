@@ -354,8 +354,12 @@ h1.collection-hero__title {
     background: var(--color-sec) !important;
 }
 
-
-
 .pagination-wrapper {
     margin-top: 140px !important;
+}
+
+
+/* TEMP DELETE LATER */
+.swym-button-bar {
+    display: none !important;
 }
