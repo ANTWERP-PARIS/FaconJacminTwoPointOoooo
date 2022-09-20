@@ -18,7 +18,20 @@
   <link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
-<section class="page-width hello test">
+
+
+{%- style -%}
+.shopify-section.product-section {
+  margin-top: 0 !important;
+}
+
+.product__media-wrapper {
+  max-width: 50;
+}
+{%- endstyle -%}
+
+
+<section class="page-width">
   <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper">
       <slider-component class="slider-mobile-gutter">
