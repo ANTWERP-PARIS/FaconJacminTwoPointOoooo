@@ -12,13 +12,13 @@
           "type": "heading",
           "settings": {
             "heading": "Image with text",
-            "heading_size": "huge"
+            "heading_size": "display"
           }
         },
         "1663697502bf00552c-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Belgian designer Alexandra Jacmin and her entrepreneur twin sister Ségolène Jacmin joined forces to establish their eco-conscious label FAÇON JACMIN. After graduating from La Cambre, Alexandra worked for Maison Martin Margiela and Jean-Paul Gaultier. <\/p><p><strong>FAÇON JACMIN is an attitude<\/strong>. <\/p><p>With their label, the twins aime to give women more confidence and empower them in their everyday life, helping to express themselves to the fullest.<\/p><p>Alexandra’s designs explore the codes of seduction, and the alliance of masculinity and femininity. If denim remains her field of predilection, other fabrics are intertwined with it, to present a playful silhouette, meddling boldness and charm – a vision for an eco-conscious, modern, desirable, and determined woman. <\/p>"
           }
         },
         "1663697502bf00552c-2": {
@@ -28,17 +28,24 @@
             "button_link": "",
             "button_window": "_self"
           }
+        },
+        "8f45edc7-2d32-4146-a92c-608a9d38613c": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AAA3652-2.jpg"
+          }
         }
       },
       "block_order": [
         "1663697502bf00552c-0",
         "1663697502bf00552c-1",
-        "1663697502bf00552c-2"
+        "1663697502bf00552c-2",
+        "8f45edc7-2d32-4146-a92c-608a9d38613c"
       ],
       "settings": {
         "color_scheme": "white",
-        "change_slides_speed": 5,
-        "height": "adapt",
+        "change_slides_speed": 3,
+        "height": "text",
         "desktop_image_width": "medium",
         "layout": "image_first"
       }
