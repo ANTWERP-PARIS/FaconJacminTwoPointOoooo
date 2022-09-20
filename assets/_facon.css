@@ -262,7 +262,6 @@ main {
 
 
 /* Product grid */
-
 h1.collection-hero__title {
     margin: 30px !important;
 }
@@ -286,7 +285,6 @@ h1.collection-hero__title {
     line-height: 15px !important;
     text-transform: none !important;
 }
-
 
 .badge {
     background: white !important;
