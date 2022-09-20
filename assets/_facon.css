@@ -262,6 +262,11 @@ main {
 
 
 /* Product grid */
+
+h1.collection-hero__title {
+    margin: 30px !important;
+}
+
 .product-card-wrapper * {
     text-transform: none !important;
 }
