@@ -278,16 +278,18 @@ h1.collection-hero__title {
     padding-top: 15px !important;
 }
 
-.card__information * {
-    font-size: 13px !important;
-    line-height: 15px !important;
-    text-transform: none !important;
-}
 
 .card-information {
     width: auto !important;
     margin-top: -3px;
 }
+
+.card-information * {
+    font-size: 13px !important;
+    line-height: 15px !important;
+    text-transform: none !important;
+}
+
 
 .badge {
     background: white !important;
