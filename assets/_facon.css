@@ -280,6 +280,8 @@ h1.collection-hero__title {
 
 .active-facets.active-facets-desktop {
     margin-top: -20px;
+    padding-left: calc(var(--pad));
+    padding-right: calc(var(--pad));
 }
 
 .active-facets__button-inner {
