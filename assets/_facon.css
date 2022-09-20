@@ -58,13 +58,13 @@ h1, h2, h3, .display, .display *, .logo, .h1 {
 }
 
 .huge, .h0 {
-    font-size: 100px;
-    letter-spacing: -2px;
+    font-size: 100px !important;
+    letter-spacing: -2px !important;
 }
 
 .logo, .h2 {
-    font-size: 27px;
-    letter-spacing: 0;
+    font-size: 27px !important;
+    letter-spacing: 0 !important;
 }
 
 b, b * {
