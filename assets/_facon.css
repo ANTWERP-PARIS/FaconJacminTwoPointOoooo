@@ -363,3 +363,7 @@ h1.collection-hero__title {
 .swym-button-bar {
     display: none !important;
 }
+
+.header__inline-menu details[open]>.header__submenu {
+    transform: translateY(16px) !important;
+}
