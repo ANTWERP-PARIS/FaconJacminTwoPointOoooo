@@ -327,5 +327,5 @@ h1.collection-hero__title {
 }
 
 .pagination-wrapper {
-    margin-top: 140px;
+    margin-top: 140px !important;
 }
