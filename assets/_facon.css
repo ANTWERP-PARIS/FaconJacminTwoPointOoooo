@@ -275,7 +275,8 @@ h1.collection-hero__title {
     margin-top: 15px;
 }
 
-.facets__form, .facets__form *, .facets__form *:focus-visible {
+.facets__form, .facets__form *, 
+.facets__form *:focus, .facets__form *:focus-visible, .facets__form *:focus-within {
     box-shadow: none !important;
 }
 
