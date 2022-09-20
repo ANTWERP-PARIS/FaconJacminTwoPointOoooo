@@ -28,9 +28,41 @@
         "link": "",
         "window": "_self"
       }
+    },
+    "16636963511a304028": {
+      "type": "newsletter",
+      "blocks": {
+        "1663696351d9649a37-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails"
+          }
+        },
+        "1663696351d9649a37-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "1663696351d9649a37-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "1663696351d9649a37-0",
+        "1663696351d9649a37-1",
+        "1663696351d9649a37-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
     }
   },
   "order": [
-    "1663621055e602879d"
+    "1663621055e602879d",
+    "16636963511a304028"
   ]
 }
