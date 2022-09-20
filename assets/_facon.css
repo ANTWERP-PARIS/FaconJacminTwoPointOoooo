@@ -295,7 +295,7 @@ h1.collection-hero__title {
     margin-bottom: 10px !important;
 }
 
-.card-information * {
+.facets__form *, .card-information * {
     font-size: 13px !important;
     line-height: 15px !important;
     text-transform: none !important;
