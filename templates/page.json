@@ -57,20 +57,11 @@
           "settings": {
             "text": "<p>Open Monday-Saturday from 10:30 a.m to 18:00 p.m.<\/p><p><a href=\"https:\/\/goo.gl\/maps\/ciD7CYCUpYUEaveMA\"><span style=\"text-decoration:underline\">Kammenstraat 58, 2000 Antwerp<\/span><\/a><\/p>"
           }
-        },
-        "16636990750b7e9c25-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "16636990750b7e9c25-0",
-        "16636990750b7e9c25-1",
-        "16636990750b7e9c25-2"
+        "16636990750b7e9c25-1"
       ],
       "settings": {
         "color_scheme": "light",
