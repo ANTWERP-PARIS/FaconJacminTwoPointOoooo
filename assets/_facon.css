@@ -51,18 +51,18 @@
     text-transform: uppercase;
 }
 
-h1, h2, h3, .display, .display *, .logo, .h0 {
+h1, h2, h3, .display, .display *, .logo, .h1 {
     font: 50px 'display' !important;
     letter-spacing: -.5px !important;
     text-transform: uppercase !important;
 }
 
-.huge {
+.huge, .h0 {
     font-size: 100px;
     letter-spacing: -2px;
 }
 
-.logo {
+.logo, .h2 {
     font-size: 27px;
     letter-spacing: 0;
 }
