@@ -266,6 +266,11 @@ h1.collection-hero__title {
     margin: 30px !important;
 }
 
+.facets__form {
+    padding-left: calc(var(--pad));
+    padding-right: calc(var(--pad));
+}
+
 .product-grid .grid__item {
     padding-left: 0 !important;
     padding-bottom: 0 !important;
@@ -319,4 +324,8 @@ h1.collection-hero__title {
 
 .badge.color-accent-2 {
     background: var(--color-sec) !important;
+}
+
+.pagination-wrapper {
+    margin-top: 140px;
 }
