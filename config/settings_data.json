@@ -19,7 +19,7 @@
             "type": "announcement",
             "settings": {
               "color_scheme": "sec",
-              "text": "NEW WEBSITE IN FEW HOURS",
+              "text": "NEW AW22 COLLECTION ONLINE",
               "link": ""
             }
           }
@@ -39,13 +39,6 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "footer-1": {
-            "type": "text",
-            "settings": {
-              "heading": "Heading",
-              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
-            }
-          },
           "footer-0": {
             "type": "link_list",
             "settings": {
@@ -55,7 +48,6 @@
           }
         },
         "block_order": [
-          "footer-1",
           "footer-0"
         ],
         "settings": {
@@ -63,8 +55,8 @@
           "newsletter_enable": true,
           "newsletter_heading": "Subscribe to our emails",
           "show_social": true,
-          "enable_country_selector": true,
-          "enable_language_selector": true,
+          "enable_country_selector": false,
+          "enable_language_selector": false,
           "payment_enable": true
         }
       }
