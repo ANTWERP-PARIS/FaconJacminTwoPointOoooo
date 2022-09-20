@@ -277,6 +277,10 @@ h1.collection-hero__title {
     display: none !important;
 }
 
+.facet-filters.sorting {
+    margin-right: -30px !important;
+}
+
 .product-grid .grid__item {
     padding-left: 0 !important;
     padding-bottom: 0 !important;
