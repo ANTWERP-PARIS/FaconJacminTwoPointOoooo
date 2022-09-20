@@ -266,6 +266,10 @@ h1.collection-hero__title {
     margin: 30px !important;
 }
 
+.product-grid .grid__item {
+    padding-bottom: 0 !important;
+}
+
 .card__content {
     overflow: hidden !important;
 }
@@ -277,7 +281,7 @@ h1.collection-hero__title {
     padding-left: calc(var(--pad)) !important;
     padding-right: calc(var(--pad)) !important;
     
-    margin-top: 15px !important;
+    margin-top: -5px !important;
     margin-bottom: 15px !important;
 }
 
