@@ -6,8 +6,8 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}</noscript>
 
-<div class="{% unless full_width %}page-width{% endunless %}">
-  <div class="rich-text color-{{ section.settings.color_scheme }} gradient{% if full_width %} rich-text--full-width{% endif %}">
+<div class="{% unless full_width %}page-width{% endunless %} bg-{{ section.settings.color_scheme }}">
+  <div class="rich-text {% if full_width %} rich-text--full-width{% endif %}">
     <div class="rich-text__blocks">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
@@ -24,6 +24,10 @@
     </div>
   </div>
 </div>
+
+{%- style -%}
+{%- endstyle -%}
+
 
 
 
@@ -83,7 +87,7 @@
           "id": "heading_size",
           "options": [
             {
-              "value": "h2",
+              "value": "logo",
               "label": "t:sections.rich-text.blocks.heading.settings.heading_size.options__1.label"
             },
             {
@@ -91,7 +95,7 @@
               "label": "t:sections.rich-text.blocks.heading.settings.heading_size.options__2.label"
             },
             {
-              "value": "h0",
+              "value": "huge",
               "label": "t:sections.rich-text.blocks.heading.settings.heading_size.options__3.label"
             }
           ],
