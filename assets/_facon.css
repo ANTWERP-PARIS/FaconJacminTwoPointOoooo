@@ -267,6 +267,7 @@ h1.collection-hero__title {
 }
 
 .product-grid .grid__item {
+    padding-left: 0 !important;
     padding-bottom: 0 !important;
 }
 
