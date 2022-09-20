@@ -271,7 +271,7 @@ h1.collection-hero__title {
     padding-right: calc(var(--pad));
 }
 
-.product-count__text {
+.product-count__text {
     display: none !important;
 }
 
