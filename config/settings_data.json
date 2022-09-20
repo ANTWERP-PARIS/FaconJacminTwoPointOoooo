@@ -19,7 +19,7 @@
             "type": "announcement",
             "settings": {
               "color_scheme": "sec",
-              "text": "AW21 New Arrivals - In store and online now",
+              "text": "NEW WEBSITE IN FEW HOURS",
               "link": ""
             }
           }
@@ -33,7 +33,7 @@
       "header": {
         "type": "header",
         "settings": {
-          "menu": "facon"
+          "menu": "main-menu-1"
         }
       },
       "footer": {
