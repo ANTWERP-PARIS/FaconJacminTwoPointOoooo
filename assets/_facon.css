@@ -266,9 +266,7 @@ h1.collection-hero__title {
     margin: 30px !important;
 }
 
-
-
-.facets__form {
+.facets__wrapper {
     padding-left: calc(var(--pad));
     padding-right: calc(var(--pad));
     margin-bottom: 0px;
@@ -278,6 +276,14 @@ h1.collection-hero__title {
 .facets__form, .facets__form *, 
 .facets__form *:focus, .facets__form *:focus-visible, .facets__form *:focus-within {
     box-shadow: none !important;
+}
+
+.active-facets.active-facets-desktop {
+    margin-top: -20px;
+}
+
+.active-facets__button-inner {
+    border: 2px solid var(--color-black);
 }
 
 .product-count__text {
