@@ -269,6 +269,8 @@ h1.collection-hero__title {
 .facets__form {
     padding-left: calc(var(--pad));
     padding-right: calc(var(--pad));
+    margin-bottom: 0px;
+    margin-top: 15px;
 }
 
 .product-count__text {
