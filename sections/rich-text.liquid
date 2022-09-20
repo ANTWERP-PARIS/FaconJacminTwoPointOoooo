@@ -1,11 +1,13 @@
+{% align full_width = true %}
+
 <link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'section-rich-text.css' | asset_url }}" media="print" onload="this.media='all'">
 
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}</noscript>
 
-<div class="{% unless section.settings.full_width %}page-width{% endunless %}">
-  <div class="rich-text color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width{% endif %}">
+<div class="{% unless full_width %}page-width{% endunless %}">
+  <div class="rich-text color-{{ section.settings.color_scheme }} gradient{% if full_width %} rich-text--full-width{% endif %}">
     <div class="rich-text__blocks">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
@@ -34,34 +36,32 @@
       "id": "color_scheme",
       "options": [
         {
-          "value": "accent-1",
-          "label": "t:sections.rich-text.settings.color_scheme.options__1.label"
+          "value": "white",
+          "label": "White"
         },
         {
-          "value": "accent-2",
-          "label": "t:sections.rich-text.settings.color_scheme.options__2.label"
-        },
-        {
-          "value": "background-1",
-          "label": "t:sections.rich-text.settings.color_scheme.options__3.label"
-        },
-        {
-          "value": "background-2",
-          "label": "t:sections.rich-text.settings.color_scheme.options__4.label"
-        },
-        {
-          "value": "inverse",
-          "label": "t:sections.rich-text.settings.color_scheme.options__5.label"
+          "value": "light",
+          "label": "Light grey"
         }
       ],
-      "default": "background-1",
+      "default": "white",
       "label": "t:sections.rich-text.settings.color_scheme.label"
     },
     {
-      "type": "checkbox",
-      "id": "full_width",
-      "default": true,
-      "label": "t:sections.rich-text.settings.full_width.label"
+      "type": "select",
+      "id": "txt_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "center",
+      "label": "t:sections.rich-text.settings.color_scheme.label"
     }
   ],
   "blocks": [
