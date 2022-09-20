@@ -306,6 +306,7 @@ h1.collection-hero__title {
 
     padding-top: 5px;
     padding-bottom: 4px;
+    margin-left: 29px;
 
     transition: transform .3s;
     transition-timing-function: ease-in-out;
