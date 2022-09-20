@@ -28,17 +28,24 @@
             "button_link": "",
             "button_window": "_self"
           }
+        },
+        "8f45edc7-2d32-4146-a92c-608a9d38613c": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AAA3652-2.jpg"
+          }
         }
       },
       "block_order": [
         "1663697502bf00552c-0",
         "1663697502bf00552c-1",
-        "1663697502bf00552c-2"
+        "1663697502bf00552c-2",
+        "8f45edc7-2d32-4146-a92c-608a9d38613c"
       ],
       "settings": {
         "color_scheme": "white",
-        "change_slides_speed": 5,
-        "height": "adapt",
+        "change_slides_speed": 3,
+        "height": "text",
         "desktop_image_width": "medium",
         "layout": "image_first"
       }
