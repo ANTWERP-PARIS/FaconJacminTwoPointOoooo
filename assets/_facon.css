@@ -82,6 +82,10 @@ b, b * {
     --color-black: #000;
     --color-light: #f2f2f2;
     --color-white: #ffffff;
+
+
+    --color-button: var(--color-light) !important;
+    --color-button-text: var(---color-black) !important;
 }
 
 .color-black {
