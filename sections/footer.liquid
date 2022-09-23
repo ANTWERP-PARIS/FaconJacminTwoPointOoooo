@@ -36,7 +36,7 @@
         -%}
         <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}">
           {%- for block in section.blocks -%}
-            <div class="footer-block grid__item{% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
+            <div class="footer-block grid__item{% if block.type == 'link_list' and block.settings.heading != blank %} col-xs-6 col-md-2{% else %} col-xs-12 col-md-4{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
                 <h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
               {%- endif -%}
@@ -359,13 +359,10 @@
     font-size: 15px !important;
   }
 
-  footer .logo {
-    padding-bottom: 23px !important;
-  }
-
   footer .logowrap {
     width: 112px;
     height: 32px;
+    padding-bottom: 23px !important;
   }
 
   footer .page-width {
