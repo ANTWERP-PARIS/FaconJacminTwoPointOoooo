@@ -45,18 +45,10 @@
               "heading": "Quick links",
               "menu": "footer"
             }
-          },
-          "f70719d5-1b3e-4e3a-92bf-4ba552542854": {
-            "type": "text",
-            "settings": {
-              "heading": "Heading",
-              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
-            }
           }
         },
         "block_order": [
-          "footer-0",
-          "f70719d5-1b3e-4e3a-92bf-4ba552542854"
+          "footer-0"
         ],
         "settings": {
           "newsletter_enable": true,
