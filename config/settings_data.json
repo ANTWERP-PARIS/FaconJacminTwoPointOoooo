@@ -45,19 +45,23 @@
               "heading": "Quick links",
               "menu": "footer"
             }
+          },
+          "f70719d5-1b3e-4e3a-92bf-4ba552542854": {
+            "type": "text",
+            "settings": {
+              "heading": "Heading",
+              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
+            }
           }
         },
         "block_order": [
-          "footer-0"
+          "footer-0",
+          "f70719d5-1b3e-4e3a-92bf-4ba552542854"
         ],
         "settings": {
-          "color_scheme": "background-1",
           "newsletter_enable": true,
           "newsletter_heading": "Subscribe to our emails",
-          "show_social": true,
-          "enable_country_selector": false,
-          "enable_language_selector": false,
-          "payment_enable": true
+          "show_social": true
         }
       }
     },
