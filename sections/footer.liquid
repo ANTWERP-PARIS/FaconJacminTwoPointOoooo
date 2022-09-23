@@ -426,8 +426,12 @@
     margin: 0;
   }
 
+  .footer-block:only-child li {
+    display: block;
+  }
+
   .footer__blocks-wrapper {
-    margin-bottom: calc(var(--pad));
+    margin-bottom: calc(var(--pad)) !important;
   }
 {%- endstyle -%}
 
