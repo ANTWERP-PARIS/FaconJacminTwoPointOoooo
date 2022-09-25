@@ -88,6 +88,10 @@
     padding: 0 !important;
   }
 
+  .header__icon {
+    text-decoration: none !important;
+  }
+
   .logowrap .logo {
     width: 110px;
     height: 30px;
@@ -526,7 +530,7 @@
       {%- endif -%}
 
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
-        <i class="fa-solid fa-bag-shopping"></i>
+        <i class="fa-solid fa-bag-shopping"></i> Checkout
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         {%- if cart != empty -%}
           <div class="cart-count-bubble">
