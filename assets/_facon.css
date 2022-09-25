@@ -270,6 +270,10 @@ main {
 
 
 /* Product grid */
+.spaced-section {
+    margin: 0 !important;
+}
+
 h1.collection-hero__title {
     margin: 30px !important;
 }
