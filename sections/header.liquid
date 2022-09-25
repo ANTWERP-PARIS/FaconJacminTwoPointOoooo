@@ -105,7 +105,7 @@
     display: none !important;
   }
 
-  .header__icon--cart {
+  .cartbutton {
     border: 2px solid var(--color-black);
     border-radius: 50%;
   }
@@ -543,7 +543,7 @@
           <i class="fa-solid fa-bag-shopping"></i> 
           Checkout
         </div>
-        
+
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         {%- if cart != empty -%}
           <div class="cart-count-bubble">
