@@ -361,6 +361,7 @@
     {%- if request.page_type == 'index' -%}
       <i class="fa-solid fa-user"></i>
       <i class="fa-solid fa-bag-shopping"></i>
+      <i class="fa-solid fa-magnifying-glass"></i>
       <h1 class="header__heading">
     {%- endif -%}
         <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
@@ -444,7 +445,7 @@
           <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
             <span>
               <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false" role="presentation">
-                <use href="#icon-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
               </svg>
               <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false" role="presentation">
                 <use href="#icon-close">
