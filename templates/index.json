@@ -63,7 +63,6 @@
     },
     "1663696698757930c7": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "16636966986677d4e6-0": {
           "type": "heading",
@@ -93,7 +92,7 @@
       "settings": {
         "color_scheme": "white",
         "change_slides_speed": 5,
-        "height": "adapt",
+        "height": "text",
         "desktop_image_width": "medium",
         "layout": "image_first"
       }
