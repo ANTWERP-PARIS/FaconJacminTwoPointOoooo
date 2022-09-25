@@ -539,7 +539,11 @@
       {%- endif -%}
 
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
-        <i class="fa-solid fa-bag-shopping"></i> Checkout
+        <div class="cartbutton">
+          <i class="fa-solid fa-bag-shopping"></i> 
+          Checkout
+        </div>
+        
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         {%- if cart != empty -%}
           <div class="cart-count-bubble">
