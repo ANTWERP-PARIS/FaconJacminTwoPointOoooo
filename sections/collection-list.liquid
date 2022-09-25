@@ -1,33 +1,4 @@
-
-{%- style -%}
-.collection-list-wrapper {
-  background: yellow !important;
-}
-
-.title-wrapper-with-link {
-  margin: 0 !important;
-  background: var(--color-light);
-}
-
-.collection-list-title {
-  margin: 0 auto;
-  padding: 60px!important;
-}
-
-.card__text {
-  background: transparent !important;
-  color: var(--color-white) !important;
-}
-
-.card__text h3 .icon-wrap {
-  display: none !important;
-}
-
-{%- endstyle -%}
-
-
-{{ assign image_ratio = "portrait" }}
-
+{%- assign image_ratio = "portrait" -%}
 
 {{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -148,6 +119,33 @@
 </div>
 
 
+
+{%- style -%}
+
+.collection-list-wrapper {
+  background: yellow !important;
+}
+
+.title-wrapper-with-link {
+  margin: 0 !important;
+  background: var(--color-light);
+}
+
+.collection-list-title {
+  margin: 0 auto;
+  padding: 60px!important;
+}
+
+.card__text {
+  background: transparent !important;
+  color: var(--color-white) !important;
+}
+
+.card__text h3 .icon-wrap {
+  display: none !important;
+}
+
+{%- endstyle -%}
 
 
 
