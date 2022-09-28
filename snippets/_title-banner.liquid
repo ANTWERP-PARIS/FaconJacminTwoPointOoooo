@@ -100,7 +100,7 @@
     >
   {%- endif -%}
 
-  <div class="_title_txt">{{- collection.title | escape -}}</div>
+  <h3 class="_title_txt">{{- collection.title | escape -}}</h3>
 </div>
 
 
@@ -123,6 +123,11 @@
     height: 100%;
 
     object-fit: cover;
-    z-index: -1;
+    z-index: 0;
+  }
+
+  ._title_banner ._title_txt {
+
+    z-index: 1;
   }
 </style>
