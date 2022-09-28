@@ -28,14 +28,12 @@
 {% endcomment %}
 
 
+{%- if products and count>0 -%}
 
-<ul data-id="{{ id }}">
-GRID
+  <ul data-id="{{ id }}">
+    GRID
 
-
-{{- products and count>0 -}}
-
-{{ products }}
-{{ count }}
-</ul>
-
+    {{ products }}
+    {{ count }}
+  </ul>
+{%- endif -%}
