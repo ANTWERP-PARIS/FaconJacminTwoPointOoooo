@@ -1,3 +1,49 @@
+/* Reset */
+:root {
+    --grid-desktop-horizontal-spacing: 0px !important;
+    --grid-desktop-vertical-spacing: 0px !important;
+    --grid-mobile-horizontal-spacing: 0px !important;
+    --grid-mobile-vertical-spacing: 0px !important;
+
+    --alpha-badge-border: 0 !important;
+    --alpha-button-border: 0 !important;
+    --blog-card-border-opacity: 0 !important;
+    --blog-card-border-width: 0rem !important;
+    --buttons-border-offset: 0px !important;
+    --buttons-border-opacity: 0 !important;
+    --buttons-border-width: 0px !important;
+    --collection-card-border-opacity: 0 !important;
+    --collection-card-border-width: 0rem !important;
+    --color-badge-border: 0, 0, 0 !important;
+    --drawer-border-opacity: 0 !important;
+    --drawer-border-width: 0px !important;
+    --inputs-border-opacity: 0 !important;
+    --inputs-border-width: 0px !important;
+    --media-border-opacity: 0 !important;
+    --media-border-width: 0px !important;
+    --popup-border-opacity: 0 !important;
+    --popup-border-width: 0px !important;
+    --product-card-border-opacity: 0 !important;
+    --product-card-border-width: 0rem !important;
+    --text-boxes-border-opacity: 0 !important;
+    --text-boxes-border-width: 0px !important;
+    --variant-pills-border-opacity: 0 !important;
+    --variant-pills-border-width: 0px !important;
+}
+
+.page-width {
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.col {
+    padding: calc(var(--pad)) !important;
+    padding-top: 0 !important;
+}
+
+
+
 /* Typography */
 @font-face {
     font-family: 'display';
@@ -39,10 +85,6 @@
     font-display: swap;
 }
 
-strong, b {
-    font-weight: bold !important;
-}
-
 .lrg, .lrg * {
     font-size: 20px;
     line-height: 30px;
@@ -71,8 +113,8 @@ h1, h2, h3, .display, .display *, .logo, .h1 {
     letter-spacing: 0 !important;
 }
 
-b, b * {
-    font-weight: bold;
+b, b *, strong, strong * {
+    font-weight: bold !important;
 }
 
 
@@ -200,52 +242,6 @@ main {
     flex: 1 0 auto;
     align-items: flex-start;
     position: relative;
-}
-
-
-
-/* Grid */
-:root {
-    --grid-desktop-horizontal-spacing: 0px !important;
-    --grid-desktop-vertical-spacing: 0px !important;
-    --grid-mobile-horizontal-spacing: 0px !important;
-    --grid-mobile-vertical-spacing: 0px !important;
-
-    --alpha-badge-border: 0 !important;
-    --alpha-button-border: 0 !important;
-    --blog-card-border-opacity: 0 !important;
-    --blog-card-border-width: 0rem !important;
-    --buttons-border-offset: 0px !important;
-    --buttons-border-opacity: 0 !important;
-    --buttons-border-width: 0px !important;
-    --collection-card-border-opacity: 0 !important;
-    --collection-card-border-width: 0rem !important;
-    --color-badge-border: 0, 0, 0 !important;
-    --drawer-border-opacity: 0 !important;
-    --drawer-border-width: 0px !important;
-    --inputs-border-opacity: 0 !important;
-    --inputs-border-width: 0px !important;
-    --media-border-opacity: 0 !important;
-    --media-border-width: 0px !important;
-    --popup-border-opacity: 0 !important;
-    --popup-border-width: 0px !important;
-    --product-card-border-opacity: 0 !important;
-    --product-card-border-width: 0rem !important;
-    --text-boxes-border-opacity: 0 !important;
-    --text-boxes-border-width: 0px !important;
-    --variant-pills-border-opacity: 0 !important;
-    --variant-pills-border-width: 0px !important;
-}
-
-.page-width {
-    max-width: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
-.col {
-    padding: calc(var(--pad)) !important;
-    padding-top: 0 !important;
 }
 
 

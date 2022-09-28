@@ -14,6 +14,8 @@
 -%}
 
 <div class="_title_banner">
+
+  <!-- BG Image -->
   {%- if hero_img -%}
     <img class="_title_img"
       srcset="{%- if img.width >= 165 -%}{{ img | image_url: width: 165 }} 165w,{%- endif -%}
@@ -28,6 +30,7 @@
     >
   {%- endif -%}
 
+  <!-- Title -->
   <h3 class="_title_txt color-{{ color }}">{{- collection.title | escape -}}</h3>
 </div>
 
