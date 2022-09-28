@@ -83,7 +83,7 @@
 -%}
 
 
-{{- show_img -}}
+
 
 <div class="_title_banner">
   {%- if img -%}
@@ -99,7 +99,7 @@
       width="{{ img.width }}" height="{{ img.height }}"
     >
   {%- endif -%}
-
+  {{- show_img -}}
   <h3 class="_title_txt">{{- collection.title | escape -}}</h3>
 </div>
 
