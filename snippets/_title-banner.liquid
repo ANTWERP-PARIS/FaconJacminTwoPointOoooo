@@ -86,24 +86,48 @@
 
 
 <div class="_title_banner">
-
   {%- if img -%}
-    <div class="_title_img">
-      <img
-        srcset="{%- if img.width >= 165 -%}{{ img | image_url: width: 165 }} 165w,{%- endif -%}
-          {%- if img.width >= 360  -%}{{ img | image_url: width: 360 }} 360w,{%- endif -%}
-          {%- if img.width >= 535  -%}{{ img | image_url: width: 535 }} 535w,{%- endif -%}
-          {%- if img.width >= 750  -%}{{ img | image_url: width: 750 }} 750w,{%- endif -%}
-          {%- if img.width >= 1070 -%}{{ img | image_url: width: 1070 }} 1070w,{%- endif -%}
-          {%- if img.width >= 1500 -%}{{ img | image_url: width: 1500 }} 1500w,{%- endif -%}
-          {{ img | image_url }} {{ img.width }}w"
-        src="{{ img | image_url: width: 750 }}"
-        alt=""
-        width="{{ img.width }}"
-        height="{{ img.height }}"
-      >
-    </div>
+    <img class="_title_img"
+      srcset="{%- if img.width >= 165 -%}{{ img | image_url: width: 165 }} 165w,{%- endif -%}
+        {%- if img.width >= 360  -%}{{ img | image_url: width: 360 }} 360w,{%- endif -%}
+        {%- if img.width >= 535  -%}{{ img | image_url: width: 535 }} 535w,{%- endif -%}
+        {%- if img.width >= 750  -%}{{ img | image_url: width: 750 }} 750w,{%- endif -%}
+        {%- if img.width >= 1070 -%}{{ img | image_url: width: 1070 }} 1070w,{%- endif -%}
+        {%- if img.width >= 1500 -%}{{ img | image_url: width: 1500 }} 1500w,{%- endif -%}
+        {{ img | image_url }} {{ img.width }}w"
+      src="{{ img | image_url: width: 750 }}"
+      width="{{ img.width }}" height="{{ img.height }}"
+    >
   {%- endif -%}
 
   <div class="_title_txt">{{- collection.title | escape -}}</div>
 </div>
+
+
+
+
+{%- stylesheet -%}
+._title_banner {
+  position: relative;
+  height: 160px;
+
+  display: flex;
+  
+  background: var(--color-light);
+}
+
+._title_banner ._title_img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  object-fit: cover;
+}
+{%- endstylesheet -%}
+
+
+
+{% javascript %}
+{% endjavascript %}
