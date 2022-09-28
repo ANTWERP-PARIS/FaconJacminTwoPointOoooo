@@ -1,78 +1,3 @@
-{% comment %}
-    Renders facets (filtering and sorting)
-
-    Accepts:
-    - results: {Object} Collection or Search object
-    - enable_filtering: {Boolean} Show filtering when true
-    - enable_sorting: {Boolean} Show sorting when true
-    - collapse_on_larger_devices: {Boolean} Collapse filtering/sorting into menu on larger devices when true
-
-    Usage:
-    {% render 'facets', results: collection, enable_filtering: true, enable_sorting: true, collapse_on_larger_devices: false %}
-
-
-{%- liquid
-  assign sort_by = results.sort_by | default: results.default_sort_by
-  assign total_active_values = 0
-  if results.url
-    assign results_url = results.url
-  else 
-    assign terms = results.terms | escape
-    assign results_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by
-  endif
--%}
-
-
-{{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
-
-{%- style -%}
-.display.collection-hero {
-  background: var(--color-light);
-  padding: 30px;
-}
-{%- endstyle -%}
-
-
-
-<div class="display center collection-hero{% if section.settings.show_collection_image and img %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient">
-  <div class="collection-hero__inner page-width">
-    <div class="collection-hero__text-wrapper">
-      <h1 class="collection-hero__title">
-        <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
-        {{- collection.title | escape -}}
-      </h1>
-
-      {%- if section.settings.show_collection_description -%}
-        <div class="collection-hero__description rte">{{ collection.description }}</div>
-      {%- endif -%}
-    </div>
-
-    {%- if section.settings.show_collection_image and img -%}
-      <div class="collection-hero__image-container media gradient">
-        <img
-          srcset="{%- if img.width >= 165 -%}{{ img | image_url: width: 165 }} 165w,{%- endif -%}
-            {%- if img.width >= 360 -%}{{ img | image_url: width: 360 }} 360w,{%- endif -%}
-            {%- if img.width >= 535 -%}{{ img | image_url: width: 535 }} 535w,{%- endif -%}
-            {%- if img.width >= 750 -%}{{ img | image_url: width: 750 }} 750w,{%- endif -%}
-            {%- if img.width >= 1070 -%}{{ img | image_url: width: 1070 }} 1070w,{%- endif -%}
-            {%- if img.width >= 1500 -%}{{ img | image_url: width: 1500 }} 1500w,{%- endif -%}
-            {{ img | image_url }} {{ img.width }}w"
-          src="{{ img | image_url: width: 750 }}"
-          sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc(50vw - 130px), calc(50vw - 55px)"
-          alt=""
-          width="{{ img.width }}"
-          height="{{ img.height }}"
-        >
-      </div>
-    {%- endif -%}
-  </div>
-</div>
-
-
-{% render '_title-banner', title: collection.title, show_img: section.settings.show_collection_image, img: img %}
-
-{% endcomment %}
-
 
 {%- liquid
   if show_img and img
@@ -84,9 +9,8 @@
 
 
 
-
 <div class="_title_banner">
-  {%- if img -%}
+  {%- if hero_img -%}
     <img class="_title_img"
       srcset="{%- if img.width >= 165 -%}{{ img | image_url: width: 165 }} 165w,{%- endif -%}
         {%- if img.width >= 360  -%}{{ img | image_url: width: 360 }} 360w,{%- endif -%}
@@ -99,7 +23,7 @@
       width="{{ img.width }}" height="{{ img.height }}"
     >
   {%- endif -%}
-  {{- show_img -}}
+
   <h3 class="_title_txt">{{- collection.title | escape -}}</h3>
 </div>
 
