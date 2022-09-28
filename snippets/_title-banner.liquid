@@ -1,0 +1,25 @@
+{% comment %}
+    Renders facets (filtering and sorting)
+
+    Accepts:
+    - results: {Object} Collection or Search object
+    - enable_filtering: {Boolean} Show filtering when true
+    - enable_sorting: {Boolean} Show sorting when true
+    - collapse_on_larger_devices: {Boolean} Collapse filtering/sorting into menu on larger devices when true
+
+    Usage:
+    {% render 'facets', results: collection, enable_filtering: true, enable_sorting: true, collapse_on_larger_devices: false %}
+
+
+{%- liquid
+  assign sort_by = results.sort_by | default: results.default_sort_by
+  assign total_active_values = 0
+  if results.url
+    assign results_url = results.url
+  else 
+    assign terms = results.terms | escape
+    assign results_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by
+  endif
+-%}
+
+{% endcomment %}
