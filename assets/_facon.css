@@ -92,6 +92,10 @@ b, b * {
     color: var(--color-black) !important;
 }
 
+.color-white {
+    color: var(--color-white) !important;
+}
+
 .color-light {
     color: var(--color-light) !important;
 }
