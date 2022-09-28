@@ -29,7 +29,7 @@
 
 
 {%- if products and count>0 and id -%}
-  <ul id="product-grid" data-id="{{ id }}" class="grid grid--2-col negative-margin product-grid">
+  <ul data-id="{{ id }}" class="grid product-grid">
 
     {%- for product in products -%}
       <li class="grid__item">
