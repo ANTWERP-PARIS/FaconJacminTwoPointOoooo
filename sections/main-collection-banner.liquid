@@ -1,3 +1,5 @@
+{% render '_title-banner', title: collection.title, show_img: section.settings.show_collection_image, img: collection.image %}
+
 {% schema %}
 {
   "name": "t:sections.main-collection-banner.name",
@@ -38,4 +40,3 @@
 }
 {% endschema %}
 
-{% render '_title-banner', title: collection.title, show_img: section.settings.show_collection_image, img: collection.image %}
