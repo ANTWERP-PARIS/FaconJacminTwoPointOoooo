@@ -1,6 +1,6 @@
 {% comment %}
   USAGE
-  {% render '_title-banner', title, title_color, show_img, img %}
+  {% render '_title-banner', title, color, show_img, img %}
 {% endcomment %}
 
 
@@ -28,7 +28,7 @@
     >
   {%- endif -%}
 
-  <h3 class="_title_txt color-{{ title_color }}">{{- collection.title | escape -}}</h3>
+  <h3 class="_title_txt color-{{ color }}">{{- collection.title | escape -}}</h3>
 </div>
 
 
