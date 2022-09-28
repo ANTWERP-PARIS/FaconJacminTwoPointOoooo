@@ -98,7 +98,6 @@
           {%- if img.width >= 1500 -%}{{ img | image_url: width: 1500 }} 1500w,{%- endif -%}
           {{ img | image_url }} {{ img.width }}w"
         src="{{ img | image_url: width: 750 }}"
-        sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc(50vw - 130px), calc(50vw - 55px)"
         alt=""
         width="{{ img.width }}"
         height="{{ img.height }}"
