@@ -28,8 +28,8 @@
 {% endcomment %}
 
 
-{%- if products and count>0 -%}
-  <ul data-id="{{ id }}">
+{%- if products and count>0 and id -%}
+  <ul id="product-grid" data-id="{{ id }}">
 
     {%- for product in products -%}
       <li class="grid__item">
