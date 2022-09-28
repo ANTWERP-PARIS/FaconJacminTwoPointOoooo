@@ -4,7 +4,7 @@
       "type": "main-collection-banner",
       "settings": {
         "show_collection_image": false,
-        "color_txt": "sec"
+        "color_txt": "black"
       }
     },
     "product-grid": {
