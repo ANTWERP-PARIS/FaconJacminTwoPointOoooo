@@ -11,9 +11,9 @@
       "type": "main-collection-product-grid",
       "settings": {
         "products_per_page": 24,
-        "columns_desktop": 4,
+        "columns_desktop": 5,
         "enable_filtering": true,
-        "filter_type": "horizontal",
+        "filter_type": "drawer",
         "enable_sorting": true,
         "columns_mobile": "2"
       }
