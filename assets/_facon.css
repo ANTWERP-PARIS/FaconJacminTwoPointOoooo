@@ -37,6 +37,11 @@
     margin: 0 !important;
 }
 
+*:focus, *:focus-visible, *:focus-within,
+.select__select:focus, .select__select:focus-visible, .select__select:focus-within {
+  box-shadow: none !important;
+}
+
 .col {
     padding: calc(var(--pad)) !important;
     padding-top: 0 !important;
@@ -274,43 +279,6 @@ main {
     margin: 0 !important;
 }
 
-h1.collection-hero__title {
-    margin: 30px !important;
-}
-
-.facets__wrapper {
-    padding-left: calc(var(--pad));
-    padding-right: calc(var(--pad));
-    margin-bottom: 0px;
-    margin-top: 15px;
-}
-
-.facets__form, .facets__form *, 
-.facets__form *:focus, .facets__form *:focus-visible, .facets__form *:focus-within {
-    box-shadow: none !important;
-}
-
-.active-facets.active-facets-desktop {
-    margin-top: -20px;
-    margin-bottom: 15px;
-    padding-left: calc(var(--pad));
-    padding-right: calc(var(--pad));
-}
-
-.active-facets__button-inner {
-    border: 2px solid var(--color-black);
-}
-
-.product-count__text {
-    display: none !important;
-}
-
-.facet-filters.sorting {
-    margin-top: 14px;
-}
-
-
-
 .product-grid .grid__item {
     padding-left: 0 !important;
     padding-bottom: 0 !important;
@@ -380,3 +348,11 @@ h1.collection-hero__title {
     transform: translateY(16px) !important;
 }
 
+/*
+- collecion grid cleanup, card
+- facets css - also mobile
+- propagate to otther lisings
+    - otther components homepage
+    - product page
+
+*/
