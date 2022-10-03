@@ -1,32 +1,6 @@
 {% comment %}
   USAGE
-  {% render '_title-banner', title, color, show_img, img %}
-
-
-
-
-  <ul id="product-grid" data-id="{{ section.id }}" class="
-    grid grid--2-col negative-margin product-grid
-    {% if collection.products_count < 4 %} grid--{{ collection.products_count }}-col-tablet{% else %}
-      {% if collection.products_count == 4 %} grid--4-col-desktop{% else %} grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}
-    {% endif %}">
-    {%- for product in collection.products -%}
-      <li class="grid__item">
-        {% render 'product-card',
-          product_card_product: product,
-          media_size: image_ratio,
-          show_secondary_image: show_secondary_image,
-          add_image_padding: section.settings.add_image_padding,
-          show_vendor: section.settings.show_vendor,
-          show_image_outline: section.settings.show_image_outline,
-          show_rating: section.settings.show_rating
-        %}
-      </li>
-    {%- endfor -%}
-  </ul>
-
-{% endcomment %}
-
+  {% render '_product-grid', id: section.id, products: collection.products, count: collection.products_count %}{% endcomment %}
 
 {%- if products and count>0 and id -%}
   <ul id="product-grid" data-id="{{ id }}" class="grid grid--2-col negative-margin product-grid">
@@ -34,16 +8,16 @@
     {%- for product in products -%}
       <li class="grid__item">
         {% render 'product-card',
-          product_card_product: product,
-          media_size: "portrait",
-          show_secondary_image: true,
-          add_image_padding: false,
-          show_vendor: false,
-          show_image_outline: false,
-          show_rating: false
-        %}
+           product_card_product: product,
+           media_size: "portrait",
+           show_secondary_image: true,
+           add_image_padding: false,
+           show_vendor: false,
+           show_image_outline: false,
+           show_rating: false
+         %}
       </li>
     {%- endfor -%}
-    
+
   </ul>
 {%- endif -%}
