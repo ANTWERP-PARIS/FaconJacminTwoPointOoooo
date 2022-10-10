@@ -17,9 +17,9 @@ if (!customElements.get('product-form')) {
       this.handleErrorMessage();
       this.cartNotification.setActiveElement(document.activeElement);
 
-      submitButton.setAttribute('aria-disabled', true);
-      submitButton.classList.add('loading');
-      this.querySelector('.loading-overlay__spinner').classList.remove('hidden');
+      // submitButton.setAttribute('aria-disabled', true);
+      // submitButton.classList.add('loading');
+      // this.querySelector('.loading-overlay__spinner').classList.remove('hidden');
 
       const config = fetchConfig('javascript');
       config.headers['X-Requested-With'] = 'XMLHttpRequest';
