@@ -55,12 +55,11 @@
             "share_label": "Share"
           }
         },
-        "714fee6f-4c5e-415a-9db7-c8914e99105f": {
-          "type": "shopify:\/\/apps\/esc-size-charts-size-guide\/blocks\/app-block\/daa9a1f8-04ef-4369-ae22-966a9c435d5f",
+        "ab941e19-9777-4848-9f92-bd107109a7e8": {
+          "type": "popup",
           "settings": {
-            "widget_type": "link",
-            "force_background": false,
-            "btn_text": "Size Guide"
+            "text": "Size guide",
+            "page": "size-guide-1"
           }
         }
       },
@@ -74,7 +73,7 @@
         "buy_buttons",
         "description",
         "share",
-        "714fee6f-4c5e-415a-9db7-c8914e99105f"
+        "ab941e19-9777-4848-9f92-bd107109a7e8"
       ],
       "settings": {
         "enable_sticky_info": true,
