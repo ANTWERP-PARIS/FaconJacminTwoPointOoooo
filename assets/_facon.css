@@ -129,7 +129,7 @@ b, b *, strong, strong * {
     --color-black: #000;
     --color-light: #f2f2f2;
     --color-white: #ffffff;
-    --color-foreground: var(--color-white) !important;
+    --color-foreground: rgb(255,255,255) !important;
 
 
     --color-button: var(--color-light) !important;
