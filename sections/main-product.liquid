@@ -608,10 +608,19 @@
 
 <!-- Popup styling -->
 {%- style -%}
+  .product-popup-modal {
+    display: flex;
+    align-items: center;
+  }
+
   .product-popup-modal__content {
+    position: relative;
+    display: flex;
+    
     width: 500px;
     height: auto;
 
+    margin: 0 !important;
     padding-bottom: 3rem !important;
   }
 
@@ -619,7 +628,6 @@
     padding-right: 0 !important;
   }
 {%- endstyle -%}
-
 
 
 
