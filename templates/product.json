@@ -57,6 +57,7 @@
         },
         "ab941e19-9777-4848-9f92-bd107109a7e8": {
           "type": "popup",
+          "disabled": true,
           "settings": {
             "text": "Size guide",
             "page": "size-guide-1"
