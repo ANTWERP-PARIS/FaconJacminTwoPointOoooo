@@ -2,76 +2,11 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
-      }
-    },
-    "1663697502e523bce9": {
-      "type": "image-with-text",
-      "blocks": {
-        "1663697502bf00552c-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "our story",
-            "heading_size": "display"
-          }
-        },
-        "1663697502bf00552c-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Belgian designer Alexandra Jacmin and her entrepreneur twin sister Ségolène Jacmin joined forces to establish their eco-conscious label FAÇON JACMIN. After graduating from La Cambre, Alexandra worked for Maison Martin Margiela and Jean-Paul Gaultier. <\/p><p><strong>FAÇON JACMIN is an attitude<\/strong>. <\/p><p>With their label, the twins aime to give women more confidence and empower them in their everyday life, helping to express themselves to the fullest.<\/p><p>Alexandra’s designs explore the codes of seduction, and the alliance of masculinity and femininity. If denim remains her field of predilection, other fabrics are intertwined with it, to present a playful silhouette, meddling boldness and charm – a vision for an eco-conscious, modern, desirable, and determined woman. <\/p>"
-          }
-        },
-        "8f45edc7-2d32-4146-a92c-608a9d38613c": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/AAA3652-2.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "1663697502bf00552c-0",
-        "1663697502bf00552c-1",
-        "8f45edc7-2d32-4146-a92c-608a9d38613c"
-      ],
-      "settings": {
-        "color_scheme": "white",
-        "change_slides_speed": 3,
-        "height": "text",
-        "desktop_image_width": "medium",
-        "layout": "image_first"
-      }
-    },
-    "1663699075736a53da": {
-      "type": "rich-text",
-      "blocks": {
-        "16636990750b7e9c25-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Store",
-            "heading_size": "h1"
-          }
-        },
-        "16636990750b7e9c25-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Open Monday-Saturday from 10:30 a.m to 18:00 p.m.<\/p><p><a href=\"https:\/\/goo.gl\/maps\/ciD7CYCUpYUEaveMA\"><span style=\"text-decoration:underline\">Kammenstraat 58, 2000 Antwerp<\/span><\/a><\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "16636990750b7e9c25-0",
-        "16636990750b7e9c25-1"
-      ],
-      "settings": {
-        "color_scheme": "light",
-        "txt_alignment": "center"
       }
     }
   },
   "order": [
-    "main",
-    "1663697502e523bce9",
-    "1663699075736a53da"
+    "main"
   ]
 }
