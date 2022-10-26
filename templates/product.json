@@ -55,11 +55,11 @@
             "share_label": "Share"
           }
         },
-        "e3ec2cd1-8fd6-417f-9f4d-6b885b40c701": {
+        "cd7c4b4b-093b-4968-ad17-a6351180e662": {
           "type": "popup",
           "settings": {
-            "text": "Size guide PXL",
-            "page": "size-guide-pxl"
+            "text": "Size guide Joe",
+            "page": "size-guide-joe"
           }
         }
       },
@@ -73,7 +73,7 @@
         "buy_buttons",
         "description",
         "share",
-        "e3ec2cd1-8fd6-417f-9f4d-6b885b40c701"
+        "cd7c4b4b-093b-4968-ad17-a6351180e662"
       ],
       "settings": {
         "enable_sticky_info": true,
