@@ -117,30 +117,29 @@
     },
     "166411543758c5e1bb": {
       "type": "collection-list",
-      "disabled": true,
       "blocks": {
         "1664115437a8fbb193-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "ready-to-wear"
+            "collection": "new-arrivals"
           }
         },
         "1664115437a8fbb193-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "accessories"
+            "collection": "coats-jackets"
           }
         },
         "1664115437a8fbb193-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": "dresses"
+            "collection": "bottoms"
           }
         },
-        "8e0b420e-4fba-4327-899b-9900665d28a1": {
+        "8334cf38-3a21-49a2-8a15-08cb53df4e9f": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "shirts-tops-jumpers"
           }
         }
       },
@@ -148,10 +147,10 @@
         "1664115437a8fbb193-0",
         "1664115437a8fbb193-1",
         "1664115437a8fbb193-2",
-        "8e0b420e-4fba-4327-899b-9900665d28a1"
+        "8334cf38-3a21-49a2-8a15-08cb53df4e9f"
       ],
       "settings": {
-        "title": "Collections"
+        "title": ""
       }
     }
   },
