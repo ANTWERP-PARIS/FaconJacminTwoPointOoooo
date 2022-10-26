@@ -55,11 +55,11 @@
             "share_label": "Share"
           }
         },
-        "cd7c4b4b-093b-4968-ad17-a6351180e662": {
+        "effcf45a-4e5b-4c0a-86c5-2ba295469456": {
           "type": "popup",
           "settings": {
-            "text": "Size guide Joe",
-            "page": "size-guide-joe"
+            "text": "Size guide",
+            "page": "size-guide-carel"
           }
         }
       },
@@ -73,7 +73,7 @@
         "buy_buttons",
         "description",
         "share",
-        "cd7c4b4b-093b-4968-ad17-a6351180e662"
+        "effcf45a-4e5b-4c0a-86c5-2ba295469456"
       ],
       "settings": {
         "enable_sticky_info": true,
