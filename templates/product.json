@@ -58,8 +58,8 @@
         "ab941e19-9777-4848-9f92-bd107109a7e8": {
           "type": "popup",
           "settings": {
-            "text": "Size guide",
-            "page": "size-guide-pearl"
+            "text": "Size guide PXL",
+            "page": "size-guide-pxl"
           }
         }
       },
