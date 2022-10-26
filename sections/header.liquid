@@ -135,7 +135,10 @@
 
   .cartbutton .bubble {
     background: var(--color-black);
+    color: var(--color-white);
     border-radius: 20px;
+    width: 20px;
+    height: 20px;
   }
 
 {%- endstyle -%}
@@ -572,11 +575,11 @@
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         <div class="cartbutton">
           <i class="fa-solid fa-bag-shopping"></i> 
+          <span>Checkout</span>
 
           {%- if cart.item_count < 100 -%}
             <span class="bubble" aria-hidden="true">{{ cart.item_count }}</span>
           {%- endif -%}
-          <span>Checkout</span>
         </div>
 
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
