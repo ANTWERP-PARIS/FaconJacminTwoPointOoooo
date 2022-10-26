@@ -136,10 +136,17 @@
   .cartbutton .bubble {
     background: var(--color-black);
     color: var(--color-white) !important;
+
     border-radius: 20px;
     width: 20px !important;
     height: 20px;
-    margin-left: 20px;
+
+    display: inline-block !important;
+    margin-left: 10px;
+
+    text-align: center;
+    font-size: 10px;
+    line-height: 22px;
   }
 
 {%- endstyle -%}
@@ -579,7 +586,7 @@
           <span>Checkout</span>
 
           {%- if cart.item_count < 100 -%}
-            <span class="bubble" aria-hidden="true">{{ cart.item_count }}</span>
+            <span class="bubble sml" aria-hidden="true">{{ cart.item_count }}</span>
           {%- endif -%}
         </div>
 
