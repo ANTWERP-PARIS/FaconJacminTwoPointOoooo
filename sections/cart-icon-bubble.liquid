@@ -3,7 +3,7 @@
     <i class="fa-solid fa-bag-shopping"></i> 
 
     {%- if cart.item_count < 100 -%}
-      <span aria-hidden="true">{{ cart.item_count }}</span>
+      <span class="bubble" aria-hidden="true">{{ cart.item_count }}</span>
     {%- endif -%}
     <span>Checkout</span>
   </div>

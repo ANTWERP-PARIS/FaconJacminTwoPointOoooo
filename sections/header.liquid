@@ -133,6 +133,11 @@
     margin-right: 5px;
   }  
 
+  .cartbutton .bubble {
+    background: var(--color-black);
+    border-radius: 20px;
+  }
+
 {%- endstyle -%}
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
@@ -569,7 +574,7 @@
           <i class="fa-solid fa-bag-shopping"></i> 
 
           {%- if cart.item_count < 100 -%}
-            <span aria-hidden="true">{{ cart.item_count }}</span>
+            <span class="bubble" aria-hidden="true">{{ cart.item_count }}</span>
           {%- endif -%}
           <span>Checkout</span>
         </div>
