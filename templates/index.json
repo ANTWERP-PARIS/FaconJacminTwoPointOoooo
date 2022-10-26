@@ -117,6 +117,7 @@
     },
     "166411543758c5e1bb": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "1664115437a8fbb193-0": {
           "type": "featured_collection",
@@ -150,7 +151,7 @@
         "8334cf38-3a21-49a2-8a15-08cb53df4e9f"
       ],
       "settings": {
-        "title": ""
+        "title": "Discover"
       }
     }
   },
