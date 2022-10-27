@@ -168,6 +168,12 @@
   .header__menu-item .icon.icon-caret {
     display: none;
   }
+
+  .header__menu-item:hover span {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px !important;
+  }
 {%- endstyle -%}
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
