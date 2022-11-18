@@ -54,6 +54,13 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "1183c79a-adea-4ed3-b0e2-c6905c4d94fa": {
+          "type": "popup",
+          "settings": {
+            "text": "Size guide",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -65,7 +72,8 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "1183c79a-adea-4ed3-b0e2-c6905c4d94fa"
       ],
       "settings": {
         "enable_sticky_info": true,
