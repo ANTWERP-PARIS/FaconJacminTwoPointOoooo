@@ -49,6 +49,13 @@
           "settings": {
           }
         },
+        "a3cae030-ff6e-4a2e-a9c5-7d25a3d6b973": {
+          "type": "popup",
+          "settings": {
+            "text": "Size guide",
+            "page": "size-guide-tali"
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
@@ -65,6 +72,7 @@
         "quantity_selector",
         "buy_buttons",
         "description",
+        "a3cae030-ff6e-4a2e-a9c5-7d25a3d6b973",
         "share"
       ],
       "settings": {
