@@ -49,13 +49,6 @@
           "settings": {
           }
         },
-        "effcf45a-4e5b-4c0a-86c5-2ba295469456": {
-          "type": "popup",
-          "settings": {
-            "text": "Size guide",
-            "page": "size-guide-carel"
-          }
-        },
         "share": {
           "type": "share",
           "settings": {
@@ -72,7 +65,6 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "effcf45a-4e5b-4c0a-86c5-2ba295469456",
         "share"
       ],
       "settings": {
