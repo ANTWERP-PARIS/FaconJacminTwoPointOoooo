@@ -19,8 +19,7 @@
 {%- endif -%}
 
 
-
-{{ '_product.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="{{ '_product.css' | asset_url }}">
 <script src="{{ '_product.js' | asset_url }}" defer="defer"></script>
 
 <div id="buybar"> 
