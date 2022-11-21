@@ -137,8 +137,9 @@
       --color-sec: {{ settings.color_sec }};
     }
     {% endstyle %}
+
     {{ '_facon.css' | asset_url | stylesheet_tag }}
-    {{ '_wacon.css' | asset_url | stylesheet_tag }}
+    <link rel="stylesheet" href="{{ '_wacon.css' | asset_url }}"/>
     <!-- END STYLE !-->
 
     <!-- SCRIPT !-->
