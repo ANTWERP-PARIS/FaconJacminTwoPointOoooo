@@ -600,6 +600,25 @@ figure.pip img {
       hiddenInput.value = event.currentTarget.value;
     });
   });
+
+
+  
+  $('figure.pip').each((k,v) => {
+    v = $(v);
+
+    v.mousemove((e) => {
+
+      let 
+        t = $(e.currentTarget), 
+        x, y, offsetX, offsetY;
+
+      x = Math.round(e.offsetX/t[0].offsetWidth * 100);
+      y = Math.round(e.offsetY/t[0].offsetHeight * 100);
+
+      t.css('background-position', x + '% ' + y + '%');
+    })
+  });
+
 </script>
 
 
