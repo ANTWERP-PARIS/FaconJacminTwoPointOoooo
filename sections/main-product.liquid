@@ -113,7 +113,6 @@
   <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
 
     <div class="grid__item product__media-wrapper">
-
       {%- for media in product.media -%}
         {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
       
@@ -121,8 +120,17 @@
           {% break %}
       
         {%- endunless -%}
-      {%- endfor -%}     
+      {%- endfor -%}
 
+      <span>BREAK</span>
+
+      {%- for media in product.media offset: 1 -%}
+        {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+      
+          {% render '_product-thumbnail', media: media, loop: section.settings.enable_video_looping %}
+      
+        {%- endunless -%}
+      {%- endfor -%}
     </div>
 
 
