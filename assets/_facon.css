@@ -208,6 +208,10 @@ main, .section {
     --pad: 40px;
 }
 
+#admin-bar-iframe {
+    display: none !important;
+}
+
 body, body * {
     font: 15px 'sans';
     line-height: 24px;
