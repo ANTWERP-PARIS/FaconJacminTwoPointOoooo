@@ -38,10 +38,8 @@
 
 {%- else -%}
   <div class="product__media media" style="padding-top: {{ 1 | divided_by: media.preview_image.aspect_ratio | times: 100 }}%;">
-    <figure class="pip">
-      <img class="large" src="{{ media.preview_image | img_url: 'master' }}">
-
-      <img class="default"
+    <figure class="pip" style="background-image: url({{ media.preview_image | img_url: 'master' }})">
+      <img
         srcset="{% if media.preview_image.width >= 288 %}{{ media.preview_image | img_url: '288x' }} 288w,{% endif %}
           {% if media.preview_image.width >= 576 %}{{ media.preview_image | img_url: '576x' }} 576w,{% endif %}
           {% if media.preview_image.width >= 750 %}{{ media.preview_image | img_url: '750x' }} 750w,{% endif %}

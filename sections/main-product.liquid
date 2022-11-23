@@ -44,27 +44,26 @@
   object-position: center center;
 }
 
+
+
 figure.pip {
+  background-size: auto !important;
+  background-position: 50% 50%;
   position: relative;
+  width: 100%;
   overflow: hidden;
   cursor: zoom-in;
 }
 
-figure.pip:hover .default {
+figure.pip:hover img {
   opacity: 0;
 }
 
-figure.pip .default {
+figure.pip .img {
   transition: opacity .5s;
-  
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  display: block;
+  width: 100%;
 }
-
-
 
 
 
