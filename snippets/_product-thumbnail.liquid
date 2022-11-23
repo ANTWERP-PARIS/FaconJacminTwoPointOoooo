@@ -7,6 +7,8 @@
 
 {% endcomment %}
 
+
+
 {%- if media.media_type == 'video' or media.media_type == 'external_video' -%}
   <span class="product__media-icon motion-reduce">{% render 'icon-play' %}</span>
   <div class="product__media media" style="padding-top: {{ 1 | divided_by: media.preview_image.aspect_ratio | times: 100 }}%;">
