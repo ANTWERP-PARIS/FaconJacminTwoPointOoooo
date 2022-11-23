@@ -426,7 +426,7 @@
       {%- for media in product.media offset: 1 -%}
         {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
       
-          {% render '_product-thumbnail', media: media, loop: section.settings.enable_video_looping %}
+          {% render '_product-thumbnail', media: media, loop: section.settings.enable_video_looping, pip: true %}
       
         {%- endunless -%}
       {%- endfor -%}
