@@ -49,17 +49,17 @@
           "settings": {
           }
         },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        },
         "b7289bf8-6fc6-43cf-a3c1-5927836488ac": {
           "type": "popup",
           "settings": {
             "text": "Size guide",
             "page": "size-guide-miley"
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
           }
         }
       },
@@ -72,8 +72,8 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share",
-        "b7289bf8-6fc6-43cf-a3c1-5927836488ac"
+        "b7289bf8-6fc6-43cf-a3c1-5927836488ac",
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
