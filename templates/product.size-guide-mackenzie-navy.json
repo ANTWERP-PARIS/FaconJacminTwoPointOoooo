@@ -49,6 +49,13 @@
           "settings": {
           }
         },
+        "62592a8d-ea61-461d-9078-24840a024289": {
+          "type": "popup",
+          "settings": {
+            "text": "Size guide",
+            "page": "size-guide-mackenzie-navy"
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
@@ -65,6 +72,7 @@
         "quantity_selector",
         "buy_buttons",
         "description",
+        "62592a8d-ea61-461d-9078-24840a024289",
         "share"
       ],
       "settings": {
