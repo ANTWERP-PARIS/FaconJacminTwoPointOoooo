@@ -420,7 +420,16 @@
         {%- endfor -%}
       </div>
 
-      <span>brek</span>
+
+
+      <!-- Images -->
+      {%- for media in product.media offset: 1 -%}
+        {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+      
+          {% render '_product-thumbnail', media: media, loop: section.settings.enable_video_looping %}
+      
+        {%- endunless -%}
+      {%- endfor -%}
     </div>
 
   </div>
