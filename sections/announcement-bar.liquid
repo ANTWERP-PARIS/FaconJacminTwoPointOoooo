@@ -64,6 +64,36 @@
   padding: 10px;
 }
 {% endstyle %}
+
+
+
+{% stylesheet %}
+#shopify-section-announcement-bar {
+  position: fixed !important;
+  top: 0;
+  width: 100% !important;
+  
+  z-index: 10 !important;
+}
+  
+.announcement-bar {
+  padding-top: 4px;
+  height: 34px;
+}
+
+.announcement-bar__link {
+  padding: 1px 0 0 0 !important;
+  text-decoration: none;
+}
+
+.announcement-bar__link:hover {
+  background-color: transparent !important;
+}
+
+{% endstylesheet %}
+
+
+
 <script>
 
 var elemWidth = document.getElementById('scroll-element').offsetWidth;
