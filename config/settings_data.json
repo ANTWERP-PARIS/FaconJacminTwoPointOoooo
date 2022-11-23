@@ -19,8 +19,8 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Don't miss our   **Stock Sales** \/\/ Antwerp store \/\/  14-19.11",
               "color_scheme": "sec",
+              "text": "Black Friday days starting soon... 25-27.11",
               "link": ""
             }
           },
@@ -28,8 +28,8 @@
             "type": "announcement",
             "disabled": true,
             "settings": {
-              "text": "Welcome to our store",
               "color_scheme": "accent-1",
+              "text": "Welcome to our store",
               "link": ""
             }
           },
@@ -37,8 +37,8 @@
             "type": "announcement",
             "disabled": true,
             "settings": {
-              "text": "Welcome to our store",
               "color_scheme": "accent-1",
+              "text": "Welcome to our store",
               "link": ""
             }
           }
