@@ -49,17 +49,17 @@
           "settings": {
           }
         },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        },
         "334f158b-97a0-4455-90df-c84bece1a43e": {
           "type": "popup",
           "settings": {
             "text": "Size guide",
             "page": "size-guide-vik"
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
           }
         }
       },
@@ -72,8 +72,8 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share",
-        "334f158b-97a0-4455-90df-c84bece1a43e"
+        "334f158b-97a0-4455-90df-c84bece1a43e",
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
