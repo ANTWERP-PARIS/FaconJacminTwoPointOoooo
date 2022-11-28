@@ -18,9 +18,10 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "color_scheme": "sec",
-              "text": "BLACK FRIDAY SALES \/\/   25-27 Nov midnight",
+              "text": "B",
               "link": ""
             }
           },
