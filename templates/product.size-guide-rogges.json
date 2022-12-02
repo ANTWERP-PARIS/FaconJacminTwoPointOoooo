@@ -49,17 +49,17 @@
           "settings": {
           }
         },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        },
         "d5629cf5-7d08-4f3a-b310-04f5363104d5": {
           "type": "popup",
           "settings": {
             "text": "Size guide",
             "page": "size-guide-rogge"
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
           }
         }
       },
@@ -72,8 +72,8 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share",
-        "d5629cf5-7d08-4f3a-b310-04f5363104d5"
+        "d5629cf5-7d08-4f3a-b310-04f5363104d5",
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
