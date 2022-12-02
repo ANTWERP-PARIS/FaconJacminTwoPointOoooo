@@ -562,14 +562,14 @@ figure.pip img {
 
 {%- style -%}
 /* Buybar */
-#buybar {
-  position: fixed;
-  top: auto;
-  left: 0;
-  right: 0;
-  bottom: 0;
+#buybar, #buybar.left, #buybar .right {
+  height: 79px !important;
+}
 
-  transition: bottom .4s;
+#buybar {
+  @media screen and (max-width: 750px) {
+    height: 159px !important;
+  }
 }
 
 #buybar.passed {
@@ -581,16 +581,21 @@ figure.pip img {
 }
 
 
+
+#buybar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  transition: bottom .4s;
+}
+
 #buybar.left, #buybar .right {
   width: 50%;
-  height: 79px !important;
 
   @media screen and (max-width: 750px) {
     width: 100%;
-  }
-
-  @media screen and (max-width: 750px) {
-    height: 159px !important;
   }
 }
 
