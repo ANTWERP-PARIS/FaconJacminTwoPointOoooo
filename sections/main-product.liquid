@@ -34,7 +34,7 @@
   z-index: -1;
 
   width: 50%;
-  height: calc(100vh - 110px);
+  height: calc(100vh - 80px);
 }
 
 .product .product__media-wrapper #large__media img {
@@ -535,6 +535,72 @@ figure.pip img {
     </modal-dialog>
   {%- endfor -%}
 </section>
+
+
+<!-- BUYBAR -->
+<div id="buybar" class=""> 
+  <div class="left between">
+    <div class="size"> 
+      <ul class="select"> 
+        <li>s </li>
+        <li class="out">m </li>
+        <li>l</li>
+      </ul>
+      <div class="guide">Size guide</div>
+    </div>
+    <div class="price"> 
+      <div class="amount lrg">290 EUR </div>
+      <div class="vat">Incl. VAT</div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="add display"><span>Add to Cart</span></div>
+    <div class="help"><span>Help</span><i class="fa-solid fa-comment-question"></i></div>
+  </div>
+</div>
+
+{%- style -%}
+/* Buybar */
+#buybar {
+  position: fixed;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  transition: bottom .4s;
+}
+
+#buybar.passed {
+  bottom: -80px;
+
+  @media screen and (max-width: 750px) {
+    bottom: -160px;
+  }
+}
+
+
+#buybar.left, #buybar .right {
+  width: 50%;
+  height: 79px !important;
+
+  @media screen and (max-width: 750px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 750px) {
+    height: 159px !important;
+  }
+}
+
+#buybar .left {
+  padding: 0 10px !important;
+}
+   
+{%- endstyle -%}
+
+
+
 
 
 
