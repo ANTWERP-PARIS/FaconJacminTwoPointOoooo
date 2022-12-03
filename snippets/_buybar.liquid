@@ -118,12 +118,17 @@
   justify-content: space-between;
 }
 
-#buybar .left, #buybar .left .size, #buybar .left .price {
+#buybar .left {
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
 }
 
+#buybar .left .price div {
+    text-align: right;
+    flex: none;
+    display: block;
+}
 {%- endstyle -%}
 
 
