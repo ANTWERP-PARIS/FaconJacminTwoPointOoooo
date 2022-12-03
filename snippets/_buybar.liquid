@@ -132,6 +132,14 @@
 
 #buybar .right .product-form form button {
     padding: 0 !important;
+    transition: background-color .7s !important;
+    transition: color .7s;
+}
+
+#buybar .right .product-form form button:hover,
+#buybar .right .product-form form button.flash {
+    background: var(--color-black);
+    color: var(--color-white);
 }
 {%- endstyle -%}
 
