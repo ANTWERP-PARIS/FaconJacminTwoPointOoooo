@@ -49,6 +49,9 @@
   right: 0;
   bottom: 0;
 
+  z-index: 10;
+  background: white;
+  
   transition: bottom .4s;
 }
 
@@ -69,46 +72,45 @@
 
 <!-- JS -->
 <script>
-    // Element exists
-    $.fn.alive = function() {
-        return this.length>0;
-    }
+// Element exists
+$.fn.alive = function() {
+    return this.length>0;
+}
 
-    // Element is the window
-    $.fn.isWindow = function() {
-        let
-            t = Object.prototype.toString.call(this[0]),
-            a = ['[object DOMWindow]','[object Window]','[object global]'];
+// Element is the window
+$.fn.isWindow = function() {
+    let
+        t = Object.prototype.toString.call(this[0]),
+        a = ['[object DOMWindow]','[object Window]','[object global]'];
 
-        return _.indexOf(a,t)>-1 ? true : false;
-    }
+    return _.indexOf(a,t)>-1 ? true : false;
+}
 
-    // Element is in view
-    $.fn.inView = function() {
-        let
-            t = $(this),
-            w = $(window),
+// Element is in view
+$.fn.inView = function() {
+    let
+        t = $(this),
+        w = $(window),
 
-            elt = t.offset().top,
-            elb = elt + t.outerHeight(),
-            vpt = w.scrollTop(),
-            vpb = vpt + w.height();
+        elt = t.offset().top,
+        elb = elt + t.outerHeight(),
+        vpt = w.scrollTop(),
+        vpb = vpt + w.height();
 
-        return elb > vpt && elt < vpb;
-    }
-  
+    return elb > vpt && elt < vpb;
+}
 
 
-    // Scroll logic
-    let buybar = $('#buybar');
-    $(window).on('scroll', function(e) {
-        let p = $('.product-recommendations');
-        
-        if(p.alive() && buybar.alive())
-            p.inView() ? 
-                buybar.addClass('passed') : 
-                buybar.removeClass('passed');
-    });
-    $(window).trigger('scroll');
 
+// Scroll logic
+let buybar = $('#buybar');
+$(window).on('scroll', function(e) {
+    let p = $('.product-recommendations');
+    
+    if(p.alive() && buybar.alive())
+        p.inView() ? 
+            buybar.addClass('passed') : 
+            buybar.removeClass('passed');
+});
+$(window).trigger('scroll');
 </script>
