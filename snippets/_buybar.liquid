@@ -1,5 +1,6 @@
 <!-- HTML -->
 <div id="buybar" class=""> 
+
   <div class="left between">
     <div class="size"> 
       <ul class="select"> 
@@ -14,9 +15,9 @@
       <div class="vat">Incl. VAT</div>
     </div>
   </div>
+
   <div class="right">
-    <button class="chat-button">Live Chat</button>
-    <product-form class="product-form">
+    <product-form class="product-form add display">
         <div class="product-form__error-message-wrapper" role="alert" hidden>
           <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
             <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
@@ -53,8 +54,7 @@
         {%- endform -%}
       </product-form>
 
-      <div class="add display"><span>Add to Cart</span></div>
-      <div class="help"><span>Help</span><i class="fa-solid fa-comment-question"></i></div>
+      <button class="chat-button help"><span>Help</span><i class="fa-solid fa-comment-question"></i></button>
   </div>
 </div>
 
