@@ -103,11 +103,11 @@
     const pscroll = $('.product-recommendations');
     console.log('.product-recommendations', pscroll, pscroll.alive());
 
-    if(pscroll.alive()) $(window).on('scroll', function(e) {
+    $(window).on('scroll', function(e) {
         pscroll.each((k,v) => {
             v = $(v);
 
-            console.log('SCROLL', v);
+            console.log('SCROLL', v, $('.product-recommendations'));
 
             /*
 
