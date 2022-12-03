@@ -100,31 +100,14 @@
 
 
     // Scroll logic
-    let pscroll = $('.product-recommendations');
-    console.log('.product-recommendations', pscroll, pscroll.alive(), $(window));
-
+    let buybar = $('#buybar');
     $(window).on('scroll', function(e) {
         let p = $('.product-recommendations');
-
-        console.log('SCROLL', p, p.alive());
-
-        /*
-        pscroll.each((k,v) => {
-            v = $(v);
-
-
-
-
-            let
-                perc = percScrollCalc(v),
-                frame = v.data('scroll').render({percent: perc});
-
-            perc = perc==1;
-            perc ? buybar.addClass('passed') : buybar.removeClass('passed');
-      
-
-        });      
-        */
+        
+        if(p.alive() && buybar.alive())
+            p.inView() ? 
+                buybar.addClass('passed') : 
+                buybar.removeClass('passed');
     });
     $(window).trigger('scroll');
 
