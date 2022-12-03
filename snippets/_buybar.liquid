@@ -1,0 +1,66 @@
+<div id="buybar" class=""> 
+  <div class="left between">
+    <div class="size"> 
+      <ul class="select"> 
+        <li>s </li>
+        <li class="out">m </li>
+        <li>l</li>
+      </ul>
+      <div class="guide">Size guide</div>
+    </div>
+    <div class="price"> 
+      <div class="amount lrg">290 EUR </div>
+      <div class="vat">Incl. VAT</div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="add display"><span>Add to Cart</span></div>
+    <div class="help"><span>Help</span><i class="fa-solid fa-comment-question"></i></div>
+  </div>
+</div>
+
+{%- style -%}
+/* Buybar */
+#buybar, #buybar.left, #buybar .right {
+  height: 79px !important;
+}
+
+#buybar {
+  @media screen and (max-width: 750px) {
+    height: 159px !important;
+  }
+}
+
+#buybar.passed {
+  bottom: -80px;
+
+  @media screen and (max-width: 750px) {
+    bottom: -160px;
+  }
+}
+
+
+
+#buybar {
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  transition: bottom .4s;
+}
+
+#buybar .left, #buybar .right {
+  width: 50%;
+
+  @media screen and (max-width: 750px) {
+    width: 100%;
+  }
+}
+
+#buybar .left {
+  padding: 0 10px !important;
+}
+   
+{%- endstyle -%}
