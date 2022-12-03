@@ -1,3 +1,4 @@
+<!-- HTML -->
 <div id="buybar" class=""> 
   <div class="left between">
     <div class="size"> 
@@ -19,8 +20,10 @@
   </div>
 </div>
 
+
+
+<!-- CSS -->
 {%- style -%}
-/* Buybar */
 #buybar, #buybar.left, #buybar .right {
   height: 79px !important;
 }
@@ -38,8 +41,6 @@
     bottom: -160px;
   }
 }
-
-
 
 #buybar {
   display: flex;
@@ -62,5 +63,63 @@
 #buybar .left {
   padding: 0 10px !important;
 }
-   
 {%- endstyle -%}
+
+
+
+<!-- JS -->
+<script>
+    // Element exists
+    $.fn.alive = function() {
+        return this.length>0;
+    }
+
+    // Element is the window
+    $.fn.isWindow = function() {
+        let
+            t = Object.prototype.toString.call(this[0]),
+            a = ['[object DOMWindow]','[object Window]','[object global]'];
+
+        return _.indexOf(a,t)>-1 ? true : false;
+    }
+
+    // Element is in view
+    $.fn.inView = function() {
+        let
+            t = $(this),
+            w = $(window),
+
+            elt = t.offset().top,
+            elb = elt + t.outerHeight(),
+            vpt = w.scrollTop(),
+            vpb = vpt + w.height();
+
+        return elb > vpt && elt < vpb;
+    }
+  
+
+
+    // Scroll logic
+    const pscroll = $('product-recommendations');
+
+    if(pscroll.alive()) $(window).on('scroll', function(e) {
+        pscroll.each((k,v) => {
+            v = $(v);
+
+            console.log('SCROLL', v);
+
+            /*
+
+            let
+                perc = percScrollCalc(v),
+                frame = v.data('scroll').render({percent: perc});
+
+            perc = perc==1;
+            perc ? buybar.addClass('passed') : buybar.removeClass('passed');
+            */
+
+        });
+    });
+    $(window).trigger('scroll');
+
+</script>
