@@ -15,7 +15,7 @@
     </div>
   </div>
   <div class="right">
-
+    <button class="chat-button">Live Chat</button>
     <product-form class="product-form">
         <div class="product-form__error-message-wrapper" role="alert" hidden>
           <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
@@ -151,4 +151,27 @@ $(window).on('scroll', function(e) {
             buybar.removeClass('passed');
 });
 $(window).trigger('scroll');
+
+
+
+
+(function() {
+    function onTidioChatApiReady() {
+        window.tidioChatApi.hide();
+        window.tidioChatApi.on("close", function() {
+        window.tidioChatApi.hide();
+        });
+    }
+
+    if (window.tidioChatApi) {
+        window.tidioChatApi.on("ready", onTidioChatApiReady);
+    } else {
+        document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+    }
+
+    document.querySelector(".chat-button").addEventListener("click", function() {
+        window.tidioChatApi.show();
+        window.tidioChatApi.open();
+    });
+})();
 </script>
