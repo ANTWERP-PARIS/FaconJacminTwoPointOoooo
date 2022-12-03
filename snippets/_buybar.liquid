@@ -195,6 +195,22 @@ $(window).trigger('scroll');
 
 
 
+// Call attention to ADD TO CART
+let addbtn = $('#buybar .add'),
+    wait = setTimeout(() => {
+        addbtn.addClass('flash');
+
+        wait = setTimeout(() => {
+            addbtn.removeClass('flash');
+        }, 2000);
+    }, 3000);
+
+addbtn.mouseenter(() => {
+    clearTimeout(wait);
+});
+
+
+
 // Tidio
 (function() {
     function onTidioChatApiReady() {
