@@ -187,8 +187,9 @@ addbtn.mouseenter(() => {
 let variant = $('variant-radios input[type=radio]');
 variant.change(() => {
     setTimeout(()=>{
-        const shadow = $('button.product-form__submit span').text();
-        addbtn.text(shadow);
+        const shadow = $('button.product-form__submit').attr('disabled');
+        console.log('DISABLED',shadow);
+        //addbtn.text(shadow);
     }, 500);
 });
 variant.trigger('change');
