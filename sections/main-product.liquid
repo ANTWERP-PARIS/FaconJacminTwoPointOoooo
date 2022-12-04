@@ -230,14 +230,11 @@ figure.pip img {
 
         <script>
           let descr = $('.product__description');
-
-          descr.find('h2 b').each((v,k) => {
-            console.log(k);
-            k = $(k).text()
-              .replaceAll(' ', '')
-              .toLowerCase();
-
-            console.log(k);
+          descr.find('h2 b').each((k,v) => {
+            v = $(v);
+            
+            let t = v.text().replaceAll(' ', '').toLowerCase();
+            if(t == 'description') v.parent().remove();
           });
         </script>
 
