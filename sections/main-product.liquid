@@ -229,7 +229,7 @@ figure.pip img {
 
           .product__description h2, .product__description h2 * {
             font-weight: bold !important;
-            text-decoration:
+            text-decoration: underline;
           }
         {%- endstyle -%}
 
@@ -239,7 +239,7 @@ figure.pip img {
             v = $(v);
             
             let t = v.text().replaceAll(' ', '').toLowerCase();
-            console.log(t, t == 'description');
+            console.log(t, t === 'description', `"${t}"`);
             if(t == 'description') v.parent().remove();
 
           });
