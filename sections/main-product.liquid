@@ -190,12 +190,27 @@ figure.pip img {
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
         <!-- TITLE -->
-        <div class="title">
+        <div class="producttitle">
           <h1 class="product__title" {{ block.shopify_attributes }}>{{ product.title | escape }}</h1>
           <div class="typelink">
             <a href="{{ product.type | url_for_type }}">{{ product.type | escape }}</a>
           </div>
         </div>
+
+        <style>
+          .producttitle h1 {
+            margin-bottom: 0;
+          }
+
+          .producttitle .typelink a {
+            text-transform: capitalize;
+            text-decoration: none;
+          }
+
+          .producttitle .typelink a:hover {
+            text-decoration: underline;
+          }
+        </style>
 
 
         {%- for block in section.blocks -%}
