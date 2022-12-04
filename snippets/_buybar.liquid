@@ -94,19 +94,19 @@
     flex-direction: column;
 }
 
-#buybar .right .product-form form button {
+#buybar .right .add {
     padding: 0 !important;
     transition: background-color .7s !important;
     transition: color .7s;
 }
 
-#buybar .right .product-form form button:hover,
-#buybar .right .product-form form button.flash {
+#buybar .right .add:hover,
+#buybar .right .add.flash {
     background: var(--color-black);
 }
 
-#buybar .right .product-form form button:hover *,
-#buybar .right .product-form form button.flash * {
+#buybar .right .add:hover *,
+#buybar .right .add.flash * {
     color: var(--color-white) !important;
 }
 {%- endstyle -%}
@@ -160,7 +160,7 @@ $(window).trigger('scroll');
 
 
 // Call attention to ADD TO CART
-let addbtn = $('#buybar .right .product-form form button'),
+let addbtn = $('#buybar .right .add'),
     wait = setTimeout(() => {
         addbtn.addClass('flash');
 
