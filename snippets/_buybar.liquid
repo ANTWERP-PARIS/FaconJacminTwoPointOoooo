@@ -29,7 +29,10 @@
   </div>
 
   <div class="right">     
-      <div class="add display"><span>Add to Cart</span></div>
+      <div class="add display">
+        <span class="yes">Add to Cart</span>
+        <span class="no">Sold out</span>
+      </div>
       <button class="chat-button help"><span>Help</span><i class="fa-solid fa-comment-question"></i></button>
   </div>
 </div>
@@ -94,9 +97,17 @@
 }
 
 #buybar .right .add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
     padding: 0 !important;
+
+    background: var(--color-light);
+    color: var(--color-black);
     transition: background-color .7s !important;
     transition: color .7s;
+
 }
 
 #buybar .right .add:hover,
