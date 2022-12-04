@@ -190,7 +190,7 @@ $(window).trigger('scroll');
 let 
     addbtn = $('#buybar .right .add'),
     addcart = $('product-form form button.product-form__submit'),
-    notify  = $('product-form button.product-form__submit.omnisend-bis-button'),
+    notify  = $('product-form div button.product-form__submit.omnisend-bis-button'),
     wait = setTimeout(() => {
         addbtn.addClass('flash');
 
@@ -220,7 +220,7 @@ variant.change(() => {
 variant.trigger('change');
 
 addbtn.click(() => {
-    console.log('CLICKKCKECKEKC', addcart, notify);
+    console.log('CLICKKCKECKEKC', addcart, notify, $('product-form div button.product-form__submit.omnisend-bis-button'));
 });
 
 
