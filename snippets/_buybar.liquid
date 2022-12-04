@@ -4,7 +4,15 @@
   <div class="left between">
     <div class="size"> 
       {%- if sizeguide != blank -%}
-        <div class="guide">{{ sizeguide }}</div>
+        <div class="guide">
+            {{ sizeguide.title }}
+            <a href="{{ sizeguide | url_for_type }}">{{ sizeguide | escape }}</a>
+
+            <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
+                <button id="ProductPopup-{{ block.id }}" class="product-popup-modal__button link" type="button" aria-haspopup="dialog">{{ block.settings.text | default: block.settings.page.title }}</button>
+            </modal-opener>
+            <a href="{{ block.settings.page.url }}" class="product-popup-modal__button link no-js">{{ block.settings.text }}</a>
+        </div>
       {%- endif -%}
     </div>
     <div class="price"> 
