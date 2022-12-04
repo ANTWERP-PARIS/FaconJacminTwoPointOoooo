@@ -233,11 +233,10 @@ figure.pip img {
 
           descr.find('h2 b').each((v,k) => {
             console.log(k);
-            k = k.text();
-            /*
+            k = $(k).text()
               .replaceAll(' ', '')
               .toLowerCase();
-            */
+
             console.log(k);
           });
         </script>
