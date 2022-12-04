@@ -31,7 +31,7 @@
   <div class="right">     
       <div class="add display">
         <span class="yes">Add to Cart</span>
-        <span class="no">Sold out</span>
+        <span class="no">Notify</span>
       </div>
       <button class="chat-button help"><span>Help</span><i class="fa-solid fa-comment-question"></i></button>
   </div>
@@ -95,6 +95,13 @@
 #buybar .left .price {
     flex-direction: column;
 }
+
+#buybar .left .price .price--large {
+    display: flex;
+    flex-direction: row;
+}
+
+
 
 #buybar .right .add {
     display: flex;
@@ -180,7 +187,10 @@ $(window).trigger('scroll');
 
 
 // ADD TO CART flash
-let addbtn = $('#buybar .right .add'),
+let 
+    addbtn = $('#buybar .right .add'),
+    addcart = $('product-form form button.product-form__submit'),
+    notify  = $('product-form button.product-form__submit.omnisend-bis-button'),
     wait = setTimeout(() => {
         addbtn.addClass('flash');
 
@@ -199,7 +209,7 @@ variant.change(() => {
     setTimeout(()=>{
         let 
             dis = 'disabled', 
-            state = $('button.product-form__submit').attr(dis);
+            state = addcart.attr(dis);
 
             state = state ? true : false;
             state ? 
@@ -208,6 +218,10 @@ variant.change(() => {
     }, 500);
 });
 variant.trigger('change');
+
+addbtn.click(() => {
+    console.log('CLICKKCKECKEKC', addcart, notify);
+});
 
 
 
