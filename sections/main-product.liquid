@@ -240,7 +240,7 @@ figure.pip img {
             v = $(v);
             
             console.log(v.text().toLowerCase().indexOf('description'));
-            if(t == 'description') v.parent().remove();
+            if(v.text().toLowerCase().indexOf('description')>-1) v.parent().remove();
 
           });
         </script>
