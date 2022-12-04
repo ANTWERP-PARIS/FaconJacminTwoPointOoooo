@@ -543,7 +543,7 @@ figure.pip img {
 
 
 <!-- Buybar -->
-{% render '_buybar', section: section, product: product, shop: shop, form: form %}
+{% render '_buybar', section: section, product: product, shop: shop, form: form, sizeguide: section.settings.sizeguide %}
 
 
 
@@ -1012,8 +1012,8 @@ figure.pip img {
     },
 
     {
-      "id": "sizeguide",
       "type": "page",
+      "id": "sizeguide",
       "label": "Size guide"
     }
   ]

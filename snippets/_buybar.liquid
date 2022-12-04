@@ -3,7 +3,9 @@
 
   <div class="left between">
     <div class="size"> 
-      <div class="guide">Size guide</div>
+      {%- if sizeguide != blank -%}
+        <div class="guide">{{ sizeguide }}</div>
+      {%- endif -%}
     </div>
     <div class="price"> 
         <div class="no-js-hidden" id="price-{{ section.id }}">
