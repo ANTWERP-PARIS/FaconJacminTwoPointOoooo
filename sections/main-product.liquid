@@ -239,8 +239,7 @@ figure.pip img {
           descr.find('h2 b').each((k,v) => {
             v = $(v);
             
-            let t = v.text().replaceAll(' ', '').replaceAll('"', '').toLowerCase();
-            console.log(t, t === 'description', `"${t}"`);
+            console.log(v.text().toLowerCase().indexOf('description'));
             if(t == 'description') v.parent().remove();
 
           });
