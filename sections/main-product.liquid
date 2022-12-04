@@ -214,7 +214,7 @@ figure.pip img {
           .producttitle .typelink a:hover {
             text-decoration: underline;
           }
-          {%- endstyle -%}
+        {%- endstyle -%}
 
 
 
@@ -227,9 +227,9 @@ figure.pip img {
 
         {%- style -%}
           .product__description, .product__description * {
-            font: 15px 'sans';
-            line-height: 24px;
-            letter-spacing: .5px;
+            font: 15px 'sans' !important;
+            line-height: 24px !important;
+            letter-spacing: .5px !important;
           }
         {%- endstyle -%}
 
@@ -237,7 +237,11 @@ figure.pip img {
           let descr = $('.product__description');
 
           descr.find('h2 b').each((v,k) => {
-            console.log(v,k);
+            k = k.text()
+              .replaceAll(' ', '')
+              .toLowerCase();
+
+            console.log(k);
           });
         </script>
 
