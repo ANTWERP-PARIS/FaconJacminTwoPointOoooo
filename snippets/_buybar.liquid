@@ -2,19 +2,34 @@
 <div id="buybar" class=""> 
 
   <div class="left between">
+
+    <!-- SIZE GUIDE -->
     <div class="size"> 
       {%- if sizeguide != blank -%}
         <div class="guide">
+            <!--
             {{ sizeguide.title }}
             <a href="{{ sizeguide | url_for_type }}">{{ sizeguide | escape }}</a>
-
-            <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
-                <button id="ProductPopup-{{ block.id }}" class="product-popup-modal__button link" type="button" aria-haspopup="dialog">{{ block.settings.text | default: block.settings.page.title }}</button>
+            {{ block.settings.text | default: block.settings.page.title }}
+            -->
+            <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-SIZEGUIDE">
+                <button id="ProductPopup-SIZEGUIDE" class="product-popup-modal__button link" type="button" aria-haspopup="dialog">Size Guide</button>
             </modal-opener>
             <a href="{{ block.settings.page.url }}" class="product-popup-modal__button link no-js">{{ block.settings.text }}</a>
+
+            <modal-dialog id="PopupModal-SIZEGUIDE" class="product-popup-modal">
+                <div role="dialog" aria-label="Size Guide" aria-modal="true" class="product-popup-modal__content" tabindex="-1">
+                  <button id="ModalClose-SIZEGUIDE" type="button" class="product-popup-modal__toggle" aria-label="{{ 'accessibility.close' | t }}"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+                  <div class="product-popup-modal__content-info">
+                    <h1 class="h2">{{ block.settings.page.title }}</h1>
+                    {{ block.settings.page.content }}
+                  </div>
+                </div>
+              </modal-dialog>
         </div>
       {%- endif -%}
     </div>
+
     <div class="price"> 
         <div class="no-js-hidden" id="price-{{ section.id }}">
             {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
