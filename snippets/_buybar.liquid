@@ -162,7 +162,8 @@ $(window).trigger('scroll');
 let variant = $('variant-radios input[type=radio]');
 
 variant.change(() => {
-    console.log('VARIANT CHANGE')
+    let t = $('button.product-form__submit span').text();
+    console.log('VARIANT CHANGE',t);
 });
 variant.trigger('change');
 
