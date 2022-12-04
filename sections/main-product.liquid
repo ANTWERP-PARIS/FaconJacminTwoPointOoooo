@@ -247,9 +247,12 @@ figure.pip img {
 
         <script>
           let descr = $('.product__description');
-          descr.find('h2 b').each((k,v) => {
+          descr.find('h2, h2 b').each((k,v) => {
             v = $(v);
-            if(v.text().toLowerCase().indexOf('description')>-1) v.parent().remove();
+            
+            if(v.text().toLowerCase().indexOf('description')>-1) return v.parent().remove();
+
+            console.log('PREV', v.prev());
           });
         </script>
 
@@ -410,7 +413,7 @@ figure.pip img {
 
 
 
-        <!-- SHOPIFY LOGIC -->
+        <!-- PLUGIN PLACEMENT -->
         {%- for block in section.blocks -%}
           {%- case block.type -%}
           {%- when '@app' -%}
