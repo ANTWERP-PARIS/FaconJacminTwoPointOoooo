@@ -255,7 +255,7 @@ figure.pip img {
               v.remove();
             }
             else {
-              if(v.prev().prop('nodeName').toLowerCase() == 'br') v.remove();
+              if(v.prev().prop('nodeName').toLowerCase() == 'br') v.prev().remove();
             }
           });
         </script>
