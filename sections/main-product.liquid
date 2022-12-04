@@ -201,7 +201,7 @@ figure.pip img {
           </div>
         </div>
 
-        <style>
+        {%- style -%}
           .producttitle h1 {
             margin-bottom: 0;
           }
@@ -214,7 +214,7 @@ figure.pip img {
           .producttitle .typelink a:hover {
             text-decoration: underline;
           }
-        </style>
+          {%- endstyle -%}
 
 
 
@@ -224,6 +224,22 @@ figure.pip img {
             {{ product.description }}
           </div>
         {%- endif -%}
+
+        {%- style -%}
+          .product__description, .product__description * {
+            font: 15px 'sans';
+            line-height: 24px;
+            letter-spacing: .5px;
+          }
+        {%- endstyle -%}
+
+        <script>
+          let descr = $('.product__description');
+
+          descr.find('h2 b').each((v,k) => {
+            console.log(v,k);
+          });
+        </script>
 
 
 
