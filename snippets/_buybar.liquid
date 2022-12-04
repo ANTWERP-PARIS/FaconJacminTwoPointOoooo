@@ -202,8 +202,9 @@ variant.change(() => {
             state = $('button.product-form__submit').attr(dis);
 
             state = state ? true : false;
-            console.log('DISABLED', state, dis);
-        //addbtn.text(shadow);
+            state ? 
+                addbtn.addClass(dis) : 
+                addbtn.removeClass(dis);
     }, 500);
 });
 variant.trigger('change');
