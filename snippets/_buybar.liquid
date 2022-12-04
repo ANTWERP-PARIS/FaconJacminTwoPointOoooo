@@ -15,17 +15,19 @@
             <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-SIZEGUIDE">
                 <button id="ProductPopup-SIZEGUIDE" class="product-popup-modal__button link" type="button" aria-haspopup="dialog">Size Guide</button>
             </modal-opener>
-            <a href="{{ block.settings.page.url }}" class="product-popup-modal__button link no-js">{{ block.settings.text }}</a>
 
             <modal-dialog id="PopupModal-SIZEGUIDE" class="product-popup-modal">
                 <div role="dialog" aria-label="Size Guide" aria-modal="true" class="product-popup-modal__content" tabindex="-1">
-                  <button id="ModalClose-SIZEGUIDE" type="button" class="product-popup-modal__toggle" aria-label="{{ 'accessibility.close' | t }}"><i class="fa-sharp fa-solid fa-xmark"></i></button>
-                  <div class="product-popup-modal__content-info">
-                    <h1 class="h2">{{ block.settings.page.title }}</h1>
-                    {{ block.settings.page.content }}
-                  </div>
+                    <button id="ModalClose-SIZEGUIDE" type="button" class="product-popup-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">
+                        <i class="fa-sharp fa-solid fa-xmark"></i>
+                    </button>
+                    
+                    <div class="product-popup-modal__content-info">
+                        <h1 class="h2">{{ sizeguide.title }}</h1>
+                        {{ sizeguide.content }}
+                    </div>
                 </div>
-              </modal-dialog>
+            </modal-dialog>
         </div>
       {%- endif -%}
     </div>
