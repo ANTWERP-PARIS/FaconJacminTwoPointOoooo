@@ -119,6 +119,16 @@
 #buybar .right .add.flash span * {
     color: var(--color-white) !important;
 }
+
+#buybar .right .add .no,
+#buybar .right .add.disabled .yes {
+    display: none;
+}
+
+#buybar .right .add.disabled .no {
+    display: block;
+}
+
 {%- endstyle -%}
 
 
@@ -187,8 +197,12 @@ addbtn.mouseenter(() => {
 let variant = $('variant-radios input[type=radio]');
 variant.change(() => {
     setTimeout(()=>{
-        const shadow = $('button.product-form__submit').attr('disabled');
-        console.log('DISABLED',shadow);
+        let 
+            dis = 'disabled', 
+            state = $('button.product-form__submit').attr(dis);
+
+            state = state ? true : false;
+            console.log('DISABLED', state, dis);
         //addbtn.text(shadow);
     }, 500);
 });
