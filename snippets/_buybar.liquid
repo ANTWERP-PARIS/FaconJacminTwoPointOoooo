@@ -132,17 +132,13 @@ button.product-form__submit {
     color: var(--color-white) !important;
 }
 
-#buybar .right .add span {
-    transition: opacity .7s !important;
-}
-
 #buybar .right .add .no,
 #buybar .right .add.disabled .yes {
-    opacity: 0;
+    display: none;
 }
 
 #buybar .right .add.disabled .no {
-    opacity: 1;
+    display: block;
 }
 
 {%- endstyle -%}
