@@ -132,13 +132,17 @@ button.product-form__submit {
     color: var(--color-white) !important;
 }
 
+#buybar .right .add span {
+    transition: opacity .7s !important;
+}
+
 #buybar .right .add .no,
 #buybar .right .add.disabled .yes {
-    display: none;
+    opacity: 0;
 }
 
 #buybar .right .add.disabled .no {
-    display: block;
+    opacity: 1;
 }
 
 {%- endstyle -%}
@@ -194,18 +198,21 @@ $(window).trigger('scroll');
 // ADD TO CART flash
 let 
     addbtn = $('#buybar .right .add'),
-    addcart = $('product-form form button.product-form__submit'),
-    wait = setTimeout(() => {
-        addbtn.addClass('flash');
+    addcart = $('product-form form button.product-form__submit');
 
-        wait = setTimeout(() => {
-            addbtn.removeClass('flash');
-        }, 2000);
-    }, 3000);
+/*
+let wait = setTimeout(() => {
+    addbtn.addClass('flash');
+
+    wait = setTimeout(() => {
+        addbtn.removeClass('flash');
+    }, 2000);
+}, 3000);
 
 addbtn.mouseenter(() => {
     clearTimeout(wait);
 });
+*/
 
 // ADD TO CART logic
 let 
