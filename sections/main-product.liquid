@@ -200,6 +200,9 @@ figure.pip img {
           {%- when 'title' -%}
             <h1 class="product__title" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
+              {{ product.type | escape }}
+
+              
             </h1>
           {%- when 'price' -%}
           <!-- MOVED TO BUYBAR -->
