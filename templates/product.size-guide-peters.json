@@ -10,21 +10,11 @@
             "text_style": "uppercase"
           }
         },
-        "title": {
-          "type": "title",
-          "settings": {
-          }
-        },
         "subtitle": {
           "type": "text",
           "settings": {
             "text": "{{ product.metafields.descriptors.subtitle.value }}",
             "text_style": "subtitle"
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {
           }
         },
         "variant_picker": {
@@ -49,13 +39,6 @@
           "settings": {
           }
         },
-        "d038a84d-6a1d-4cc3-bcf8-86e5d6582e7f": {
-          "type": "popup",
-          "settings": {
-            "text": "Size guide",
-            "page": "size-guide-peters"
-          }
-        },
         "share": {
           "type": "share",
           "settings": {
@@ -65,20 +48,18 @@
       },
       "block_order": [
         "vendor",
-        "title",
         "subtitle",
-        "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "description",
-        "d038a84d-6a1d-4cc3-bcf8-86e5d6582e7f",
         "share"
       ],
       "settings": {
         "enable_sticky_info": true,
         "hide_variants": false,
-        "enable_video_looping": false
+        "enable_video_looping": false,
+        "sizeguide": "size-guide-peters"
       }
     },
     "product-recommendations": {
