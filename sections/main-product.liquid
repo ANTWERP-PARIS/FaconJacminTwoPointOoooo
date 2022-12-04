@@ -235,7 +235,7 @@ figure.pip img {
             v = $(v);
             
             let t = v.text().replaceAll(' ', '').toLowerCase();
-            console.log(v, v.parent());
+            console.log(t == 'description');
             if(t == 'description') v.parent().remove();
           });
         </script>
