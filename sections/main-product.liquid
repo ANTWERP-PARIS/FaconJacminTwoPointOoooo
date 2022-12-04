@@ -250,7 +250,10 @@ figure.pip img {
           descr.find('h2, h2 b').each((k,v) => {
             v = $(v);
             
-            if(v.text().toLowerCase().indexOf('description')>-1) {v.parent().remove();}
+            if(v.text().toLowerCase().indexOf('description')>-1) {
+              if(v.attr('name') != 'h2') v = v.parent();
+              v.remove();
+            }
             else {
             
               console.log('PREV', v.prev());
