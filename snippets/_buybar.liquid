@@ -31,7 +31,7 @@
   <div class="right">     
       <div class="add display">
         <span class="yes">Add to Cart</span>
-        <span class="no">Notify</span>
+        <span class="no">Notify Restock</span>
       </div>
       <button class="chat-button help"><span>Help</span><i class="fa-solid fa-comment-question"></i></button>
   </div>
@@ -190,7 +190,6 @@ $(window).trigger('scroll');
 let 
     addbtn = $('#buybar .right .add'),
     addcart = $('product-form form button.product-form__submit'),
-    notify  = $('product-form div button.product-form__submit.omnisend-bis-button'),
     wait = setTimeout(() => {
         addbtn.addClass('flash');
 
@@ -204,23 +203,25 @@ addbtn.mouseenter(() => {
 });
 
 // ADD TO CART logic
-let variant = $('variant-radios input[type=radio]');
+let 
+    variant = $('variant-radios input[type=radio]'),
+    dis = 'disabled', state = true;
+
 variant.change(() => {
     setTimeout(()=>{
-        let 
-            dis = 'disabled', 
-            state = addcart.attr(dis);
+        state = addcart.attr(dis);
 
-            state = state ? true : false;
-            state ? 
-                addbtn.addClass(dis) : 
-                addbtn.removeClass(dis);
+        state = state ? true : false;
+        state ? 
+            addbtn.addClass(dis) : 
+            addbtn.removeClass(dis);
     }, 500);
 });
 variant.trigger('change');
 
 addbtn.click(() => {
-    console.log('CLICKKCKECKEKC', addcart, notify, $('product-form div button.product-form__submit.omnisend-bis-button'));
+    let el = state ? addcart : $('product-form div button.product-form__submit.omnisend-bis-button');
+    if(el.alive()) el.trigger('click');    
 });
 
 
