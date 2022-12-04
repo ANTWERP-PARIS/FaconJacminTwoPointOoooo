@@ -74,7 +74,7 @@ figure.pip img {
 }
 
 .product__info-container {
-  padding: calc(var(--pad)) !important;
+  padding: calc(var(--pad)) calc(var(--pad) * 2) !important;
 }
 
 
@@ -437,6 +437,7 @@ figure.pip img {
 
               {%- assign pick_up_availabilities = product.selected_or_first_available_variant.store_availabilities | where: 'pick_up_enabled', true -%}
 
+              <!-- 
               <pickup-availability class="product__pickup-availabilities no-js-hidden"
                 {% if product.selected_or_first_available_variant.available and pick_up_availabilities.size > 0 %} available{% endif %}
                 data-base-url="{{ shop.url }}{{ routes.root_url }}"
@@ -453,6 +454,7 @@ figure.pip img {
                   </pickup-availability-preview>
                 </template>
               </pickup-availability>
+              -->
             </div>
 
             <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
