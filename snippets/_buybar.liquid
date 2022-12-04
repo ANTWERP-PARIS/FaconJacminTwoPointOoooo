@@ -158,7 +158,14 @@ $(window).trigger('scroll');
 
 
 
-// Call attention to ADD TO CART
+// ADD TO CART logic
+$('variant-radios input[type=radio]').change(() => {
+    console.log('VARIANT CHANGE')
+});
+
+
+
+// ADD TO CART flash
 let addbtn = $('#buybar .right .add'),
     wait = setTimeout(() => {
         addbtn.addClass('flash');
