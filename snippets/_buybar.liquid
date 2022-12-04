@@ -220,7 +220,7 @@ variant.change(() => {
 variant.trigger('change');
 
 addbtn.click(() => {
-    let el = state ? addcart : $('product-form div button.product-form__submit.omnisend-bis-button');
+    let el = !state ? addcart : $('product-form div button.product-form__submit.omnisend-bis-button');
     if(el.alive()) el.trigger('click');    
 });
 
