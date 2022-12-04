@@ -227,6 +227,11 @@ figure.pip img {
             letter-spacing: .5px !important;
           }
 
+          .product__description p:first-child {
+            font-size: 20px !important;
+            line-height: 30px !important;
+          }
+
           .product__description h2, .product__description h2 * {
             font-weight: bold !important;
             text-transform: capitalize !important;
@@ -238,8 +243,6 @@ figure.pip img {
           let descr = $('.product__description');
           descr.find('h2 b').each((k,v) => {
             v = $(v);
-            
-            console.log(v.text(), v.text().toLowerCase().indexOf('description'));
             if(v.text().toLowerCase().indexOf('description')>-1) v.parent().remove();
 
           });
