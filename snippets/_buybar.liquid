@@ -102,12 +102,12 @@
     justify-content: center;
     align-items: center;
     padding: 0 !important;
+    cursor: pointer;
 
-    background: var(--color-light);
-    color: var(--color-black);
     transition: background-color .7s !important;
     transition: color .7s;
-
+    background: var(--color-light);
+    color: var(--color-black);
 }
 
 #buybar .right .add:hover,
@@ -115,8 +115,8 @@
     background: var(--color-black);
 }
 
-#buybar .right .add:hover *,
-#buybar .right .add.flash * {
+#buybar .right .add:hover span,
+#buybar .right .add.flash span * {
     color: var(--color-white) !important;
 }
 {%- endstyle -%}
