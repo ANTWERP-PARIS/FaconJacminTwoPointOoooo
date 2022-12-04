@@ -158,19 +158,6 @@ $(window).trigger('scroll');
 
 
 
-// ADD TO CART logic
-let variant = $('variant-radios input[type=radio]');
-
-variant.change(() => {
-    setTimeout(()=>{
-        let t = $('button.product-form__submit span').text();
-        console.log('VARIANT CHANGE',t);
-    }, 500);
-});
-variant.trigger('change');
-
-
-
 // ADD TO CART flash
 let addbtn = $('#buybar .right .add'),
     wait = setTimeout(() => {
@@ -184,6 +171,16 @@ let addbtn = $('#buybar .right .add'),
 addbtn.mouseenter(() => {
     clearTimeout(wait);
 });
+
+// ADD TO CART logic
+let variant = $('variant-radios input[type=radio]');
+variant.change(() => {
+    setTimeout(()=>{
+        const shadow = $('button.product-form__submit span').text();
+        addbtn.text(shadow);
+    }, 500);
+});
+variant.trigger('change');
 
 
 
