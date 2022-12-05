@@ -1,3 +1,8 @@
+
+
+{%- assign enable_sticky_info = false -%}
+{%- assign hide_variants = false -%}
+
 {% comment %}theme-check-disable TemplateLength{% endcomment %}
 {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
 {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
@@ -502,7 +507,7 @@ figure.pip img {
       {%- for media in product.media offset: 1 -%}
         {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
       
-          {% render '_product-thumbnail', media: media, loop: section.settings.enable_video_looping, pip: true %}
+          {% render '_product-thumbnail', media: media, loop: true, pip: true %}
       
         {%- endunless -%}
       {%- endfor -%}
@@ -519,7 +524,7 @@ figure.pip img {
         {%- liquid
           if product.selected_or_first_available_variant.featured_media != null
             assign media = product.selected_or_first_available_variant.featured_media
-            render 'product-media', media: media, loop: section.settings.enable_video_looping, variant_image: section.settings.hide_variants
+            render 'product-media', media: media, loop: true, variant_image: section.settings.hide_variants
           endif
         -%}
 
@@ -532,7 +537,7 @@ figure.pip img {
             endif
 
             unless media.id == product.selected_or_first_available_variant.featured_media.id
-              render 'product-media', media: media, loop: section.settings.enable_video_looping, variant_image: variant_image
+              render 'product-media', media: media, loop: true, variant_image: variant_image
             endunless
           -%}
         {%- endfor -%}
@@ -962,33 +967,15 @@ figure.pip img {
   ],
   "settings": [
     {
-      "type": "checkbox",
-      "id": "enable_sticky_info",
-      "default": true,
-      "label": "t:sections.main-product.settings.enable_sticky_info.label"
-    },
-    {
       "type": "header",
-      "content": "t:sections.main-product.settings.header.content",
-      "info": "t:sections.main-product.settings.header.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "hide_variants",
-      "default": false,
-      "label": "t:sections.main-product.settings.hide_variants.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "enable_video_looping",
-      "default": false,
-      "label": "t:sections.main-product.settings.enable_video_looping.label"
+      "content": "Size Guide",
+      "info": ""
     },
 
     {
       "type": "page",
       "id": "sizeguide",
-      "label": "Size guide"
+      "label": "Size guide chart"
     }
   ]
 }
