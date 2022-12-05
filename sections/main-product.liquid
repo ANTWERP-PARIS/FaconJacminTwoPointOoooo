@@ -107,8 +107,12 @@ figure.pip img {
   text-transform: uppercase;
 }
 
-.product__description h2 {
-  margin-top: 15px !important;
+.producttitle {
+  margin-bottom: 40px;
+}
+
+.product__description, .product__description h2 {
+  margin: 0 !important;
 }
 
 .product__description h2, .product__description h2 * {
@@ -231,9 +235,11 @@ figure.pip img {
             letter-spacing: .5px !important;
           }
 
-          .product__description p:first-child, .product__description p:first-child {
+          .product__description p:first-child, .product__description p:first-child * {
             font-size: 20px !important;
             line-height: 30px !important;
+
+            margin-bottom: 40px;
           }
 
           .product__description h2, .product__description h2 * {
@@ -245,20 +251,26 @@ figure.pip img {
 
         <script>
           let descr = $('.product__description');
-          descr.find('h2 b').each((k,v) => {
+          descr.find('h2, h2 b').each((k,v) => {
             v = $(v);
-            if(v.text().toLowerCase().indexOf('description')>-1) v.parent().remove();
 
+            if(v.text().toLowerCase().indexOf('description')>-1) {
+              if(v.prop('nodeName').toLowerCase() != 'h2') v = v.parent();
+              v.remove();
+            }
+            else {
+              if(v.prev().prop('nodeName').toLowerCase() == 'br') v.prev().remove();
+            }
           });
         </script>
 
 
 
+        <!-- BLOCK LOOP -->
         {%- for block in section.blocks -%}
           {%- case block.type -%}
           {%- when '@app' -%}
             {% render block %}
-
 
           {%- when 'quantity_selector' -%}
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
