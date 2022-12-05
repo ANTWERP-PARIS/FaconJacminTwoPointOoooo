@@ -270,7 +270,7 @@ figure.pip img {
           console.log('LOGGINGGNGNG');
           descr.find('p, span').each((k,v) => {
             v = $(v);
-            console.log(v, v.text().replaceAll(' ', ''));
+            console.log(v, v.text().replaceAll(' ', '').replaceAll(' ', ''));
             if(v.text().replaceAll(' ', '') == '') v.remove();
           });
         </script>
