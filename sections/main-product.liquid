@@ -277,11 +277,9 @@ form__label .form__label {
             }
           });
 
-          console.log('LOGGINGGNGNG');
           descr.find('p, span').each((k,v) => {
             v = $(v);
-            console.log(v, v.text().replaceAll(' ', '').replaceAll(' ', ''));
-            if(v.text().replaceAll(' ', '') == '') v.remove();
+            if(v.text().replaceAll(' ', '').replaceAll(' ', '') == '') v.remove();
           });
         </script>
 
