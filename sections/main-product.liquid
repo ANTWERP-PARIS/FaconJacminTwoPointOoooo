@@ -269,6 +269,7 @@ figure.pip img {
 
           descr.find('p, span').each((k,v) => {
             v = $(v);
+            console.log(v, v.text().replaceAll(' ', ''));
             if(v.text().replaceAll(' ', '') == '') v.remove();
           });
         </script>
