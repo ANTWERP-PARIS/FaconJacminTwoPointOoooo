@@ -1,5 +1,4 @@
 
-
 {%- assign enable_sticky_info = false -%}
 {%- assign hide_variants = false -%}
 
@@ -252,9 +251,16 @@ figure.pip img {
 
         <script>
           let descr = $('.product__description');
-          descr.find('h2 b').each((k,v) => {
+          descr.find('h2, h2 b').each((k,v) => {
             v = $(v);
-            if(v.text().toLowerCase().indexOf('description')>-1) v.parent().remove();
+
+            if(v.text().toLowerCase().indexOf('description')>-1) {
+              if(v.prop('nodeName').toLowerCase() != 'h2') v = v.parent();
+              v.remove();
+            }
+            else {
+              if(v.prev().prop('nodeName').toLowerCase() == 'br') v.prev().remove();
+            }
           });
         </script>
 
