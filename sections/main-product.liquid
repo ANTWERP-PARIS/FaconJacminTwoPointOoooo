@@ -1,3 +1,7 @@
+
+{%- assign enable_video_looping = true -%}
+{%- assign hide_variants = false -%}
+
 {% comment %}theme-check-disable TemplateLength{% endcomment %}
 {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
 {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
@@ -495,7 +499,7 @@ figure.pip img {
       {%- for media in product.media offset: 1 -%}
         {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
       
-          {% render '_product-thumbnail', media: media, loop: section.settings.enable_video_looping, pip: true %}
+          {% render '_product-thumbnail', media: media, loop: enable_video_looping, pip: true %}
       
         {%- endunless -%}
       {%- endfor -%}
@@ -512,20 +516,20 @@ figure.pip img {
         {%- liquid
           if product.selected_or_first_available_variant.featured_media != null
             assign media = product.selected_or_first_available_variant.featured_media
-            render 'product-media', media: media, loop: section.settings.enable_video_looping, variant_image: section.settings.hide_variants
+            render 'product-media', media: media, loop: enable_video_looping, variant_image: hide_variants
           endif
         -%}
 
         {%- for media in product.media -%}
           {%- liquid
-            if section.settings.hide_variants and variant_images contains media.src
+            if hide_variants and variant_images contains media.src
               assign variant_image = true
             else
               assign variant_image = false
             endif
 
             unless media.id == product.selected_or_first_available_variant.featured_media.id
-              render 'product-media', media: media, loop: section.settings.enable_video_looping, variant_image: variant_image
+              render 'product-media', media: media, loop: enable_video_looping, variant_image: variant_image
             endunless
           -%}
         {%- endfor -%}
