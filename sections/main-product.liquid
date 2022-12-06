@@ -284,8 +284,8 @@ variant-radios .form__label {
 
           descr.find('br').each((k,v) => {
             v = $(v);
-            console.log(v.next(), v.next().prop('nodeName').toLowerCase() == 'br');
-            if(v.next().prop('nodeName').toLowerCase() == 'br') v.next().remove();
+            console.log(v.prev(), v.prev().prop('nodeName').toLowerCase() == 'br');
+            if(v.prev().prop('nodeName').toLowerCase() == 'br') v.prev().remove();
           });
         </script>
 
