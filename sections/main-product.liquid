@@ -281,6 +281,11 @@ variant-radios .form__label {
             v = $(v);
             if(v.text().replaceAll(' ', '').replaceAll(' ', '') == '') v.remove();
           });
+
+          descr.find('br').each((k,v) => {
+            v = $(v);
+            console.log(v.next().prop('nodeName'));
+          });
         </script>
 
 
