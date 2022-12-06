@@ -161,8 +161,10 @@ variant-radios {
   margin: 0;
 }
 
-variant-radios .form__label {
+variant-radios .form__label, .product-form__quantity .form__label {
   font: 15px 'sans' !important;
+  font-weight: bold !important;
+  text-decoration: underline !important;
   line-height: 24px !important;
   letter-spacing: .5px !important;
 }
@@ -284,7 +286,6 @@ variant-radios .form__label {
 
           descr.find('br').each((k,v) => {
             v = $(v);
-            console.log(v.prev(), v.prev().prop('nodeName').toLowerCase() == 'br');
             if(v.prev().prop('nodeName').toLowerCase() == 'br') v.prev().remove();
           });
         </script>
