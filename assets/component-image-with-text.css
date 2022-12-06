@@ -1,5 +1,6 @@
 .image-with-text {
   margin-top: 5rem;
+  height: auto !important;
 }
 
 .image-with-text:not(.color-scheme-background-1) {
