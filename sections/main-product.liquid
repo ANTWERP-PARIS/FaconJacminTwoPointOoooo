@@ -79,7 +79,17 @@ figure.pip img {
 .product__info-wrapper {
   padding: 0 !important;
   max-width: 50% !important;
+  background: var(--color-white);
 }
+
+@media screen and (max-width: 750px) {
+  .product__info-wrapper {
+    max-width: 100% !important;
+    margin-top: 100vh !important;
+  }
+}
+
+
 
 .product__info-container {
   padding: calc(var(--pad)) calc(var(--pad) * 2) !important;
