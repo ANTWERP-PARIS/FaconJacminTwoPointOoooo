@@ -269,14 +269,13 @@ $(window).on('orientationchange resize', function(e) {
     wh = $(window).height();
 
   console.log((ww/iw)*ih);
+  console.log("LOLR");
+
 
   let sh = (ww =< 750) ? 100 : 200;
   //let sh = (ww =< 750) ? (ww / iw) * ih : wh - parseFloat($('main').css('margin-top'));
   show.css('height', sh);
 });
 $(window).trigger('resize');
-
-console.log("LOLR");
-
 
 {% endjavascript %}
