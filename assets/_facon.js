@@ -12,7 +12,6 @@ let
     submenu = $('header-menu'),
     main = $('main'),
 
-    slideshow = $('.slideshow'),
     textMedia = $('.image-with-text'),
     featuredCollection = $('.featured-collection-wrapper .collection__title');
 
@@ -32,10 +31,6 @@ $(window).on('orientationchange resize', function (e) {
 
     // Set Top
     setTop();
-
-    // Slideshow
-    if(slideshow.alive())
-        slideshow.css('height', $(window).height() - parseFloat(main.css('margin-top')));
 
     // Text with media
     textMedia.each((k,v) => {

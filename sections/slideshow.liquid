@@ -194,8 +194,7 @@
 
 .slideshow .imgs {
   top: 79px;
-  bottom: 0;
-  height: auto !important;
+  height: calc(100% - 79px);
   z-index: -1 !important;
 }
 
@@ -238,7 +237,8 @@
 
 {% javascript %}
 let 
-  imgs = $('.slideshow .imgs'),
+  show = $('.slideshow'),
+  imgs = show.children('.imgs'),
   autoSpeed = parseFloat(imgs.data('auto')) * 1000;
 
 imgs.each((k,v) => {
@@ -259,8 +259,18 @@ imgs.each((k,v) => {
 
 $(window).on('orientationchange resize', function(e) {
 
-  let img = imgs.find('img:first');
-  console.log($(window).width(), img.attr('width'), img.attr('height'));
+  if(!show.alive()) return;
+
+  let 
+    img = imgs.find('img:first'),
+    iw = parseFloat(img.attr('width')),
+    ih = parseFloat(img.attr('height')),
+    ww = $(window).width(),
+    wh = $(window).height(),;
+
+  console.log((iw/ww)*ih);
+  let sh = ww =< 750 ? (iw / ww) * ih : wh - parseFloat(main.css('margin-top');
+    
 });
 $(window).trigger('resize');
 
