@@ -193,7 +193,9 @@
 }
 
 .slideshow .imgs {
-  top: 0;
+  top: 79px;
+  bottom: 0;
+  height: auto !important;
   z-index: -1 !important;
 }
 
@@ -254,5 +256,15 @@ imgs.each((k,v) => {
     arrows: false
   });
 });
+
+$(window).on('orientationchange resize', function(e) {
+
+  let img = imgs.find('img:first');
+  console.log($(window).width(), img.attr('width'), img.attr('height'));
+});
+
+$(window).trigger('resize');
+
+
 {% endjavascript %}
 
