@@ -259,6 +259,9 @@ imgs.each((k,v) => {
 
 $(window).on('orientationchange resize', function(e) {
 
+  console.log(!show.alive());
+  if(!show.alive()) return;
+
   let 
     img = imgs.find('img:first'),
     iw = parseFloat(img.attr('width')),
@@ -266,12 +269,12 @@ $(window).on('orientationchange resize', function(e) {
     ww = $(window).width(),
     wh = $(window).height();
 
-  console.log((iw/ww)*ih);
+  console.log((ww/iw)*ih);
+
 
 });
 $(window).trigger('resize');
 
-console.log("LOLE");
-
+console.log("LOLR");
 
 {% endjavascript %}
