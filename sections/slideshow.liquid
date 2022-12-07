@@ -270,7 +270,8 @@ $(window).on('orientationchange resize', function(e) {
 
   console.log((ww/iw)*ih);
 
-  let sh = (ww =< 750) ? (ww / iw) * ih : wh - parseFloat($('main').css('margin-top'));
+  let sh = 200;
+  //let sh = (ww =< 750) ? (ww / iw) * ih : wh - parseFloat($('main').css('margin-top'));
   show.css('height', sh);
 });
 $(window).trigger('resize');
