@@ -257,7 +257,21 @@ imgs.each((k,v) => {
   });
 });
 
+$(window).on('orientationchange resize', function(e) {
 
+  let 
+    img = imgs.find('img:first'),
+    iw = parseFloat(img.attr('width')),
+    ih = parseFloat(img.attr('height')),
+    ww = $(window).width(),
+    wh = $(window).height(),;
+
+  console.log((iw/ww)*ih);
+
+  let sh = ww =< 750 ? (iw / ww) * ih : wh - parseFloat(main.css('margin-top');
+  show.css('height', sh);
+});
+$(window).trigger('resize');
 
 console.log("LOL");
 
