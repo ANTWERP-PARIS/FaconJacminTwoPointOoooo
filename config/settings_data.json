@@ -21,7 +21,7 @@
             "disabled": true,
             "settings": {
               "color_scheme": "sec",
-              "text": "Christmas is the air, arriving soon... Be on time and order your wishlist and gifts before Tuesday 19th Dec",
+              "text": "",
               "link": ""
             }
           },
@@ -42,12 +42,21 @@
               "text": "Welcome to our store",
               "link": ""
             }
+          },
+          "a2629253-85ee-46ff-bb14-2be652068134": {
+            "type": "announcement",
+            "settings": {
+              "color_scheme": "sec",
+              "text": "Christmas is the air, arriving soon... Be on time and order your wishlist and gifts before Tuesday 19th Dec",
+              "link": ""
+            }
           }
         },
         "block_order": [
           "announcement-bar-0",
           "96f6d972-2328-4b05-b752-66406058f456",
-          "33bb7a82-e96e-4f5d-89cf-88bf41580441"
+          "33bb7a82-e96e-4f5d-89cf-88bf41580441",
+          "a2629253-85ee-46ff-bb14-2be652068134"
         ],
         "settings": {
         }
