@@ -350,6 +350,13 @@ main {
 
 
 
+/* ANCHOR: Slider component */
+slider-component ul {
+    padding: 0 !important;
+}
+
+
+
 /* ANCHOR: Soundest form popup */
 .soundest-form-without-image-close {
     border: none;
