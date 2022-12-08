@@ -99,6 +99,10 @@ figure.pip img {
 }
 
 @media screen and (max-width: 750px) {
+  .product__info-container {
+    padding: calc(var(--pad)) calc(var(--pad)) !important;
+  }
+
   .product .product__media-wrapper {
     max-width: 100% !important;
   }
@@ -299,6 +303,25 @@ product-recommendations .grid {
 
           .product__description h2 {
             margin-top: 20px !important;
+          }
+
+          @media screen and (max-width: 750px) {
+            .product__description, .product__description * {
+              font: 12px 'sans' !important;
+              line-height: 19px !important;
+              letter-spacing: .5px !important;
+            }
+
+            .product__description p:first-child, .product__description p:first-child * {
+              font-size: 15px !important;
+              line-height: 24px !important;
+
+              margin-bottom: 40px;
+            }
+
+            .product__description h2 {
+              margin-top: 10px !important;
+            }
           }
 
           .product__description h2, .product__description h2 * {
