@@ -300,6 +300,7 @@ variant.trigger('change');
 
 addbtn.click(() => {
     let el = !state ? addcart : $('a.omnisend-form-639489a62e79e5c523763ceb-teaser-btn');
+    console.log(el);
     // WAS: $('product-form div button.product-form__submit.omnisend-bis-button');
     if(el.alive()) el.trigger('click');    
 });
