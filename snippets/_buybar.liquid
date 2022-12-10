@@ -66,7 +66,8 @@
 
 <!-- CSS -->
 {%- style -%}
-button.product-form__submit {
+button.product-form__submit,
+a.omnisend-form-639489a62e79e5c523763ceb-teaser-btn {
     display: none !important;
 }
 
@@ -298,10 +299,10 @@ variant.change(() => {
 variant.trigger('change');
 
 addbtn.click(() => {
-    let el = !state ? addcart : $('product-form div button.product-form__submit.omnisend-bis-button');
+    let el = !state ? addcart : $('a.omnisend-form-639489a62e79e5c523763ceb-teaser-btn');
+    // WAS: $('product-form div button.product-form__submit.omnisend-bis-button');
     if(el.alive()) el.trigger('click');    
 });
-
 
 
 // Tidio
