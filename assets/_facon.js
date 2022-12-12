@@ -11,6 +11,8 @@ let
     head = $('#shopify-section-header'),
     submenu = $('header-menu'),
     main = $('main'),
+    buybar = $('#buybar'),
+    largemedia = $('#large__media'),
 
     textMedia = $('.image-with-text'),
     featuredCollection = $('.featured-collection-wrapper .collection__title');
@@ -52,9 +54,7 @@ $(window).on('orientationchange resize', function (e) {
 
         v.height(vh);
         imgs.height(vh);
-    });
-
-    
+    });  
 
     // Trigger scroll
     $(window).trigger('scroll');
@@ -73,6 +73,13 @@ function setTop() {
 
     main.css('margin-top', h);
     featuredCollection.css('top', h);
+
+    largemedia.css({
+        'top': h,
+        'bottom': 200
+    });
+
+
 }
 
 
