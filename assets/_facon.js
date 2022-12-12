@@ -11,10 +11,10 @@ let
     head = $('#shopify-section-header'),
     submenu = $('header-menu'),
     main = $('main'),
-    buybar = $('#buybar'),
+    buybardiv = $('#buybar'),
     largemedia = $('#large__media'),
 
-    textMedia = $('.image-with-text'),
+    textMedia = $('.image-with-tefxt'),
     featuredCollection = $('.featured-collection-wrapper .collection__title');
 
 
@@ -79,7 +79,7 @@ function setTop() {
         'bottom': 200
     });
 
-
+    //buybardiv
 }
 
 
