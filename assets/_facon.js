@@ -17,6 +17,7 @@ let
     largew = largeimg.attr('width'),
     largeh = largeimg.attr('height'),
     left = [$('#buybar .left'), $('.grid__item.product__media-wrapper'), largemedia],
+    right = [$('#buybar .right'), $('.product__info-wrapper.grid__item')],
 
     textMedia = $('.image-with-tefxt'),
     featuredCollection = $('.featured-collection-wrapper .collection__title');
@@ -40,17 +41,18 @@ $(window).on('orientationchange resize', function (e) {
 
     // Large media on product page
     const 
-        ww = $(window).width()/2,
+        ww = $(window).width(),
         iw = (largeimg.height()/largeh) * largew;
 
-    const tw = ww>iw ? iw : ww;
-    console.log('TARGET', tw);
+    const 
+        tw = ww/2>iw ? iw : ww/2,
+        tv = ww-tw;
 
     left[0].width(tw - parseFloat(left[0].css('padding-left')) - parseFloat(left[0].css('padding-right')));
     left[1].css('max-width', tw);
     left[2].css('max-width', tw);
-
-
+    right[0].css('max-width', tv);
+    right[1].css('max-width', tv);
 
 
 
