@@ -47,7 +47,7 @@ $(window).on('orientationchange resize', function (e) {
     console.log('TARGET', tw);
 
     for(let l of left) console.log(l);
-    for(let l of left) l.width(tw - parseFloat(l.css('padding-left')) - parseFloat(l.css('padding-right')));
+    for(let l of left) l.css('max-width', tw - parseFloat(l.css('padding-left')) - parseFloat(l.css('padding-right')));
 
 
 
