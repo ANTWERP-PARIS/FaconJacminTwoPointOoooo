@@ -16,7 +16,7 @@ let
     largeimg = largemedia.children('img'),
     largew = largeimg.attr('width'),
     largeh = largeimg.attr('height'),
-    left = [$('#buybar .left'), largemedia],
+    left = [$('#buybar .left'), $('.grid__item.product__media-wrapper'), largemedia],
 
     textMedia = $('.image-with-tefxt'),
     featuredCollection = $('.featured-collection-wrapper .collection__title');
