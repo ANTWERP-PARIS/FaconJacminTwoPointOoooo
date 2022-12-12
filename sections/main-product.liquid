@@ -266,6 +266,23 @@ product-recommendations .grid {
         
           {%- endunless -%}
         {%- endfor -%}
+
+        
+
+        {%- style -%}
+
+        {%- endstyle -%}
+
+        <script>
+          let 
+            el = {
+              announce: $('#shopify-section-announcement-bar'),
+              header: $('.header-wrapper'),
+              buybar: $('#buybar')
+            };
+
+          console.log('ELS',el);
+        </script>
       </div>
     </div>
 
