@@ -44,15 +44,19 @@ $(window).on('orientationchange resize', function (e) {
         ww = $(window).width(),
         iw = (largeimg.height()/largeh) * largew;
 
-    const 
-        tw = ww/2>iw ? iw : ww/2,
-        tv = ww-tw;
+    if(ww>750) {
+        const 
+            tw = ww/2>iw ? iw : ww/2,
+            tv = ww-tw;
 
-    left[0].width(tw - parseFloat(left[0].css('padding-left')) - parseFloat(left[0].css('padding-right')));
-    left[1].css('max-width', tw);
-    left[2].css('max-width', tw);
-    right[0].css('width', tv);
-    right[1].css('width', tv);
+        left[0].width(tw - parseFloat(left[0].css('padding-left')) - parseFloat(left[0].css('padding-right')));
+        left[1].css('max-width', tw);
+        left[2].css('max-width', tw);
+        right[0].css('width', tv);
+        right[1].css('width', tv);
+    }
+
+
 
 
 
