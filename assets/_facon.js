@@ -105,5 +105,3 @@ function setTop() {
     featuredCollection.css('top', h);
     largeimg.css('top', h);
 }
-
-
