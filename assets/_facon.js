@@ -11,7 +11,6 @@ let
     head = $('#shopify-section-header'),
     submenu = $('header-menu'),
     main = $('main'),
-    buybardiv = $('#buybar'),
     largemedia = $('#large__media'),
 
     textMedia = $('.image-with-tefxt'),
@@ -73,13 +72,7 @@ function setTop() {
 
     main.css('margin-top', h);
     featuredCollection.css('top', h);
-
-    largemedia.css({
-        'top': h,
-        'bottom': 200
-    });
-
-    //buybardiv
+    largemedia.css('top', h);
 }
 
 
