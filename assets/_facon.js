@@ -41,7 +41,7 @@ $(window).on('orientationchange resize', function (e) {
     const w = $(window).width()/2;
 
 
-    console.log('WIDTH', (largeimg.height()/largeh) * largew);
+    console.log('IMG WIDTH', (largeimg.height()/largeh) * largew);
     console.log('MAX WIDTH', w);
 
 
