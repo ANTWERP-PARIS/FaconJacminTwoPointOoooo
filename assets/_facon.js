@@ -72,7 +72,6 @@ function setTop() {
 
     main.css('margin-top', h);
     featuredCollection.css('top', h);
-    largemedia.css('top', h);
 }
 
 
