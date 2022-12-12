@@ -11,6 +11,7 @@ let
     head = $('#shopify-section-header'),
     submenu = $('header-menu'),
     main = $('main'),
+    largemedia = $('#large__media'),
 
     textMedia = $('.image-with-tefxt'),
     featuredCollection = $('.featured-collection-wrapper .collection__title');
@@ -31,6 +32,11 @@ $(window).on('orientationchange resize', function (e) {
 
     // Set Top
     setTop();
+
+    // Large media on product page
+    //largemedia
+
+
 
     // Text with media
     textMedia.each((k,v) => {
