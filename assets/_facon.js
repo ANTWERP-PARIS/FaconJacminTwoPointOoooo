@@ -103,5 +103,5 @@ function setTop() {
 
     main.css('margin-top', h);
     featuredCollection.css('top', h);
-    largeimg.css('top', h);
+    largemedia.css('top', h);
 }
