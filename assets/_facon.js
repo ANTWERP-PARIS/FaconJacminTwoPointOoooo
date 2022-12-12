@@ -11,7 +11,11 @@ let
     head = $('#shopify-section-header'),
     submenu = $('header-menu'),
     main = $('main'),
+
     largemedia = $('#large__media'),
+    largeimg = largemedia.children('img'),
+    largew = largeimg.attr('width'),
+    largeh = largeimg.attr('height'),
 
     textMedia = $('.image-with-tefxt'),
     featuredCollection = $('.featured-collection-wrapper .collection__title');
@@ -35,6 +39,13 @@ $(window).on('orientationchange resize', function (e) {
 
     // Large media on product page
     //largemedia
+    /*!SECTION
+    largeimg = largemedia.children('img'),
+    largew = largeimg.attr('width'),
+    largeh = largeimg.attr('height')
+    */
+
+    console.log(largeimg, largew, largeh);
 
 
 
