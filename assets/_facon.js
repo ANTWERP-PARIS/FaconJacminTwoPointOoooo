@@ -16,6 +16,7 @@ let
     largeimg = largemedia.children('img'),
     largew = largeimg.attr('width'),
     largeh = largeimg.attr('height'),
+    left = [$('#buybar .left'), largeimg],
 
     textMedia = $('.image-with-tefxt'),
     featuredCollection = $('.featured-collection-wrapper .collection__title');
@@ -44,6 +45,9 @@ $(window).on('orientationchange resize', function (e) {
 
     const tw = ww>iw ? iw : ww;
     console.log('TARGET', tw);
+
+    for(let l of left) console.log(l);
+    for(let l of left) l.width(tw);
 
 
 
