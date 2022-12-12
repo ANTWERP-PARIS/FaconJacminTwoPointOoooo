@@ -58,8 +58,8 @@ $(window).on('orientationchange resize', function (e) {
 
     else {
         left[0].width('100%');
-        left[1].css('max-width', '100%');
-        left[2].css('max-width', '100%');
+        left[1].css('max-width', 'none');
+        left[2].css('max-width', 'none');
         right[0].css('width', '100%');
         right[1].css('width', '100%');
     }
