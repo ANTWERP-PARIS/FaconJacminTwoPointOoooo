@@ -38,24 +38,14 @@ $(window).on('orientationchange resize', function (e) {
     setTop();
 
     // Large media on product page
-    const w = $(window).width()/2;
+    const 
+        ww = $(window).width()/2,
+        iw = (largeimg.height()/largeh) * largew;
+
+    const tw = ww>iw ? iw : ww;
+    console.log('TARGET', tw);
 
 
-    console.log('IMG WIDTH', (largeimg.height()/largeh) * largew);
-    console.log('MAX WIDTH', w);
-
-
-
-    //largemedia
-    /*!SECTION
-    largeimg = largemedia.children('img'),
-    largew = largeimg.attr('width'),
-    largeh = largeimg.attr('height')
-    */
-   
-    
-
-    console.log(largeimg, largeimg.height(), largew, largeh, w/2);
 
 
 
