@@ -51,8 +51,8 @@ $(window).on('orientationchange resize', function (e) {
     left[0].width(tw - parseFloat(left[0].css('padding-left')) - parseFloat(left[0].css('padding-right')));
     left[1].css('max-width', tw);
     left[2].css('max-width', tw);
-    right[0].css('max-width', tv);
-    right[1].css('max-width', tv);
+    right[0].css('width', tv);
+    right[1].css('width', tv);
 
 
 
