@@ -6,7 +6,7 @@
         "1663621055723bf94a-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Facon_Jacmin_AW22_Black_Moon_denim.jpg"
+            "image": "shopify:\/\/shop_images\/test_homepage.jpg"
           }
         },
         "1663621055723bf94a-1": {
@@ -22,7 +22,7 @@
       ],
       "settings": {
         "change_slides_speed": 5,
-        "color_overlay": "sec",
+        "color_overlay": "white",
         "overlay": "logo",
         "overlay_text": "New Collections",
         "link": "",
