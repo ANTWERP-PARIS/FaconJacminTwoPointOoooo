@@ -23,8 +23,8 @@
       "settings": {
         "change_slides_speed": 5,
         "color_overlay": "white",
-        "overlay": "logo",
-        "overlay_text": "New Collections",
+        "overlay": "text",
+        "overlay_text": "",
         "link": "",
         "window": "_self"
       }
