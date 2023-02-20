@@ -136,6 +136,13 @@
             "collection": "bottoms"
           }
         },
+        "361f3941-734f-43e0-8bcc-af76811e78f7": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": ""
+          }
+        },
         "8334cf38-3a21-49a2-8a15-08cb53df4e9f": {
           "type": "featured_collection",
           "settings": {
@@ -147,6 +154,7 @@
         "1664115437a8fbb193-0",
         "1664115437a8fbb193-1",
         "1664115437a8fbb193-2",
+        "361f3941-734f-43e0-8bcc-af76811e78f7",
         "8334cf38-3a21-49a2-8a15-08cb53df4e9f"
       ],
       "settings": {
