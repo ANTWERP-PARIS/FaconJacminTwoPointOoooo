@@ -5,20 +5,29 @@
       "blocks": {
         "1663621055723bf94a-0": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/test_homepage.jpg"
           }
         },
         "1663621055723bf94a-1": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/landscape_pic_retouched_for_homepage_bag_campaign.jpg"
+          }
+        },
+        "f2d7593c-9791-482d-adf3-d3aaca31485e": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/FACON_JACMIN4766_2_1.jpg"
           }
         }
       },
       "block_order": [
         "1663621055723bf94a-0",
-        "1663621055723bf94a-1"
+        "1663621055723bf94a-1",
+        "f2d7593c-9791-482d-adf3-d3aaca31485e"
       ],
       "settings": {
         "change_slides_speed": 5,
