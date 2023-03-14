@@ -163,11 +163,9 @@
                 >
             {%- endif -%}
 
-            {{ block.type }}
-            {{ block.name }}
-            {{ block.limit }}
-
-  
+            <script>
+              console.log( {{ variable | json }} );
+            </script>
 
         {%- endfor -%}
     </div>
