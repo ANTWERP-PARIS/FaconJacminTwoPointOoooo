@@ -161,6 +161,10 @@
                   height="{{ block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round }}"
                 >
             {%- endif -%}
+
+            {%- if block.settings.video -%}
+              VIDEO
+          {%- endif -%}
         {%- endfor -%}
     </div>
 
