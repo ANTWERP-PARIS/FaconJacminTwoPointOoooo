@@ -43,6 +43,10 @@
                       data-height="{{ block.settings.image.height }}"
                     >
                 {%- endif -%}
+
+                {%- if block.settings.video -%}
+                  {{ block.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false }}
+                {%- endif -%}
             {%- endfor -%}
         </div>
       </div>
@@ -213,6 +217,19 @@ txtimgs.each((k,v) => {
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        }
+      ]
+    },
+
+    {
+      "type": "video",
+      "name": "Video slide",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video"
         }
       ]
     },
