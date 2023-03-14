@@ -164,9 +164,7 @@
             {%- endif -%}
   
             {%- if block.settings.video -%}
-                <video autoplay loop muted playsinline>
-                    <source src="{{ block.settings.video }}" type="video/mp4">
-                </video>
+              {{ block.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false }}
             {%- endif -%}
         {%- endfor -%}
     </div>
