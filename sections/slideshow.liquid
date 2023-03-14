@@ -163,10 +163,11 @@
                 >
             {%- endif -%}
 
-            {%- for lol in block -%}
-              {{ lol }}
-            {%- endfor -%}
+            {{ block.type }}
+            {{ block.name }}
+            {{ block.limit }}
 
+  
 
         {%- endfor -%}
     </div>
