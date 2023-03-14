@@ -217,12 +217,15 @@
 }
 
 .slideshow .imgs {
+  display: flex;
+  justify-content: center;
+
   top: 82px;
   height: calc(100% - 79px);
   z-index: -1 !important;
 }
 
-.slideshow .imgs img {
+.slideshow .imgs img, .slideshow .imgs video {
   object-fit: cover;
 }
 
