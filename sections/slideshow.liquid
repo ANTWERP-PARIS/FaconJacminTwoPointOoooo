@@ -214,8 +214,6 @@
 }
 .slick-list, .slick-track, .slick-slide div {
   height: 100% !important;
-  display: flex;
-  justify-content: center;
 }
 
 .slideshow .imgs {
@@ -227,6 +225,13 @@
 .slideshow .imgs img, .slideshow .imgs video {
   object-fit: cover;
 }
+
+.slideshow .imgs video {
+  display: block !important;
+  margin: auto !important;
+}
+
+
 
 .slideshow .overlay {
   z-index: 1 !important;
