@@ -163,25 +163,9 @@
                 >
             {%- endif -%}
 
-            {{ block.settings.video }}
-            {{ block.settings.video.alt }}
-            {{ block.settings.video.aspect_ratio }}
-            {{ block.settings.video.duration }}
-            {{ block.settings.video.media_type }}
-            {{ block.settings.video.preview_image }}
-            {{ block.settings.video.sources }}
-
-            <div class="video">
-              {%- if block.settings.video -%}
-                {{ block.settings.video }}
-                {{ block.settings.video.alt }}
-                {{ block.settings.video.aspect_ratio }}
-                {{ block.settings.video.duration }}
-                {{ block.settings.video.media_type }}
-                {{ block.settings.video.preview_image }}
-                {{ block.settings.video.sources }}
-              {%- endif -%}
-            </div>
+            {%- for lol in block -%}
+              {{ lol }}
+            {%- endfor -%}
 
 
         {%- endfor -%}
