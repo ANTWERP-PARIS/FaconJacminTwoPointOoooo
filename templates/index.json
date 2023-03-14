@@ -80,7 +80,6 @@
     },
     "1663696698757930c7": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "16636966986677d4e6-0": {
           "type": "heading",
@@ -97,15 +96,23 @@
         },
         "2d8b17ac-2669-4a3a-8e10-d60fee411a9e": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/AAA3652-2.jpg"
+          }
+        },
+        "390b770a-3822-4c5e-b404-ca79ca46cb95": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/FJ SS23 VIDEO.mp4"
           }
         }
       },
       "block_order": [
         "16636966986677d4e6-0",
         "16636966986677d4e6-1",
-        "2d8b17ac-2669-4a3a-8e10-d60fee411a9e"
+        "2d8b17ac-2669-4a3a-8e10-d60fee411a9e",
+        "390b770a-3822-4c5e-b404-ca79ca46cb95"
       ],
       "settings": {
         "color_scheme": "white",
