@@ -142,7 +142,6 @@
 <div class="slideshow">
     <div class="imgs fix" data-auto="{{ section.settings.change_slides_speed }}">
         {%- for block in section.blocks -%}
-            <div>{% block.settings %}</div>
 
             {%- if block.settings.image -%}
                 <img
@@ -164,9 +163,27 @@
                 >
             {%- endif -%}
 
-            {%- if block.settings.video -%}
-              VIDEO
-          {%- endif -%}
+            {{ block.settings.video }}
+            {{ block.settings.video.alt }}
+            {{ block.settings.video.aspect_ratio }}
+            {{ block.settings.video.duration }}
+            {{ block.settings.video.media_type }}
+            {{ block.settings.video.preview_image }}
+            {{ block.settings.video.sources }}
+
+            <div class="video">
+              {%- if block.settings.video -%}
+                {{ block.settings.video }}
+                {{ block.settings.video.alt }}
+                {{ block.settings.video.aspect_ratio }}
+                {{ block.settings.video.duration }}
+                {{ block.settings.video.media_type }}
+                {{ block.settings.video.preview_image }}
+                {{ block.settings.video.sources }}
+              {%- endif -%}
+            </div>
+
+
         {%- endfor -%}
     </div>
 
