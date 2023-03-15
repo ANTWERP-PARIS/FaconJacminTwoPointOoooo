@@ -80,6 +80,7 @@
     },
     "1663696698757930c7": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "390b770a-3822-4c5e-b404-ca79ca46cb95": {
           "type": "video",
