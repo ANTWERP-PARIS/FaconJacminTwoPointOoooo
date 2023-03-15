@@ -12,7 +12,7 @@
 {%- endstyle -%}
 
 {%- for block in section.blocks -%}
-  {%- if block.settings.image -%}
+  {%- if block.settings.image || block.settings.video -%}
     {% assign has_images = true %}
   {%- endif -%}
 {%- endfor -%}
@@ -51,6 +51,8 @@
         </div>
       </div>
     {%- endif -%}
+
+
 
     <div class="image-with-text__text-item grid__item">
       <div id="ImageWithText--{{ section.id }}" class="image-with-text__content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} gradient color-{{ section.settings.color_scheme }} content-container">
