@@ -12,7 +12,10 @@
 {%- endstyle -%}
 
 {%- for block in section.blocks -%}
-  {%- if block.settings.image || block.settings.video -%}
+  {%- if block.settings.image -%}
+    {% assign has_images = true %}
+  {%- endif -%}
+  {%- if block.settings.video -%}
     {% assign has_images = true %}
   {%- endif -%}
 {%- endfor -%}
