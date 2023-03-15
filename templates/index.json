@@ -27,7 +27,7 @@
         "128b5c35-224a-4483-bd84-cbe19a6c38ff": {
           "type": "video",
           "settings": {
-            "video": "shopify:\/\/files\/videos\/FACON_JACMIN_SS21.mov"
+            "video": "shopify:\/\/files\/videos\/FJ SS23 VIDEO.mp4"
           }
         }
       },
@@ -44,38 +44,6 @@
         "overlay_text": "",
         "link": "",
         "window": "_self"
-      }
-    },
-    "16636963511a304028": {
-      "type": "newsletter",
-      "disabled": true,
-      "blocks": {
-        "1663696351d9649a37-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Subscribe to our emails"
-          }
-        },
-        "1663696351d9649a37-1": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
-          }
-        },
-        "1663696351d9649a37-2": {
-          "type": "email_form",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "1663696351d9649a37-0",
-        "1663696351d9649a37-1",
-        "1663696351d9649a37-2"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
       }
     },
     "1663696698757930c7": {
@@ -121,6 +89,38 @@
         "height": "text",
         "desktop_image_width": "medium",
         "layout": "image_first"
+      }
+    },
+    "16636963511a304028": {
+      "type": "newsletter",
+      "disabled": true,
+      "blocks": {
+        "1663696351d9649a37-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails"
+          }
+        },
+        "1663696351d9649a37-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "1663696351d9649a37-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "1663696351d9649a37-0",
+        "1663696351d9649a37-1",
+        "1663696351d9649a37-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
       }
     },
     "1663702785e6fc99ac": {
@@ -189,8 +189,8 @@
   },
   "order": [
     "1663621055e602879d",
-    "16636963511a304028",
     "1663696698757930c7",
+    "16636963511a304028",
     "1663702785e6fc99ac",
     "166411543758c5e1bb"
   ]
