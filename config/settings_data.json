@@ -45,10 +45,17 @@
           },
           "a2629253-85ee-46ff-bb14-2be652068134": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "color_scheme": "sec",
-              "text": "WINTER SALE is live! ..... Enjoy up to 50%......WINTER SALE is live! ..... Enjoy up to 50% ..... WINTER SALE is live! ..... Enjoy up to 50% ..... WINTER SALE is live! ..... Enjoy up to 50% ..... WINTER SALE is live! ..... Enjoy up to 50% ..... WINTER SALE is live! ..... Enjoy up to 50%",
+              "text": "STOCK SALE ALERT !!    8-13 MAY ANTWERP  ........STOCK SALE ALERT !!    8-13 MAY ANTWERP  ........STOCK SALE ALERT !!    8-13 MAY ANTWERP  ........",
+              "link": ""
+            }
+          },
+          "2d737ef4-feae-4da0-8248-73ce39b21ca2": {
+            "type": "announcement",
+            "settings": {
+              "color_scheme": "sec",
+              "text": "Welcome to our store",
               "link": ""
             }
           }
@@ -57,7 +64,8 @@
           "announcement-bar-0",
           "96f6d972-2328-4b05-b752-66406058f456",
           "33bb7a82-e96e-4f5d-89cf-88bf41580441",
-          "a2629253-85ee-46ff-bb14-2be652068134"
+          "a2629253-85ee-46ff-bb14-2be652068134",
+          "2d737ef4-feae-4da0-8248-73ce39b21ca2"
         ],
         "settings": {
         }
