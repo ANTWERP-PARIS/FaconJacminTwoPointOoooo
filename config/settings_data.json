@@ -1,5 +1,6 @@
 {
   "current": {
+    "color_sec": "#83f2de",
     "colors_solid_button_labels": "#FFFFFF",
     "colors_accent_1": "#0e2163",
     "colors_accent_2": "#08174b",
@@ -47,12 +48,13 @@
             "type": "announcement",
             "settings": {
               "color_scheme": "sec",
-              "text": "STOCK SALE ALERT !!    8-13 MAY ANTWERP  ........STOCK SALE ALERT !!    8-13 MAY ANTWERP  ........STOCK SALE ALERT !!    8-13 MAY ANTWERP  ........",
+              "text": "STOCK SALE ALERT !!    8-13 MAY ANTWERP  ........STOCK SALE ALERT !!    8-13 MAY ANTWERP  ........STOCK SALE ALERT !!    8-13 MAY ANTWERP  .....",
               "link": ""
             }
           },
           "2d737ef4-feae-4da0-8248-73ce39b21ca2": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "color_scheme": "sec",
               "text": "Welcome to our store",
