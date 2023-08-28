@@ -26,8 +26,15 @@
         },
         "128b5c35-224a-4483-bd84-cbe19a6c38ff": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "video": "shopify:\/\/files\/videos\/FJ SS23 VIDEO.mp4"
+          }
+        },
+        "3be4bec0-c871-4c87-bcfe-589e7794fd35": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Home_page_AW23-24_option_1.jpg"
           }
         }
       },
@@ -35,7 +42,8 @@
         "1663621055723bf94a-0",
         "1663621055723bf94a-1",
         "f2d7593c-9791-482d-adf3-d3aaca31485e",
-        "128b5c35-224a-4483-bd84-cbe19a6c38ff"
+        "128b5c35-224a-4483-bd84-cbe19a6c38ff",
+        "3be4bec0-c871-4c87-bcfe-589e7794fd35"
       ],
       "settings": {
         "change_slides_speed": 5,
@@ -48,7 +56,6 @@
     },
     "1663696698757930c7": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "390b770a-3822-4c5e-b404-ca79ca46cb95": {
           "type": "video",
@@ -83,6 +90,7 @@
         "16636966986677d4e6-1",
         "2d8b17ac-2669-4a3a-8e10-d60fee411a9e"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "white",
         "change_slides_speed": 5,
@@ -93,7 +101,6 @@
     },
     "16636963511a304028": {
       "type": "newsletter",
-      "disabled": true,
       "blocks": {
         "1663696351d9649a37-0": {
           "type": "heading",
@@ -118,6 +125,7 @@
         "1663696351d9649a37-1",
         "1663696351d9649a37-2"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "background-1",
         "full_width": true
