@@ -26,13 +26,13 @@
         },
         "128b5c35-224a-4483-bd84-cbe19a6c38ff": {
           "type": "video",
-          "disabled": true,
           "settings": {
             "video": "shopify:\/\/files\/videos\/FJ SS23 VIDEO.mp4"
           }
         },
         "3be4bec0-c871-4c87-bcfe-589e7794fd35": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Home_page_AW23-24_option_1.jpg"
           }
