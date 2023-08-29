@@ -26,6 +26,7 @@
         },
         "128b5c35-224a-4483-bd84-cbe19a6c38ff": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "video": "shopify:\/\/files\/videos\/FJ SS23 VIDEO.mp4"
           }
@@ -36,6 +37,12 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Home_page_3.jpg"
           }
+        },
+        "547c51b8-5881-4397-931c-06ef8b73cdfb": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Home_page_AW23-24_option_1.jpg"
+          }
         }
       },
       "block_order": [
@@ -43,7 +50,8 @@
         "1663621055723bf94a-1",
         "f2d7593c-9791-482d-adf3-d3aaca31485e",
         "128b5c35-224a-4483-bd84-cbe19a6c38ff",
-        "3be4bec0-c871-4c87-bcfe-589e7794fd35"
+        "3be4bec0-c871-4c87-bcfe-589e7794fd35",
+        "547c51b8-5881-4397-931c-06ef8b73cdfb"
       ],
       "settings": {
         "change_slides_speed": 5,
