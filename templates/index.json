@@ -50,7 +50,7 @@
         "color_overlay": "white",
         "overlay": "text",
         "overlay_text": "",
-        "link": "https:\/\/www.faconjacmin.com\/collections\/new-arrivals",
+        "link": "shopify:\/\/collections\/new-arrivals",
         "window": "_self"
       }
     },
