@@ -21,12 +21,11 @@
         "template--14758110134337__d6868e40-bbd7-4f6f-9c41-29fe2463c28c-slide-1",
         "template--14758110134337__d6868e40-bbd7-4f6f-9c41-29fe2463c28c-slide-2"
       ],
-      "disabled": true,
       "settings": {
         "change_slides_speed": 5,
-        "color_overlay": "sec",
-        "overlay": "logo",
-        "overlay_text": "New Collection",
+        "color_overlay": "white",
+        "overlay": "text",
+        "overlay_text": "",
         "link": "shopify:\/\/collections\/new-arrivals",
         "window": "_self"
       }
@@ -76,6 +75,7 @@
         "128b5c35-224a-4483-bd84-cbe19a6c38ff",
         "3be4bec0-c871-4c87-bcfe-589e7794fd35"
       ],
+      "disabled": true,
       "settings": {
         "change_slides_speed": 5,
         "color_overlay": "white",
