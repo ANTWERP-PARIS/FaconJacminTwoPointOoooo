@@ -107,6 +107,15 @@
               "text": "SALE SEASON - UP TO 50% OFF - SALE SEASON - UP TO 50% OFF - SALE SEASON - UP TO 50% OFF - SALE SEASON - UP TO 50% OFF - SALE SEASON - UP TO 50% OFF - SALE SEASON - UP TO 50% OFF - SALE SEASON - UP TO 50% OFF - SALE SEASON - UP TO 50% OFF - SALE SEASON - UP TO 50% OFF - SALE SEASON - UP TO 50% OFF - SALE SEASON - UP TO 50% OFF - SALE SEASON - UP TO 50% OFF - SALE SEASON - UP TO 50% OFF -",
               "link": "shopify:\/\/collections\/outlet-1"
             }
+          },
+          "announcement_6RJXwN": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "color_scheme": "sec",
+              "text": "FIRST DROP SS24 NOW LIVE",
+              "link": ""
+            }
           }
         },
         "block_order": [
@@ -119,7 +128,8 @@
           "94b1fa4c-5ed1-4504-bcfd-570d9749faa2",
           "8e622a72-c22e-4276-b77e-2028a6f4fa26",
           "063f6ef1-4d32-4b55-add3-c5eeacbc8cfa",
-          "64b4d2d3-9c7e-4567-812c-9f54862b1c94"
+          "64b4d2d3-9c7e-4567-812c-9f54862b1c94",
+          "announcement_6RJXwN"
         ],
         "settings": {
         }
