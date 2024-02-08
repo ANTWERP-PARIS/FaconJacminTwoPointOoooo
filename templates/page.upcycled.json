@@ -1,5 +1,27 @@
 {
   "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "featured_collection_zAwiHC": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "collection": "ss24-upcycled",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": false,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
     "1663697502e523bce9": {
       "type": "image-with-text",
       "blocks": {
@@ -42,28 +64,6 @@
         "layout": "image_first"
       }
     },
-    "featured_collection_zAwiHC": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "",
-        "collection": "ss24-upcycled",
-        "products_to_show": 4,
-        "show_view_all": true,
-        "swipe_on_mobile": true,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": false,
-        "show_vendor": false,
-        "show_rating": false
-      }
-    },
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "1663699075736a53da": {
       "type": "rich-text",
       "blocks": {
@@ -92,9 +92,9 @@
     }
   },
   "order": [
-    "1663697502e523bce9",
-    "featured_collection_zAwiHC",
     "main",
+    "featured_collection_zAwiHC",
+    "1663697502e523bce9",
     "1663699075736a53da"
   ]
 }

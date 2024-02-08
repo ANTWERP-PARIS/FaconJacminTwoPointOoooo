@@ -10,21 +10,11 @@
             "text_style": "uppercase"
           }
         },
-        "title": {
-          "type": "title",
-          "settings": {
-          }
-        },
         "subtitle": {
           "type": "text",
           "settings": {
             "text": "{{ product.metafields.descriptors.subtitle.value }}",
             "text_style": "subtitle"
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {
           }
         },
         "variant_picker": {
@@ -54,23 +44,26 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "custom_liquid_bFMCJP": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "Upcycled"
+          }
         }
       },
       "block_order": [
         "vendor",
-        "title",
         "subtitle",
-        "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "custom_liquid_bFMCJP"
       ],
       "settings": {
-        "enable_sticky_info": true,
-        "hide_variants": false,
-        "enable_video_looping": false
+        "sizeguide": ""
       }
     },
     "product-recommendations": {
