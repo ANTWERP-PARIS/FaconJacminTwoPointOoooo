@@ -3,6 +3,12 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "custom_liquid_bFMCJP": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "Upcycled"
+          }
+        },
         "vendor": {
           "type": "text",
           "settings": {
@@ -44,23 +50,17 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "custom_liquid_bFMCJP": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "Upcycled"
-          }
         }
       },
       "block_order": [
+        "custom_liquid_bFMCJP",
         "vendor",
         "subtitle",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share",
-        "custom_liquid_bFMCJP"
+        "share"
       ],
       "settings": {
         "sizeguide": ""
