@@ -6,6 +6,63 @@
       "settings": {
       }
     },
+    "slideshow_AYcz8g": {
+      "type": "slideshow",
+      "blocks": {
+        "video_EHbkzB": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/video homepage.MOV"
+          }
+        }
+      },
+      "block_order": [
+        "video_EHbkzB"
+      ],
+      "settings": {
+        "change_slides_speed": 5,
+        "color_overlay": "sec",
+        "overlay": "logo",
+        "overlay_text": "New Collection",
+        "link": "",
+        "window": "_self"
+      }
+    },
+    "rich_text_UEDhe6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_x8LtQQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_3QQkWk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Introducing our newest UPCYCLED collection. The fusion of previously used materials with a creative design approach results in one-of-a-kind garments that embody the commitment of FAÇON JACMIN to fashion circularity. Through a process of carefully selected vintage pieces in Belgium, our atelier in Antwerp is in charge of cleaning, washing and unstitching them before sending them to our factory to manufacture into exclusive designs. Breathing new meaning and expanding the lifecycle of these materials. This capsule is the first stage of a long-term project towards more responsible practices. Each irregularity or defect reflects the uniqueness of the model.<\/p><p><\/p>"
+          }
+        },
+        "button_aNiriJ": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_x8LtQQ",
+        "text_3QQkWk",
+        "button_aNiriJ"
+      ],
+      "settings": {
+        "color_scheme": "white",
+        "txt_alignment": "center"
+      }
+    },
     "1663697502e523bce9": {
       "type": "image-with-text",
       "blocks": {
@@ -40,6 +97,7 @@
         "video_U6YFPE",
         "slide_LnEGdt"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "white",
         "change_slides_speed": 3,
@@ -93,6 +151,8 @@
   },
   "order": [
     "main",
+    "slideshow_AYcz8g",
+    "rich_text_UEDhe6",
     "1663697502e523bce9",
     "featured_collection_zAwiHC",
     "1663699075736a53da"
