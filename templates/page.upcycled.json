@@ -11,7 +11,6 @@
       "blocks": {
         "video_EHbkzB": {
           "type": "video",
-          "disabled": true,
           "settings": {
             "video": "shopify:\/\/files\/videos\/video homepage.MOV"
           }
