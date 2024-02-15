@@ -22,8 +22,8 @@
       "settings": {
         "change_slides_speed": 5,
         "color_overlay": "sec",
-        "overlay": "logo",
-        "overlay_text": "New Collection",
+        "overlay": "text",
+        "overlay_text": "",
         "link": "",
         "window": "_self"
       }
