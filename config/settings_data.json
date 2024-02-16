@@ -154,6 +154,9 @@
         "block_order": [
           "footer-0"
         ],
+        "custom_css": [
+
+        ],
         "settings": {
           "newsletter_enable": true,
           "newsletter_heading": "Subscribe to our emails",

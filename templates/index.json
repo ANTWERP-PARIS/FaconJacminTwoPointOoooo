@@ -66,6 +66,7 @@
         },
         "3be4bec0-c871-4c87-bcfe-589e7794fd35": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Home_page_3.jpg"
           }

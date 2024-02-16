@@ -15,10 +15,17 @@
           "settings": {
             "video": "shopify:\/\/files\/videos\/video homepage.MOV"
           }
+        },
+        "slide_WiiBBj": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PHOTO-2023-10-30-12-28-33.jpg"
+          }
         }
       },
       "block_order": [
-        "video_EHbkzB"
+        "video_EHbkzB",
+        "slide_WiiBBj"
       ],
       "settings": {
         "change_slides_speed": 5,
@@ -45,20 +52,11 @@
           "settings": {
             "text": "<p>Introducing our newest UPCYCLED collection. The fusion of previously used materials with a creative design approach results in one-of-a-kind garments that embody the commitment of FAÇON JACMIN to fashion circularity. Through a process of carefully selected vintage pieces in Belgium, our atelier in Antwerp is in charge of cleaning, washing and unstitching them before sending them to our factory to manufacture into exclusive designs. Breathing new meaning and expanding the lifecycle of these materials. This capsule is the first stage of a long-term project towards more responsible practices. Each irregularity or defect reflects the uniqueness of the model.<\/p><p><\/p>"
           }
-        },
-        "button_aNiriJ": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "heading_x8LtQQ",
-        "text_3QQkWk",
-        "button_aNiriJ"
+        "text_3QQkWk"
       ],
       "settings": {
         "color_scheme": "white",
@@ -68,19 +66,6 @@
     "1663697502e523bce9": {
       "type": "image-with-text",
       "blocks": {
-        "1663697502bf00552c-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "The upcycling process",
-            "heading_size": "display"
-          }
-        },
-        "1663697502bf00552c-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Introducing our newest UPCYCLED collection. The fusion of previously used materials with a creative design approach results in one-of-a-kind garments that embody the commitment of FAÇON JACMIN to fashion circularity. Through a process of carefully selected vintage pieces in Belgium, our atelier in Antwerp is in charge of cleaning, washing and unstitching them before sending them to our factory to manufacture into exclusive designs. Breathing new meaning and expanding the lifecycle of these materials. This capsule is the first stage of a long-term project towards more responsible practices. Each irregularity or defect reflects the uniqueness of the model.<\/p><p><\/p>"
-          }
-        },
         "video_U6YFPE": {
           "type": "video",
           "settings": {
@@ -94,17 +79,16 @@
         }
       },
       "block_order": [
-        "1663697502bf00552c-0",
-        "1663697502bf00552c-1",
         "video_U6YFPE",
         "slide_LnEGdt"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "white",
         "change_slides_speed": 3,
-        "height": "text",
+        "height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "image_first"
+        "layout": "text_first"
       }
     },
     "featured_collection_zAwiHC": {
