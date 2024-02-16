@@ -2,7 +2,6 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
       }
     },
@@ -37,13 +36,29 @@
         "video": "shopify:\/\/files\/videos\/video homepage.MOV"
       }
     },
+    "featured_collection_zAwiHC": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "collection": "ss24-upcycled",
+        "products_to_show": 2,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "portrait",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": false,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
     "rich_text_UEDhe6": {
       "type": "rich-text",
       "blocks": {
         "heading_x8LtQQ": {
           "type": "heading",
           "settings": {
-            "heading": "Introducing FAÇON JACMIN upcycled",
+            "heading": "FAÇON JACMIN upcycled",
             "heading_size": "h1"
           }
         },
@@ -74,13 +89,20 @@
         "slide_LnEGdt": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Palmspringsupcycledtayloring2-Christalwhite2_1_81f65a62-95eb-475f-8706-9b7593ddabee.jpg"
+            "image": "shopify:\/\/shop_images\/PHOTO-2023-10-30-12-28-33.jpg"
+          }
+        },
+        "text_bwjYkz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
         }
       },
       "block_order": [
         "video_U6YFPE",
-        "slide_LnEGdt"
+        "slide_LnEGdt",
+        "text_bwjYkz"
       ],
       "disabled": true,
       "settings": {
@@ -88,23 +110,7 @@
         "change_slides_speed": 3,
         "height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "text_first"
-      }
-    },
-    "featured_collection_zAwiHC": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "",
-        "collection": "ss24-upcycled",
-        "products_to_show": 2,
-        "show_view_all": true,
-        "swipe_on_mobile": true,
-        "image_ratio": "portrait",
-        "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": false,
-        "show_vendor": false,
-        "show_rating": false
+        "layout": "image_first"
       }
     },
     "1663699075736a53da": {
@@ -137,9 +143,9 @@
   "order": [
     "main",
     "slideshow_AYcz8g",
+    "featured_collection_zAwiHC",
     "rich_text_UEDhe6",
     "1663697502e523bce9",
-    "featured_collection_zAwiHC",
     "1663699075736a53da"
   ]
 }
