@@ -29,7 +29,7 @@
       ],
       "settings": {
         "change_slides_speed": 5,
-        "color_overlay": "sec",
+        "color_overlay": "white",
         "overlay": "text",
         "overlay_text": "",
         "link": "",
