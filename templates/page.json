@@ -6,28 +6,6 @@
       "settings": {
       }
     },
-    "slideshow_HjiCFr": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_64AxLJ": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/PHOTO-2023-10-30-12-28-33_ddff50d0-0420-481f-b251-7b9a9c0633a9.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "slide_64AxLJ"
-      ],
-      "settings": {
-        "change_slides_speed": 5,
-        "color_overlay": "sec",
-        "overlay": "text",
-        "overlay_text": "",
-        "link": "",
-        "window": "_self"
-      }
-    },
     "rich_text_YEHedh": {
       "type": "rich-text",
       "blocks": {
@@ -49,59 +27,52 @@
         "heading_F8F3AN",
         "text_3J4dWd"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "white",
         "txt_alignment": "center"
       }
     },
-    "featured_collection_EHaN8z": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "",
-        "collection": "ss24-upcycled",
-        "products_to_show": 4,
-        "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false,
-        "show_rating": false
-      }
-    },
-    "1663699075736a53da": {
-      "type": "rich-text",
+    "image_with_text_MFFKRe": {
+      "type": "image-with-text",
       "blocks": {
-        "16636990750b7e9c25-0": {
+        "heading_mV9j3c": {
           "type": "heading",
           "settings": {
-            "heading": "Store",
+            "heading": "our story",
             "heading_size": "h1"
           }
         },
-        "16636990750b7e9c25-1": {
+        "text_EHWQem": {
           "type": "text",
           "settings": {
-            "text": "<p>Open Monday-Saturday from 10:30 a.m to 18:00 p.m.<\/p><p><a href=\"https:\/\/goo.gl\/maps\/ciD7CYCUpYUEaveMA\"><span style=\"text-decoration:underline\">Kammenstraat 58, 2000 Antwerp<\/span><\/a><\/p>"
+            "text": "<p>Belgian designer Alexandra  Jacmin  and her entrepreneur twin sister Ségolène Jacmin joined forces to establish their eco-conscious label FAÇON JACMIN. After graduating from La Cambre, Alexandra worked for Maison Martin Marginal and Jean-Paul Gaultier.<\/p><p><strong>Façon Jacmin is an attitude.<\/strong><\/p><p>With their label, the twins aim to give individuals more confidence and empower them in their everyday life, helping to express themselves to the fullest.<\/p><p>Alexandra's designs explore the codes of seduction, and the alliance of masculinity and femininity. If denim remains her field of predilection, other fabrics are intertwined with it, to present a playful silhouette, meddling boldness and charm - a vision for an eco-conscious, modern, desirable and determined woman.<\/p><p><strong>SUSTAINABILITY AT THE HEART<\/strong><\/p><p>The sisters are committed to making the best possible quality of clothes, that aim to last for a lifetime. With their label, they take the lead to boost ecological initiatives in response to consumer demands and to reduce the industry's environmental impact.<\/p><p>They are sourcing the best quality fabrics in Italy, and select mainly certified organic cottons and waterless denims. Next to that, they make it a point of honour to work only with confection ateliers bases in Europe, Italy, Portugal and Bulgaria.<\/p><p>They also value up cycling and frequently release upcycled capsule collections.<\/p>"
+          }
+        },
+        "slide_CDWFUx": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AAA3652_6d2a45b8-2ce4-43b8-be65-b7254faee33e.jpg"
           }
         }
       },
       "block_order": [
-        "16636990750b7e9c25-0",
-        "16636990750b7e9c25-1"
+        "heading_mV9j3c",
+        "text_EHWQem",
+        "slide_CDWFUx"
       ],
       "settings": {
-        "color_scheme": "light",
-        "txt_alignment": "center"
+        "color_scheme": "white",
+        "change_slides_speed": 5,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first"
       }
     }
   },
   "order": [
     "main",
-    "slideshow_HjiCFr",
     "rich_text_YEHedh",
-    "featured_collection_EHaN8z",
-    "1663699075736a53da"
+    "image_with_text_MFFKRe"
   ]
 }
