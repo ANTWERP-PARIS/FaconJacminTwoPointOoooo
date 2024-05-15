@@ -19,15 +19,23 @@
         },
         "slide_jnJMYi": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/home_page_SS24_pic_2_1920-1080.jpg"
+          }
+        },
+        "slide_8Qxzrc": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/home_page_SS24_pic_4_1920-1080_f9b0b233-409f-4bb6-a202-ab972092a47f.jpg"
           }
         }
       },
       "block_order": [
         "template--14758110134337__d6868e40-bbd7-4f6f-9c41-29fe2463c28c-slide-1",
         "video_pU9mW3",
-        "slide_jnJMYi"
+        "slide_jnJMYi",
+        "slide_8Qxzrc"
       ],
       "custom_css": [
 
