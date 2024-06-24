@@ -27,9 +27,9 @@
       ],
       "settings": {
         "change_slides_speed": 5,
-        "color_overlay": "white",
+        "color_overlay": "black",
         "overlay": "text",
-        "overlay_text": ".",
+        "overlay_text": "",
         "link": "shopify:\/\/collections\/new-arrivals",
         "window": "_blank"
       }
