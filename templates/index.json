@@ -1,29 +1,17 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "d6868e40-bbd7-4f6f-9c41-29fe2463c28c": {
       "type": "slideshow",
       "blocks": {
-        "template--14758110134337__d6868e40-bbd7-4f6f-9c41-29fe2463c28c-slide-1": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Home_page_AW23-24_option_1.jpg"
-          }
-        },
-        "video_pU9mW3": {
-          "type": "video",
-          "disabled": true,
-          "settings": {
-            "video": "shopify:\/\/files\/videos\/new_format.MOV"
-          }
-        },
-        "slide_jnJMYi": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/home_page_SS24_pic_2_1920-1080.jpg"
-          }
-        },
         "slide_8Qxzrc": {
           "type": "slide",
           "settings": {
@@ -32,9 +20,6 @@
         }
       },
       "block_order": [
-        "template--14758110134337__d6868e40-bbd7-4f6f-9c41-29fe2463c28c-slide-1",
-        "video_pU9mW3",
-        "slide_jnJMYi",
         "slide_8Qxzrc"
       ],
       "custom_css": [
@@ -46,7 +31,7 @@
         "overlay": "text",
         "overlay_text": "",
         "link": "shopify:\/\/collections\/new-arrivals",
-        "window": "_self"
+        "window": "_blank"
       }
     },
     "1663621055e602879d": {
