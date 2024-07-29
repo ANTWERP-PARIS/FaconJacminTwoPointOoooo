@@ -106,7 +106,7 @@ function setTop() {
     largemedia.css('top', h);
 }
 
-
+// size chart
 $('.size-chart-open-popup').magnificPopup({
   type:'inline',
   midClick: true
