@@ -199,5 +199,71 @@
   
 {% include 'swymSnippet' %}
 
-{% include 'appikon-pre-order-helper' %}</body>
+{% include 'appikon-pre-order-helper' %}
+
+    
+  <button id="size-guide-button" style="position: fixed; bottom: 20px; right: 20px; padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer;">
+  Size Guide
+</button>
+
+<div id="size-guide-popup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); z-index: 1000;">
+  <h2>Size Guide</h2>
+  <table style="width: 100%; border-collapse: collapse;">
+    <thead>
+      <tr>
+        <th style="border: 1px solid #ddd; padding: 8px;">Size</th>
+        <th style="border: 1px solid #ddd; padding: 8px;">Bust</th>
+        <th style="border: 1px solid #ddd; padding: 8px;">Waist</th>
+        <th style="border: 1px solid #ddd; padding: 8px;">Hip</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 8px;">S</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">34-35"</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">26-27"</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">36-37"</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 8px;">M</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">36-37"</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">28-29"</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">38-39"</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 8px;">L</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">38-39"</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">30-31"</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">40-41"</td>
+      </tr>
+      <!-- Add more sizes as needed -->
+    </tbody>
+  </table>
+  <button id="close-size-guide" style="margin-top: 20px; padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer;">Close</button>
+</div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+  var sizeGuideButton = document.getElementById('size-guide-button');
+  var sizeGuidePopup = document.getElementById('size-guide-popup');
+  var closeSizeGuide = document.getElementById('close-size-guide');
+
+  sizeGuideButton.addEventListener('click', function() {
+    sizeGuidePopup.style.display = 'block';
+  });
+
+  closeSizeGuide.addEventListener('click', function() {
+    sizeGuidePopup.style.display = 'none';
+  });
+
+  // Close the pop-up when clicking outside of it
+  window.addEventListener('click', function(event) {
+    if (event.target == sizeGuidePopup) {
+      sizeGuidePopup.style.display = 'none';
+    }
+  });
+});
+    </script>
+    
+  </body>
 </html>
