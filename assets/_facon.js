@@ -108,7 +108,7 @@ function setTop() {
 
 
 
-// size guide
+// size chart
 /*! Magnific Popup - v1.0.0 - 2015-03-30
 * http://dimsemenov.com/plugins/magnific-popup/
 * Copyright (c) 2015 Dmitry Semenov; */
