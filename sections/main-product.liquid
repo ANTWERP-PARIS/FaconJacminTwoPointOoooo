@@ -412,6 +412,21 @@ product-recommendations .grid {
                 </button>
               </quantity-input>
             </div>
+
+
+
+       {% if product.options contains 'Size' %}
+    <a class="trigger-pop-up btn">See Size Chart</a>
+        {% endif %}
+
+
+
+
+
+
+
+
+            
           {%- when 'popup' -%}
               <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
                 <button id="ProductPopup-{{ block.id }}" class="product-popup-modal__button link" type="button" aria-haspopup="dialog">{{ block.settings.text | default: block.settings.page.title }}</button>
