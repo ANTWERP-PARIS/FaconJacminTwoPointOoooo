@@ -382,19 +382,27 @@ product-recommendations .grid {
 
 
         <!-- BLOCK LOOP -->
-         <!-- size guide -->
 
-            
+
+
+
+
+        
+<!-- size guide -->
+
 {% if product.options contains 'Size' %}
   
-<a class="btn size-chart-open-popup" href="#size-chart">See size chart</a>
+<a class="btn size-chart-open-popup" href="#pants-size-chart">See size chart</a>
 
-    {% endif %}
-
-
-
+{% endif %}
             
  <!-- end size guide -->
+
+
+
+
+
+        
         {%- for block in section.blocks -%}
           {%- case block.type -%}
           {%- when '@app' -%}
@@ -405,19 +413,7 @@ product-recommendations .grid {
               <label class="form__label" for="Quantity-{{ section.id }}">
                 {{ 'products.product.quantity.label' | t }}
               </label>
-   <!-- size guide -->
 
-            
-{% if product.options contains 'Size' %}
-  
-<a class="btn size-chart-open-popup" href="#size-chart">See size chart</a>
-
-    {% endif %}
-
-
-
-            
- <!-- end size guide -->
               <quantity-input class="quantity">
                 <button class="quantity__button no-js-hidden" name="minus" type="button">
                   <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
