@@ -91,6 +91,22 @@
                   {%- endif -%}
                 </div>
               {%- endif -%}
+
+
+
+
+              
+              {% if product.options contains 'Size' %}
+    <a class="trigger-pop-up btn">See Size Chart</a>
+{% endif %}
+
+
+
+
+
+
+
+              
               {%- if product != blank -%}
                 <div {{ block.shopify_attributes }}>
                   {%- form 'product', product -%}
