@@ -105,3 +105,9 @@ function setTop() {
     featuredCollection.css('top', h);
     largemedia.css('top', h);
 }
+
+
+$('.size-chart-open-popup').magnificPopup({
+  type:'inline',
+  midClick: true
+})
