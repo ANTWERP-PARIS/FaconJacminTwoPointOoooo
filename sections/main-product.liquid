@@ -299,7 +299,19 @@ product-recommendations .grid {
           }
         {%- endstyle -%}
 
+ <!-- size guide -->
 
+            
+{% if product.options contains 'Size' %}
+  
+<a class="btn size-chart-open-popup" href="#size-chart">See size chart</a>
+
+    {% endif %}
+
+
+
+            
+ <!-- end size guide -->
 
         <!-- DESCRIPTION -->
         {%- if product.description != blank -%}
