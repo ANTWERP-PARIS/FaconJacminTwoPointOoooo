@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -44,6 +53,21 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "custom_liquid_bFMCJP": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "Upcycled"
+          }
+        },
+        "collapsible_tab_kJFkxU": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Size guide",
+            "content": "",
+            "page": "upcycled",
+            "icon": "check_mark"
+          }
         }
       },
       "block_order": [
@@ -53,7 +77,9 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "custom_liquid_bFMCJP",
+        "collapsible_tab_kJFkxU"
       ],
       "settings": {
         "sizeguide": ""
