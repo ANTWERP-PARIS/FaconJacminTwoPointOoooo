@@ -460,7 +460,29 @@ product-recommendations .grid {
   <button id="close-size-guide" style="margin-top: 20px; padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer;">Close</button>
 </div>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  var sizeGuideButton = document.getElementById('size-guide-button');
+  var sizeGuidePopup = document.getElementById('size-guide-popup');
+  var closeSizeGuide = document.getElementById('close-size-guide');
 
+  sizeGuideButton.addEventListener('click', function() {
+    sizeGuidePopup.style.display = 'block';
+  });
+
+  closeSizeGuide.addEventListener('click', function() {
+    sizeGuidePopup.style.display = 'none';
+  });
+
+  // Close the pop-up when clicking outside of it
+  window.addEventListener('click', function(event) {
+    if (event.target == sizeGuidePopup) {
+      sizeGuidePopup.style.display = 'none';
+    }
+  });
+});
+
+</script>
 
 
  <!-- end size guide -->
