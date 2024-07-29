@@ -390,11 +390,12 @@ product-recommendations .grid {
         
 <!-- size guide -->
 
-{% if product.options contains 'Size' %}
-  
-<a class="btn size-chart-open-popup" href="#pants-size-chart">See size chart</a>
-
-{% endif %}
+ {% if product.options contains 'Size' %}
+      {% assign chart = product.type | handleize | append: "-size-chart" %}
+      {% unless pages[chart].empty? or pages[chart].content == blank %}
+        <a class="trigger-pop-up btn">See Size Chart</a>
+      {% endunless %}
+    {% endif %}
             
  <!-- end size guide -->
 
