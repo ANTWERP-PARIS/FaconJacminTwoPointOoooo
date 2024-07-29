@@ -201,6 +201,25 @@
 
 {% include 'appikon-pre-order-helper' %}
 
+
+
+
+
+
+
+
+{% if request.page_type == ‘product’ %}
+
+    {% if product.options contains ‘Size’ %}
+
+        {% render ‘size-chart’ %}
+
+    {% endif %}
+
+{% endif %}
+
+
+
     
  
   </body>
