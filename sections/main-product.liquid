@@ -299,19 +299,7 @@ product-recommendations .grid {
           }
         {%- endstyle -%}
 
- <!-- size guide -->
 
-            
-{% if product.options contains 'Size' %}
-  
-<a class="btn size-chart-open-popup" href="#size-chart">See size chart</a>
-
-    {% endif %}
-
-
-
-            
- <!-- end size guide -->
 
         <!-- DESCRIPTION -->
         {%- if product.description != blank -%}
@@ -394,6 +382,19 @@ product-recommendations .grid {
 
 
         <!-- BLOCK LOOP -->
+         <!-- size guide -->
+
+            
+{% if product.options contains 'Size' %}
+  
+<a class="btn size-chart-open-popup" href="#size-chart">See size chart</a>
+
+    {% endif %}
+
+
+
+            
+ <!-- end size guide -->
         {%- for block in section.blocks -%}
           {%- case block.type -%}
           {%- when '@app' -%}
