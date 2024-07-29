@@ -131,7 +131,9 @@
 
               
  <button id="size-guide-button" style="position: fixed; bottom: 20px; right: 20px; padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer;">
-  Size Guide
+   {% render 'icon-share' %}
+                  {{ block.settings.share_label | escape }}
+   Size Guide
 </button>
 
 <div id="size-guide-popup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); z-index: 1000;">
