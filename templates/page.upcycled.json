@@ -15,6 +15,42 @@
       "settings": {
       }
     },
+    "image_with_text_nkkbLK": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_LTzVDf": {
+          "type": "heading",
+          "settings": {
+            "heading": "FAÇON JACMIN UPCYCLED",
+            "heading_size": "h1"
+          }
+        },
+        "text_HA9x4i": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Introducing our newest UPCYCLED collection. The fusion of previously used materials with a creative design approach results in one-of-a-kind garments that embody the commitment of FAÇON JACMIN to fashion circularity. Through a process of carefully selected vintage pieces in Belgium, our atelier in Antwerp is in charge of cleaning, washing and unstitching them before sending them to our factory to manufacture into exclusive designs. Breathing new meaning and expanding the lifecycle of these materials. </p><p>This capsule is the first stage of a long-term project towards more responsible practices.</p><p>Alexandra’s proficiency in upcycling transcends conventional boundaries, transforming second-hand textiles into sophisticated garments that blur the distinction between upcycled and new. Each irregularity or defect reflects the uniqueness of the model.</p>"
+          }
+        },
+        "video_qmLmeK": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/up_.MOV"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LTzVDf",
+        "text_HA9x4i",
+        "video_qmLmeK"
+      ],
+      "settings": {
+        "color_scheme": "white",
+        "change_slides_speed": 5,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first"
+      }
+    },
     "rich_text_UEDhe6": {
       "type": "rich-text",
       "blocks": {
@@ -57,42 +93,6 @@
         "show_rating": false
       }
     },
-    "image_with_text_nkkbLK": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_LTzVDf": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h2"
-          }
-        },
-        "text_HA9x4i": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Alexandra’s proficiency in upcycling transcends conventional boundaries, transforming second-hand textiles into sophisticated garments that blur the distinction between upcycled and new. Each irregularity or defect reflects the uniqueness of the model.</p>"
-          }
-        },
-        "video_qmLmeK": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/up_.MOV"
-          }
-        }
-      },
-      "block_order": [
-        "heading_LTzVDf",
-        "text_HA9x4i",
-        "video_qmLmeK"
-      ],
-      "settings": {
-        "color_scheme": "white",
-        "change_slides_speed": 5,
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first"
-      }
-    },
     "1663699075736a53da": {
       "type": "rich-text",
       "blocks": {
@@ -122,9 +122,9 @@
   },
   "order": [
     "main",
+    "image_with_text_nkkbLK",
     "rich_text_UEDhe6",
     "featured_collection_zAwiHC",
-    "image_with_text_nkkbLK",
     "1663699075736a53da"
   ]
 }
