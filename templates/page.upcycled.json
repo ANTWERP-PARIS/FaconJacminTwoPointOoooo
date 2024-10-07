@@ -60,17 +60,10 @@
             "heading": "",
             "heading_size": "h1"
           }
-        },
-        "text_3QQkWk": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
         }
       },
       "block_order": [
-        "heading_x8LtQQ",
-        "text_3QQkWk"
+        "heading_x8LtQQ"
       ],
       "settings": {
         "color_scheme": "white",
