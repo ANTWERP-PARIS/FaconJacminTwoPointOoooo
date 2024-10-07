@@ -84,39 +84,12 @@
         "show_vendor": false,
         "show_rating": false
       }
-    },
-    "1663699075736a53da": {
-      "type": "rich-text",
-      "blocks": {
-        "16636990750b7e9c25-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Store",
-            "heading_size": "h1"
-          }
-        },
-        "16636990750b7e9c25-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Open Monday-Saturday from 10:30 a.m to 18:00 p.m.</p><p><a href=\"https://goo.gl/maps/ciD7CYCUpYUEaveMA\"><span style=\"text-decoration:underline\">Kammenstraat 58, 2000 Antwerp</span></a></p>"
-          }
-        }
-      },
-      "block_order": [
-        "16636990750b7e9c25-0",
-        "16636990750b7e9c25-1"
-      ],
-      "settings": {
-        "color_scheme": "light",
-        "txt_alignment": "center"
-      }
     }
   },
   "order": [
     "main",
     "image_with_text_nkkbLK",
     "rich_text_UEDhe6",
-    "featured_collection_zAwiHC",
-    "1663699075736a53da"
+    "featured_collection_zAwiHC"
   ]
 }
