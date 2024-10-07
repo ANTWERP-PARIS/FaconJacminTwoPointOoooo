@@ -60,6 +60,13 @@
     "image_with_text_nkkbLK": {
       "type": "image-with-text",
       "blocks": {
+        "heading_LTzVDf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h2"
+          }
+        },
         "text_HA9x4i": {
           "type": "text",
           "settings": {
@@ -74,6 +81,7 @@
         }
       },
       "block_order": [
+        "heading_LTzVDf",
         "text_HA9x4i",
         "video_qmLmeK"
       ],
