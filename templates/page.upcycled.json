@@ -28,7 +28,7 @@
         "text_3QQkWk": {
           "type": "text",
           "settings": {
-            "text": "<p>Introducing our newest UPCYCLED collection. The fusion of previously used materials with a creative design approach results in one-of-a-kind garments that embody the commitment of FAÇON JACMIN to fashion circularity. Through a process of carefully selected vintage pieces in Belgium, our atelier in Antwerp is in charge of cleaning, washing and unstitching them before sending them to our factory to manufacture into exclusive designs. Breathing new meaning and expanding the lifecycle of these materials. </p><p>This capsule is the first stage of a long-term project towards more responsible practices. </p><p>Each irregularity or defect reflects the uniqueness of the model.</p>"
+            "text": "<p>Introducing our newest UPCYCLED collection. The fusion of previously used materials with a creative design approach results in one-of-a-kind garments that embody the commitment of FAÇON JACMIN to fashion circularity. Through a process of carefully selected vintage pieces in Belgium, our atelier in Antwerp is in charge of cleaning, washing and unstitching them before sending them to our factory to manufacture into exclusive designs. Breathing new meaning and expanding the lifecycle of these materials. </p><p>This capsule is the first stage of a long-term project towards more responsible practices.</p>"
           }
         }
       },
@@ -55,6 +55,41 @@
         "show_image_outline": false,
         "show_vendor": false,
         "show_rating": false
+      }
+    },
+    "image_with_text_nkkbLK": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_HA9x4i": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Alexandra’s proficiency in upcycling transcends conventional boundaries, transforming second-hand textiles into sophisticated garments that blur the distinction between upcycled and new. Each irregularity or defect reflects the uniqueness of the model.</p>"
+          }
+        },
+        "slide_qy7RyM": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/1_65236efa-69b8-458e-a05e-fd68e21464a2.jpg"
+          }
+        },
+        "video_qmLmeK": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/up_.MOV"
+          }
+        }
+      },
+      "block_order": [
+        "text_HA9x4i",
+        "slide_qy7RyM",
+        "video_qmLmeK"
+      ],
+      "settings": {
+        "color_scheme": "white",
+        "change_slides_speed": 5,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first"
       }
     },
     "1663699075736a53da": {
@@ -88,6 +123,7 @@
     "main",
     "rich_text_UEDhe6",
     "featured_collection_zAwiHC",
+    "image_with_text_nkkbLK",
     "1663699075736a53da"
   ]
 }
