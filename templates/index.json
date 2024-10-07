@@ -30,7 +30,7 @@
         "color_overlay": "white",
         "overlay": "text",
         "overlay_text": "AW24",
-        "link": "shopify://collections",
+        "link": "shopify://collections/aw24",
         "window": "_blank"
       }
     },
