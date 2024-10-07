@@ -54,16 +54,15 @@
     "rich_text_UEDhe6": {
       "type": "rich-text",
       "blocks": {
-        "heading_x8LtQQ": {
-          "type": "heading",
+        "text_3QQkWk": {
+          "type": "text",
           "settings": {
-            "heading": "",
-            "heading_size": "h1"
+            "text": ""
           }
         }
       },
       "block_order": [
-        "heading_x8LtQQ"
+        "text_3QQkWk"
       ],
       "settings": {
         "color_scheme": "white",
