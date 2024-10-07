@@ -15,7 +15,7 @@
         "slide_8Qxzrc": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/home_page_AW24_pic_1_1920-1080.jpg"
+            "image": "shopify://shop_images/homepage_2nddrop.png"
           }
         }
       },
@@ -30,7 +30,7 @@
         "color_overlay": "white",
         "overlay": "text",
         "overlay_text": "",
-        "link": "shopify:\/\/collections\/new-arrivals",
+        "link": "shopify://collections/new-arrivals",
         "window": "_blank"
       }
     },
@@ -41,35 +41,35 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/test_homepage.jpg"
+            "image": "shopify://shop_images/test_homepage.jpg"
           }
         },
         "1663621055723bf94a-1": {
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/landscape_pic_retouched_for_homepage_bag_campaign.jpg"
+            "image": "shopify://shop_images/landscape_pic_retouched_for_homepage_bag_campaign.jpg"
           }
         },
         "f2d7593c-9791-482d-adf3-d3aaca31485e": {
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/FACON_JACMIN4766_2_1.jpg"
+            "image": "shopify://shop_images/FACON_JACMIN4766_2_1.jpg"
           }
         },
         "128b5c35-224a-4483-bd84-cbe19a6c38ff": {
           "type": "video",
           "disabled": true,
           "settings": {
-            "video": "shopify:\/\/files\/videos\/FJ SS23 VIDEO.mp4"
+            "video": "shopify://files/videos/FJ SS23 VIDEO.mp4"
           }
         },
         "3be4bec0-c871-4c87-bcfe-589e7794fd35": {
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Home_page_3.jpg"
+            "image": "shopify://shop_images/Home_page_3.jpg"
           }
         }
       },
@@ -86,7 +86,7 @@
         "color_overlay": "white",
         "overlay": "text",
         "overlay_text": "",
-        "link": "shopify:\/\/collections\/new-arrivals",
+        "link": "shopify://collections/new-arrivals",
         "window": "_self"
       }
     },
@@ -96,7 +96,7 @@
         "390b770a-3822-4c5e-b404-ca79ca46cb95": {
           "type": "video",
           "settings": {
-            "video": "shopify:\/\/files\/videos\/FJ SS23 VIDEO.mp4"
+            "video": "shopify://files/videos/FJ SS23 VIDEO.mp4"
           }
         },
         "16636966986677d4e6-0": {
@@ -109,14 +109,14 @@
         "16636966986677d4e6-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
           }
         },
         "2d8b17ac-2669-4a3a-8e10-d60fee411a9e": {
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/AAA3652-2.jpg"
+            "image": "shopify://shop_images/AAA3652-2.jpg"
           }
         }
       },
@@ -147,7 +147,7 @@
         "1663696351d9649a37-1": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
           }
         },
         "1663696351d9649a37-2": {
