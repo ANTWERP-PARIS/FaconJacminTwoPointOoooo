@@ -19,10 +19,10 @@
     "colors_background_2": "#F3F3F3",
     "type_header_font": "helvetica_n4",
     "type_body_font": "helvetica_n4",
-    "social_facebook_link": "https:\/\/www.facebook.com\/faconjacmin\/",
-    "social_instagram_link": "https:\/\/www.instagram.com\/faconjacmin\/",
-    "social_tiktok_link": "https:\/\/www.tiktok.com\/@faconjacmin",
-    "favicon": "shopify:\/\/shop_images\/favico.png",
+    "social_facebook_link": "https://www.facebook.com/faconjacmin/",
+    "social_instagram_link": "https://www.instagram.com/faconjacmin/",
+    "social_tiktok_link": "https://www.tiktok.com/@faconjacmin",
+    "favicon": "shopify://shop_images/favico.png",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -31,8 +31,8 @@
             "type": "announcement",
             "settings": {
               "color_scheme": "black",
-              "text": "1ST DROP AUTUMN\/WINTER 24 - 1ST DROP AUTUMN\/WINTER 24 - 1ST DROP AUTUMN\/WINTER 24 - 1ST DROP AUTUMN\/WINTER 24 - 1ST DROP AUTUMN\/WINTER 24 - 1ST DROP AUTUMN\/WINTER 24 - 1ST DROP AUTUMN\/WINTER 24 - 1ST DROP AUTUMN\/WINTER 24 - 1ST DROP AUTUMN\/WINTER 24 - 1ST DROP AUTUMN\/WINTER 24 -",
-              "link": "shopify:\/\/collections\/ready-to-wear"
+              "text": "2ND DROP AUTUMN/WINTER 24 - 2ND DROP AUTUMN/WINTER 24 - 2ND DROP AUTUMN/WINTER 24 - 2ND DROP AUTUMN/WINTER 24 - 2ND DROP AUTUMN/WINTER 24 - 2ND DROP AUTUMN/WINTER 24 - 2ND DROP AUTUMN/WINTER 24 - 2ND DROP AUTUMN/WINTER 24 - 2ND DROP AUTUMN/WINTER 24 - 2ND DROP AUTUMN/WINTER 24 -",
+              "link": "shopify://collections/ready-to-wear"
             }
           },
           "announcement_6d3YFD": {
@@ -87,7 +87,7 @@
     ],
     "blocks": {
       "6097499278999377719": {
-        "type": "shopify:\/\/apps\/globo-mega-menu\/blocks\/app-embed\/7a00835e-fe40-45a5-a615-2eb4ab697b58",
+        "type": "shopify://apps/globo-mega-menu/blocks/app-embed/7a00835e-fe40-45a5-a615-2eb4ab697b58",
         "disabled": false,
         "settings": {
         }
