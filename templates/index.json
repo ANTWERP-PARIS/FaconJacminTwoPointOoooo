@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "d6868e40-bbd7-4f6f-9c41-29fe2463c28c": {
@@ -14,13 +14,21 @@
       "blocks": {
         "slide_8Qxzrc": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/home_page_AW24_pic_1_1920-1080.jpg"
+          }
+        },
+        "video_8VMTPc": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/BANNER4.mp4"
           }
         }
       },
       "block_order": [
-        "slide_8Qxzrc"
+        "slide_8Qxzrc",
+        "video_8VMTPc"
       ],
       "custom_css": [
 
