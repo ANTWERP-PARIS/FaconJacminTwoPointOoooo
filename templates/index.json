@@ -12,23 +12,22 @@
     "d6868e40-bbd7-4f6f-9c41-29fe2463c28c": {
       "type": "slideshow",
       "blocks": {
+        "video_8VMTPc": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/BANNER4.mp4"
+          }
+        },
         "slide_8Qxzrc": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/home_page_AW24_pic_1_1920-1080.jpg"
           }
-        },
-        "video_8VMTPc": {
-          "type": "video",
-          "disabled": true,
-          "settings": {
-            "video": "shopify://files/videos/FJ SS23 VIDEO.mp4"
-          }
         }
       },
       "block_order": [
-        "slide_8Qxzrc",
-        "video_8VMTPc"
+        "video_8VMTPc",
+        "slide_8Qxzrc"
       ],
       "custom_css": [
 
