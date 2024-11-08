@@ -31,7 +31,7 @@
             "type": "announcement",
             "settings": {
               "color_scheme": "black",
-              "text": "2ND DROP AUTUMN/WINTER 24 - 2ND DROP AUTUMN/WINTER 24 - 2ND DROP AUTUMN/WINTER 24 - 2ND DROP AUTUMN/WINTER 24 - 2ND DROP AUTUMN/WINTER 24 - 2ND DROP AUTUMN/WINTER 24 - 2ND DROP AUTUMN/WINTER 24 - 2ND DROP AUTUMN/WINTER 24 - 2ND DROP AUTUMN/WINTER 24 - 2ND DROP AUTUMN/WINTER 24 -",
+              "text": "ANTWERP DESIGNER SALES: 12-17 NOV - ANTWERP DESIGNER SALES: 12-17 NOV - ANTWERP DESIGNER SALES: 12-17 NOV - ANTWERP DESIGNER SALES: 12-17 NOV - ANTWERP DESIGNER SALES: 12-17 NOV - ANTWERP DESIGNER SALES: 12-17 NOV - ANTWERP DESIGNER SALES: 12-17 NOV - ANTWERP DESIGNER SALES: 12-17 NOV - ANTWERP DESIGNER SALES: 12-17 NOV - ANTWERP DESIGNER SALES: 12-17 NOV - ANTWERP DESIGNER SALES: 12-17 NOV - ANTWERP DESIGNER SALES: 12-17 NOV -",
               "link": "shopify://collections/ready-to-wear"
             }
           },
@@ -49,8 +49,7 @@
           "announcement_faEkax",
           "announcement_6d3YFD"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "header": {
         "type": "header",
@@ -72,9 +71,7 @@
         "block_order": [
           "footer-0"
         ],
-        "custom_css": [
-
-        ],
+        "custom_css": [],
         "settings": {
           "newsletter_enable": true,
           "newsletter_heading": "Subscribe to our emails",
@@ -82,15 +79,12 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "6097499278999377719": {
         "type": "shopify://apps/globo-mega-menu/blocks/app-embed/7a00835e-fe40-45a5-a615-2eb4ab697b58",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   },
@@ -119,8 +113,7 @@
           "block_order": [
             "announcement-bar-0"
           ],
-          "settings": {
-          }
+          "settings": {}
         }
       }
     },
@@ -140,21 +133,18 @@
           "blocks": {
             "menu": {
               "type": "link_list",
-              "settings": {
-              }
+              "settings": {}
             },
             "text": {
               "type": "text",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
             "menu",
             "text"
           ],
-          "settings": {
-          }
+          "settings": {}
         }
       }
     }
