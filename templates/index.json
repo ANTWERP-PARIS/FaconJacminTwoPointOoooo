@@ -29,9 +29,7 @@
         "video_8VMTPc",
         "slide_8Qxzrc"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "change_slides_speed": 5,
         "color_overlay": "white",
@@ -94,7 +92,7 @@
         "color_overlay": "white",
         "overlay": "text",
         "overlay_text": "",
-        "link": "shopify://collections/new-arrivals",
+        "link": "shopify://collections/archive",
         "window": "_self"
       }
     },
@@ -160,8 +158,7 @@
         },
         "1663696351d9649a37-2": {
           "type": "email_form",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
