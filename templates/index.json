@@ -14,6 +14,7 @@
       "blocks": {
         "video_8VMTPc": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/BANNER4.mp4"
           }
@@ -21,7 +22,7 @@
         "slide_8Qxzrc": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/home_page_AW24_pic_1_1920-1080.jpg"
+            "image": "shopify://shop_images/1.png"
           }
         }
       },
