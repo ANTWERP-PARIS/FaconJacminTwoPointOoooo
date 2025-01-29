@@ -196,13 +196,13 @@
         "1664115437a8fbb193-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "scarfs"
+            "collection": "sale"
           }
         },
         "featured_collection_aJq6XM": {
           "type": "featured_collection",
           "settings": {
-            "collection": "sale"
+            "collection": "coats-jackets"
           }
         },
         "1664115437a8fbb193-2": {
@@ -214,7 +214,7 @@
         "1664115437a8fbb193-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "coats-jackets"
+            "collection": "shirts-tops-jumpers"
           }
         }
       },
