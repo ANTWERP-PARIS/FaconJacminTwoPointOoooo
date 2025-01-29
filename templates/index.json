@@ -33,84 +33,6 @@
         "video": "shopify://files/videos/ss25.mp4"
       }
     },
-    "1663621055e602879d": {
-      "type": "slideshow",
-      "blocks": {
-        "1663621055723bf94a-0": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/test_homepage.jpg"
-          }
-        },
-        "1663621055723bf94a-1": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/landscape_pic_retouched_for_homepage_bag_campaign.jpg"
-          }
-        },
-        "f2d7593c-9791-482d-adf3-d3aaca31485e": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/FACON_JACMIN4766_2_1.jpg"
-          }
-        },
-        "128b5c35-224a-4483-bd84-cbe19a6c38ff": {
-          "type": "video",
-          "disabled": true,
-          "settings": {
-            "video": "shopify://files/videos/FJ SS23 VIDEO.mp4"
-          }
-        },
-        "3be4bec0-c871-4c87-bcfe-589e7794fd35": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Home_page_3.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "1663621055723bf94a-0",
-        "1663621055723bf94a-1",
-        "f2d7593c-9791-482d-adf3-d3aaca31485e",
-        "128b5c35-224a-4483-bd84-cbe19a6c38ff",
-        "3be4bec0-c871-4c87-bcfe-589e7794fd35"
-      ],
-      "disabled": true,
-      "settings": {
-        "change_slides_speed": 5,
-        "color_overlay": "white",
-        "overlay": "text",
-        "overlay_text": "",
-        "link": "shopify://collections/archive",
-        "window": "_self"
-      }
-    },
-    "1663696698757930c7": {
-      "type": "image-with-text",
-      "blocks": {
-        "390b770a-3822-4c5e-b404-ca79ca46cb95": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/BANNER4.mp4"
-          }
-        }
-      },
-      "block_order": [
-        "390b770a-3822-4c5e-b404-ca79ca46cb95"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "white",
-        "change_slides_speed": 5,
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first"
-      }
-    },
     "16636963511a304028": {
       "type": "newsletter",
       "blocks": {
@@ -200,8 +122,6 @@
   },
   "order": [
     "d6868e40-bbd7-4f6f-9c41-29fe2463c28c",
-    "1663621055e602879d",
-    "1663696698757930c7",
     "16636963511a304028",
     "1663702785e6fc99ac",
     "166411543758c5e1bb"
