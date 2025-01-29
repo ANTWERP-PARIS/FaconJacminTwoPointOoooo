@@ -34,7 +34,7 @@
       "settings": {
         "change_slides_speed": 5,
         "color_overlay": "white",
-        "overlay": "logo",
+        "overlay": "text",
         "overlay_text": "",
         "link": "shopify://collections/ready-to-wear",
         "window": "_blank",
