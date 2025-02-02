@@ -87,7 +87,7 @@
         "1664115437a8fbb193-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "sale"
+            "collection": "shirts-tops-jumpers"
           }
         },
         "featured_collection_aJq6XM": {
@@ -99,13 +99,13 @@
         "1664115437a8fbb193-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": "bottoms"
+            "collection": "new-arrivals"
           }
         },
         "1664115437a8fbb193-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "shirts-tops-jumpers"
+            "collection": "bottoms"
           }
         }
       },
