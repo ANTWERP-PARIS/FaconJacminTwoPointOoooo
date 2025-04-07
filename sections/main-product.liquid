@@ -1,4 +1,3 @@
-
 {%- assign enable_video_looping = true -%}
 {%- assign hide_variants = false -%}
 
@@ -368,7 +367,7 @@ product-recommendations .grid {
 
           descr.find('p, span').each((k,v) => {
             v = $(v);
-            if(v.text().replaceAll(' ', '').replaceAll(' ', '') == '') v.remove();
+            if(v.text().replaceAll(' ', '').replaceAll(' ', '') == '') v.remove();
           });
 
           descr.find('br').each((k,v) => {
@@ -551,6 +550,7 @@ product-recommendations .grid {
                         {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}
                         {% if variant.available == false %}disabled{% endif %}
                         value="{{ variant.id }}"
+                      >
                         {{ variant.title }}
                         {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
                         - {{ variant.price | money | strip_html }}
@@ -583,6 +583,12 @@ product-recommendations .grid {
                       class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
                     {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
                     >
+                        <span>
+                          {%- if product.selected_or_first_available_variant.available -%}
+                            {{ 'products.product.add_to_cart' | t }}
+                          {%- else -%}
+                            {{ 'products.product.sold_out' | t }}
+                          {%- endif -%}
                         </span>
                         <div class="loading-overlay__spinner hidden">
                           <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
