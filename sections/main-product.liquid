@@ -551,7 +551,6 @@ product-recommendations .grid {
                         {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}
                         {% if variant.available == false %}disabled{% endif %}
                         value="{{ variant.id }}"
-                      >
                         {{ variant.title }}
                         {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
                         - {{ variant.price | money | strip_html }}
