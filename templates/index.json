@@ -23,7 +23,7 @@
         "video_8VMTPc"
       ],
       "custom_css": [
-        "@media (max-width: 768px) {.slideshow video {margin-bottom: 0 !important; padding-bottom: 0 !important; } .slideshow {margin-bottom: 0 !important; padding-bottom: 0 !important; }"
+        "@media (max-width: 768px) {.slideshow video {margin-bottom: 0 !important; padding-bottom: 0 !important; } .slideshow {margin-bottom: 0 !important; padding-bottom: 0 !important; } @media (max-width: 768px) {.slideshow video {width: 100% !important; height: auto !important; }}"
       ],
       "settings": {
         "change_slides_speed": 9,
