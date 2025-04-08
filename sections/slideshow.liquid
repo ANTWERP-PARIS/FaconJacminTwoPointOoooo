@@ -198,13 +198,20 @@
 }
 
 .slideshow .imgs img, .slideshow .imgs video {
-  object-fit: cover;
+  object-fit: cover; /* Garde l'image/vidéo bien ajustée sans déformation */
+  width: 100%;
+  height: 100%; /* Assure que l'image et la vidéo prennent toute la hauteur de leur conteneur */
 }
 
+/* Pour la vidéo spécifiquement */
 .slideshow .imgs video {
-  display: block !important;
-  margin: auto !important;
+  display: block !important; /* Assure que la vidéo est un bloc */
+  margin: 0 !important; /* Retire toute marge qui pourrait créer un espace sous la vidéo */
+  padding: 0 !important; /* Assure qu'il n'y a pas de padding indésirable */
+  height: 100vh !important; /* Force la hauteur de la vidéo à être égale à celle de la fenêtre */
+  width: 100vw !important; /* Force la largeur à être égale à celle de la fenêtre */
 }
+
 
 
 
