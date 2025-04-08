@@ -24,7 +24,7 @@
       ],
       "custom_css": [],
       "settings": {
-        "change_slides_speed": 5,
+        "change_slides_speed": 9,
         "color_overlay": "black",
         "overlay": "text",
         "overlay_text": "ICI",
