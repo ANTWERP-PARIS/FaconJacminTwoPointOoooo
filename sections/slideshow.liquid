@@ -206,8 +206,8 @@
 }
 
 .overlay a {
-    width: 100%;
-    text-decoration: none !important;
+  width: 100%;
+  text-decoration: none !important;
 }
 
 .overlay .wrap {
@@ -233,24 +233,27 @@
 
 /* Styles pour la vidéo */
 .slideshow .video-slide {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
+  z-index: 0;
 }
 
 .slideshow .video-slide video {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Assure que la vidéo ne soit pas zoomée */
+  object-fit: cover; /* Remplir tout l'écran sans déformer */
 }
 
 @media (max-width: 768px) {
   .slideshow .video-slide video {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover; /* Assure que la vidéo couvre toute la hauteur de l'écran */
   }
 }
 {%- endstylesheet -%}
