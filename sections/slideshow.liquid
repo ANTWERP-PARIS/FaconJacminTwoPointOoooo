@@ -161,7 +161,6 @@
                   height="{{ block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round }}"
                 >
             {%- endif -%}
-  
             {%- if block.settings.video -%}
                 <a href="https://www.faconjacmin.com/collections/new-arrivals" target="_blank">
     {{ block.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false }}
