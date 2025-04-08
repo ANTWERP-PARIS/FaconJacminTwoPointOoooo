@@ -161,12 +161,15 @@
                 >
             {%- endif -%}
             {%- if block.settings.video -%}
-                <a href="https://www.faconjacmin.com/collections/new-arrivals" target="_blank">
-    {{ block.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false }}
-  </a>
+                <div class="video-slide">
+                    <a href="https://www.faconjacmin.com/collections/new-arrivals" target="_blank">
+                        {{ block.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false }}
+                    </a>
+                </div>
             {%- endif -%}
         {%- endfor -%}
     </div>
+</div>
 
 {%- stylesheet -%}
 .slideshow {
@@ -195,9 +198,6 @@
   height: calc(100% - 79px);
   z-index: -1 !important;
 }
-
-
-
 
 .slideshow .overlay {
   z-index: 1 !important;
@@ -228,9 +228,28 @@
   -ms-user-select: none;
   user-select: none;
 }
+
+/* Styles pour la vidéo */
+.slideshow .video-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slideshow .video-slide video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Changement de cover à contain pour éviter le zoom */
+}
+
+@media (max-width: 768px) {
+  .slideshow .video-slide video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Assure que la vidéo s'adapte sans être zoomée */
+  }
+}
 {%- endstylesheet -%}
-
-
 
 {% javascript %}
 let 
@@ -271,7 +290,8 @@ $(window).on('orientationchange resize', function(e) {
 });
 
 $(window).trigger('resize');
-
 {% endjavascript %}
+
+
 
 
