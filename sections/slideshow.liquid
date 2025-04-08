@@ -153,20 +153,21 @@
                   {%- if block.settings.image.width >= 1780 -%}{{ block.settings.image | image_url: width: 1780 }} 1780w,{%- endif -%}
                   {%- if block.settings.image.width >= 2000 -%}{{ block.settings.image | image_url: width: 2000 }} 2000w,{%- endif -%}
                   {%- if block.settings.image.width >= 3000 -%}{{ block.settings.image | image_url: width: 3000 }} 3000w,{%- endif -%}
+                  {%- if block.settings.image.width >= 3840 -%}{{ block.settings.image | image_url: width: 3840 }} 3840w,{%- endif -%}
+                  {{ block.settings.image | image_url }} {{ block.settings.image.width }}w"
                   sizes="100vw"
                   src="{{ block.settings.image | image_url: width: 1500 }}"
-                  alt=""
+                  alt="{{ block.settings.image.alt | escape }}"
+                  width="{{ block.settings.image.width }}"
+                  height="{{ block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round }}"
                 >
             {%- endif -%}
-
+  
             {%- if block.settings.video -%}
-                <video autoplay loop muted>
-                    <source src="{{ block.settings.video | file_url }}" type="video/mp4">
-                    Votre navigateur ne prend pas en charge la lecture de vidéos.
-                </video>
+              {{ block.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false }}
             {%- endif -%}
         {%- endfor -%}
-</div>
+    </div>
 
     <div class="overlay abs row middle-xs center-xs">
 
@@ -306,3 +307,5 @@ $(window).on('orientationchange resize', function(e) {
 $(window).trigger('resize');
 
 {% endjavascript %}
+
+
