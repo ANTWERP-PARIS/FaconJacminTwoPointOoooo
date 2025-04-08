@@ -202,7 +202,7 @@
 .slideshow .imgs img, .slideshow .imgs video {
   object-fit: contain;  /* Garder l'image ou la vidéo entière sans la couper */
   width: 100%;           /* Remplir la largeur du conteneur */
-  height: 100%;          /* Remplir la hauteur du conteneur, ce qui est crucial pour l'affichage vertical */
+  height: 100%;          /* Remplir la hauteur du conteneur */
   margin: 0;             /* Supprimer les marges indésirables */
   padding: 0;            /* Supprimer le padding qui pourrait causer un espacement */
 }
@@ -211,10 +211,20 @@
 .slideshow .imgs video {
   display: block !important;  /* Affiche la vidéo comme un bloc */
   width: 100%;                /* Remplir la largeur du conteneur */
-  height: 100%;               /* Remplir la hauteur du conteneur, en mode vertical */
+  height: 100%;               /* Remplir la hauteur du conteneur */
   margin: 0 auto;             /* Centrer la vidéo dans le conteneur */
   max-height: 100vh;          /* Limiter la hauteur à 100% de la hauteur de la fenêtre pour éviter l'espace supplémentaire */
   object-position: center;    /* Centrer la vidéo dans son conteneur */
+}
+
+/* Ajustements spécifiques pour les écrans mobiles */
+@media only screen and (max-width: 750px) {
+  .slideshow .imgs video {
+    object-fit: cover;  /* Recadrer la vidéo pour qu'elle remplisse l'écran sans espace */
+    height: 100vh;      /* Limiter la hauteur de la vidéo à 100% de la hauteur de l'écran */
+    width: 100vw;       /* Limiter la largeur à 100% de la largeur de l'écran */
+  }
+}
 }
 
 
