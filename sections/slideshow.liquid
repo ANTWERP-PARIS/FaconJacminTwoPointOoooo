@@ -215,6 +215,11 @@
   margin: 0 auto;             /* Centrer la vidéo dans le conteneur */
   max-height: 100vh;          /* Limiter la hauteur à 100% de la hauteur de l'écran */
   object-position: center;    /* Centrer la vidéo dans son conteneur */
+  position: absolute;         /* Fixer la vidéo en haut de la page */
+  top: 0;                     /* Placer la vidéo tout en haut */
+  left: 0;                    /* Placer la vidéo à gauche */
+  right: 0;                   /* Étendre la vidéo sur toute la largeur */
+  z-index: -1;                /* S'assurer que la vidéo ne cache pas les autres éléments */
 }
 
 /* Ajustements spécifiques pour les écrans mobiles */
@@ -224,8 +229,12 @@
     height: 100vh;             /* Limiter la hauteur à 100% de la hauteur de l'écran */
     width: auto;               /* Laisser la largeur ajustable pour garder le ratio */
     max-width: 100vw;          /* Limiter la largeur à 100% de l'écran */
+    top: 0;                    /* Placer la vidéo tout en haut sur mobile */
+    left: 0;                   /* Placer la vidéo à gauche sur mobile */
+    right: 0;                  /* Étendre la vidéo sur toute la largeur sur mobile */
   }
 }
+
 
 .slideshow .overlay {
   z-index: 1 !important;
