@@ -171,9 +171,13 @@
 
     <div class="overlay abs row middle-xs center-xs">
 
-        {%- if section.settings.link -%}
-          <a href="{{  section.settings.link }}" target="{{  section.settings.window }}">
-        {%- endif -%}
+       {%- if section.settings.link -%}
+  <a href="{{ section.settings.link }}" target="{{ section.settings.window }}">
+{%- endif -%}
+  {{ block.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false }}
+{%- if section.settings.link -%}
+  </a>
+{%- endif -%}
           
         <div class="wrap">
           {%- if section.settings.overlay == 'logo' -%}
