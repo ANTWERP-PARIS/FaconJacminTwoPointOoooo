@@ -22,7 +22,9 @@
       "block_order": [
         "video_8VMTPc"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "@media (max-width: 768px) {.slideshow video {margin-bottom: 0 !important; padding-bottom: 0 !important; } .slideshow {margin-bottom: 0 !important; padding-bottom: 0 !important; }"
+      ],
       "settings": {
         "change_slides_speed": 9,
         "color_overlay": "black",
