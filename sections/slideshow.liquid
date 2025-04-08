@@ -197,42 +197,7 @@
   z-index: -1 !important;
 }
 
-/* Réglage de la vidéo pour qu'elle reste dans un format vertical */
-.slideshow .imgs img, .slideshow .imgs video {
-  object-fit: contain;  /* Garder l'image ou la vidéo entière sans la couper */
-  width: 100%;           /* Remplir la largeur du conteneur */
-  height: 150%;          /* Remplir la hauteur du conteneur */
-  margin: 0;             /* Supprimer les marges indésirables */
-  padding: 0;            /* Supprimer le padding qui pourrait causer un espacement */
-}
 
-/* Pour la vidéo spécifiquement */
-.slideshow .imgs video {
-  display: block !important;  /* Affiche la vidéo comme un bloc */
-  width: 100%;                /* Remplir la largeur du conteneur */
-  height: auto;               /* Laisser la hauteur ajustable selon l'aspect ratio */
-  margin: 0 auto;             /* Centrer la vidéo dans le conteneur */
-  max-height: 100vh;          /* Limiter la hauteur à 100% de la hauteur de l'écran */
-  object-position: center;    /* Centrer la vidéo dans son conteneur */
-  position: absolute;         /* Fixer la vidéo en haut de la page */
-  top: 0;                     /* Placer la vidéo tout en haut */
-  left: 0;                    /* Placer la vidéo à gauche */
-  right: 0;                   /* Étendre la vidéo sur toute la largeur */
-  z-index: -1;                /* S'assurer que la vidéo ne cache pas les autres éléments */
-}
-
-/* Ajustements spécifiques pour les écrans mobiles */
-@media only screen and (max-width: 750px) {
-  .slideshow .imgs video {
-    object-fit: contain;      /* Garder la vidéo entière sans la couper */
-    height: 100vh;             /* Limiter la hauteur à 100% de la hauteur de l'écran */
-    width: auto;               /* Laisser la largeur ajustable pour garder le ratio */
-    max-width: 100vw;          /* Limiter la largeur à 100% de l'écran */
-    top: 0;                    /* Placer la vidéo tout en haut sur mobile */
-    left: 0;                   /* Placer la vidéo à gauche sur mobile */
-    right: 0;                  /* Étendre la vidéo sur toute la largeur sur mobile */
-  }
-}
 
 
 .slideshow .overlay {
