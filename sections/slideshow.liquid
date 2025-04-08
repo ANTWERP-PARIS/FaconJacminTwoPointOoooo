@@ -168,69 +168,25 @@
         {%- endfor -%}
     </div>
 
-{%- stylesheet -%}
-.slideshow {
-  position: relative;
-  z-index: 0;
-  
-  width: 50vw;
-  height: 50vh;
-  overflow: hidden;
+/* Cibler la vidéo dans le slideshow */
+.slideshow .imgs video {
+  object-fit: cover;       /* Permet de remplir le conteneur sans déformer la vidéo */
+  width: 100%;             /* Assurer que la vidéo occupe toute la largeur */
+  height: 100%;            /* La vidéo occupe toute la hauteur de son conteneur */
+  position: absolute;      /* Positionner la vidéo de manière absolue */
+  top: 0;                  /* Placer la vidéo tout en haut du conteneur */
+  left: 0;                 /* Placer la vidéo à gauche du conteneur */
+  z-index: -1;             /* Assurer que la vidéo reste derrière les autres éléments */
 }
 
-.slideshow .imgs, .slideshow .imgs img, .slideshow .overlay {
-  width: 100%;
-  height: 100%;
-}
-
-.slick-track {
-  position: absolute;
-}
-.slick-list, .slick-track, .slick-slide div {
-  height: 100% !important;
-}
-
-.slideshow .imgs {
-  top: 82px;
-  height: calc(100% - 79px);
-  z-index: -1 !important;
-}
-
-
-
-
-.slideshow .overlay {
-  z-index: 1 !important;
-}
-
-.overlay a {
-    width: 100%;
-    text-decoration: none !important;
-}
-
-.overlay .wrap {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.overlay .wrap .logo {
-  height: auto;
-  margin: 0 auto;
-}
-
-.overlay .wrap span {
-  font: 200px 'display';
-  letter-spacing: -30px;
-  line-height: 160px;
-  text-transform: uppercase;
-  word-break: break-word;    
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-{%- endstylesheet -%}
-
-
+/* Ajustement pour les écrans plus petits */
+@media only screen and (max-width: 750px) {
+  .slideshow .imgs video {
+    width: 100%;            /* Remplir toute la largeur de l'écran */
+    height: auto;           /* Adapter la hauteur proportionnellement */
+    max-height: 100vh;      /* Limiter la hauteur à 100% de la hauteur de la fenêtre */
+    object-position: center; /* Centrer la vidéo dans son conteneur */
+  }
 
 {% javascript %}
 let 
