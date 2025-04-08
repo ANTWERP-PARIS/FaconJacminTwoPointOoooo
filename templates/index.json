@@ -29,7 +29,7 @@
         "overlay": "text",
         "overlay_text": "",
         "link": "shopify://collections/new-arrivals",
-        "window": "_blank",
+        "window": "_self",
         "video": "shopify://files/videos/ss25_homepage.mp4"
       }
     },
