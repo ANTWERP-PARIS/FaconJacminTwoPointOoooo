@@ -136,8 +136,6 @@
   ]
 }
 {% endschema %}
-
-
 <div class="slideshow">
     <div class="imgs fix" data-auto="{{ section.settings.change_slides_speed }}">
         {%- for block in section.blocks -%}
@@ -175,27 +173,31 @@
 .slideshow {
   position: relative;
   z-index: 0;
-  
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .slideshow .imgs, .slideshow .imgs img, .slideshow .overlay {
   width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .slick-track {
   position: absolute;
 }
+
 .slick-list, .slick-track, .slick-slide div {
   height: 100% !important;
 }
 
 .slideshow .imgs {
-  top: 82px;
-  height: calc(100% - 79px);
+  top: 0;
+  height: 100%;
   z-index: -1 !important;
 }
 
@@ -234,19 +236,21 @@
   position: relative;
   width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .slideshow .video-slide video {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Changement de cover à contain pour éviter le zoom */
+  object-fit: contain; /* Assure que la vidéo ne soit pas zoomée */
 }
 
 @media (max-width: 768px) {
   .slideshow .video-slide video {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Assure que la vidéo s'adapte sans être zoomée */
+    object-fit: contain;
   }
 }
 {%- endstylesheet -%}
@@ -291,6 +295,9 @@ $(window).on('orientationchange resize', function(e) {
 
 $(window).trigger('resize');
 {% endjavascript %}
+
+
+
 
 
 
