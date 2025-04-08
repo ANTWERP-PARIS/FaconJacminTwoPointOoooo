@@ -224,7 +224,43 @@
 
 .slideshow .imgs img, .slideshow .imgs video {
   object-fit: cover;
+}
 
+.slideshow .imgs video {
+  display: block !important;
+  margin: auto !important;
+}
+
+
+
+.slideshow .overlay {
+  z-index: 1 !important;
+}
+
+.overlay a {
+    width: 100%;
+    text-decoration: none !important;
+}
+
+.overlay .wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.overlay .wrap .logo {
+  height: auto;
+  margin: 0 auto;
+}
+
+.overlay .wrap span {
+  font: 200px 'display';
+  letter-spacing: -3px;
+  line-height: 160px;
+  text-transform: uppercase;
+  word-break: break-word;    
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 {%- endstylesheet -%}
 
